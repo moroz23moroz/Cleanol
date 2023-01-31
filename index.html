@@ -5,37 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- header -->
     <header class="header">
-        <img src="" alt="" class="header__img">
+        <img src="./images/header/aquatechno_logo.svg" alt="" class="header__img">
         <div class="header__title">Продажа и установка роботизированных моек в каждом городе Беларуси</div>
         <div class="header-contacts">
             <p class="header-contacts__item header-contacts__item_blue">+375 29 365-80-70</p>
             <p class="header-contacts__item">info@aqts.by</p>
             <p class="header-contacts__item">sales@aqts.by</p>
         </div>
-
-        <nav class="header-nav">
-            <a href="" class="header-nav__item">Описание</a>
-            <a href="" class="header-nav__item">Характеристики</a>
-            <a href="" class="header-nav__item">Техническое оснащение</a>
-            <a href="" class="header-nav__item">Преимущества</a>
-            <a href="" class="header-nav__item">Этапы работы</a>
-        </nav>
     </header>
+
+    <nav class="header-nav">
+        <a href="#description" class="header-nav__item">Описание</a>
+        <a href="#qualities" class="header-nav__item">Характеристики</a>
+        <a href="#" class="header-nav__item">Техническое оснащение</a>
+        <a href="#" class="header-nav__item">Преимущества</a>
+        <a href="#" class="header-nav__item">Этапы работы</a>
+    </nav>
     <!-- header -->
 
     <main class="main">
         <!-- banner -->
-        <div class="banner">
-            <img src="" alt="" class="banner__nav-arrow banner__nav-arrow_left">
+        <!-- <div class="banner">
+            <img src="./images/banner/banner_arrow_left.svg" alt="" class="banner__nav-arrow banner__nav-arrow_left">
             <div class="banner-content">
-                <img src="" alt="" class="banner-content__slider">
-                <img src="" alt="" class="banner-content__round-img">
+                <img src="./images/banner/slider_1.png" alt="" class="banner-content__slider">
+                <img src="./images/banner/round_img_header.svg" alt="" class="banner-content__round-img">
                 <h1 class="banner-content__title">Робот-мойка</h1>
                 <div class="banner-content-block">
                     <img src="./images/banner/banner_icon_key.svg" alt="key icon" class="banner-content-block__icon">
@@ -51,40 +52,44 @@
                             class="banner-content-block__text banner-content-block__text_bold">14</span> месяцев</p>
                 </div>
             </div>
-            <img src="" alt="" class="banner__nav-arrow banner__nav-arrow_right">
-        </div>
+            <img src="./images/banner/banner_arrow_right.svg" alt="" class="banner__nav-arrow banner__nav-arrow_right">
+        </div> -->
         <!-- banner -->
 
         <!-- block_3 -->
-        <div class="info-block">
+        <div class="info-block" id="description">
             <h2 class="info-block__title">Робот-мойка для легковых автомобилей</h2>
 
-            <div class="info-block-content">
-                <p class="info-block-content__text"><span
-                        class="info-block-content__text_bold info-block-content__text_blue">Робот-мойка</span> -
-                    автоматизированное решение для бесконтактного мытья
-                    автомобиля. Процесс не требует участия оператора, что сокращает издержки на персонал и минимизирует
-                    риски, связанные с компетенцией специалистов</p>
+            <div class="info-block-wrapper">
+                <div class="info-block-content">
+                    <div class="info-block__text"><span
+                            class="info-block__text_bold info-block__text_blue">Робот-мойка</span> -
+                        автоматизированное решение для бесконтактного мытья
+                        автомобиля. Процесс не требует участия оператора, что сокращает издержки на персонал и
+                        минимизирует
+                        риски, связанные с компетенцией специалистов</div>
+
+
+                    <div class="info-block-list">
+                        <h3 class="info-block-list__title">3 плюса роботизированной мойки:</h3>
+                        <p class="info-block-list__number">01.</p>
+                        <p class="info-block-list__text">Индивидуальная настройка программ мойки</p>
+                        <p class="info-block-list__number">02.</p>
+                        <p class="info-block-list__text">Удалённое управление робот-мойкой</p>
+                        <p class="info-block-list__number">03.</p>
+                        <p class="info-block-list__text">Оптимизация расходов воды, автохимии и электроэнергии</p>
+                    </div>
+
+                    <button class="info-block-btn info-block-btn_blue">Заказать <img src="./images/btn_arrow_white.svg"
+                            alt="white arrow" class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                </div>
+
+                <img src="./images/block_3/block3_washing_car.png" alt="washing of car" class="info-block__img">
             </div>
-
-            <div class="info-block-list">
-                <h3 class="info-block-list__title">3 плюса роботизированной мойки:</h3>
-                <p class="info-block-list__number">01.</p>
-                <p class="info-block-list__text">Индивидуальная настройка программ мойки</p>
-                <p class="info-block-list__number">02.</p>
-                <p class="info-block-list__text">Удалённое управление робот-мойкой</p>
-                <p class="info-block-list__number">03.</p>
-                <p class="info-block-list__text">Оптимизация расходов воды, автохимии и электроэнергии</p>
-            </div>
-
-            <img src="./images/block_3/block3_washing_car.png" alt="washing of car" class="info-block__img">
-
-            <button class="info-block-btn info-block-btn_blue">Заказать <img src="./images/btn_arrow_white.svg"
-                    alt="white arrow" class="info-block-btn-arrow info-block-btn-arrow_white"></button>
         </div>
 
         <!-- block_3.1 -->
-        <div class="info-block info-block_bg-blue">
+        <!-- <div class="info-block info-block_bg-blue">
             <div class="info-block-content">
                 <p class="info-block-content__text">Свяжитесь с нами по телефону <span
                         class="info-block-content__text_bold info-block-content__text_white">+375 29 365-80-70</span>
@@ -96,32 +101,32 @@
 
             <button class="info-block-btn info-block-btn_white">Оставить заявку <img src="./images/btn_arrow_blue.svg"
                     alt="blue arrow" class="info-block-btn-arrow info-block-btn-arrow_blue"></button>
-        </div>
+        </div> -->
         <!-- block_3.1 -->
         <!-- block_3 -->
 
 
         <!-- block_4 -->
-        <div class="info-block info-block_bg-light-blue">
+        <!-- <div class="info-block info-block_bg-light-blue" id="qualities">
             <h2 class="info-block__title">8 основных характеристик <br> роботизированной мойки</h2>
-            <img src="./images/block_4/block_4_image.png" alt="" class="info-block__img info-block__img_absolute">
+            <img src="./images/block_4/block_4_image.png" alt="" class="info-block__img info-block__img_absolute"> -->
 
-            <!-- vertical-slider -->
-            <div class="info-block-slider">
+        <!-- vertical-slider -->
+        <!-- <div class="info-block-slider">
 
                 <button class="info-block-btn info-block-btn_blue">Купить <img src="./images/btn_arrow_white.svg"
                         alt="white arrow" class="info-block-btn-arrow info-block-btn-arrow_white"></button>
-            </div>
-            <!-- vertical-slider -->
+            </div> -->
+        <!-- vertical-slider -->
 
-            <button class="info-block-btn info-block-btn_blue">Купить <img src="./images/btn_arrow_white.svg"
+        <!-- <button class="info-block-btn info-block-btn_blue">Купить <img src="./images/btn_arrow_white.svg"
                     alt="white arrow" class="info-block-btn-arrow info-block-btn-arrow_white"></button>
 
-        </div>
+        </div> -->
         <!-- block_4 -->
 
         <!-- block_5 -->
-        <div class="info-block">
+        <!-- <div class="info-block">
             <div class="info-block-content">
                 <p class="info-block-content__text"><span
                         class="info-block-content__text_bold info-block-content__text_blue">Робот-мойка</span> - моечное
@@ -136,7 +141,7 @@
 
             <button class="info-block-btn info-block-btn_blue">Подробнее <img src="./images/btn_arrow_white.svg"
                     alt="white arrow" class="info-block-btn-arrow info-block-btn-arrow_white"></button>
-        </div>
+        </div> -->
         <!-- block_5 -->
     </main>
 

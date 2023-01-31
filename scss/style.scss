@@ -1,6 +1,11 @@
 @import './vars.scss' ;
-@import './fonts';
-@import './global';
-@import './media';
-@import './reset';
+@import './fonts.scss';
+@import './global.scss';
+@import './media.scss';
+@import './reset.scss';
 
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/banner';
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap");
