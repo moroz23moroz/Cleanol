@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
     <title>Document</title>
 </head>
 
@@ -14,21 +15,25 @@
         <div class="why-robot-cleaner">
             <h2 class="why-robot-cleaner__title">В каком случае вам подойдет робот-мойка?</h2>
             <div class="why-robot-cleaner__container">
-                <div class="image-wrapper">
-                    <img src="" alt="">
-                    <img src="" alt="thumbs-up icon">
+                <div class="why-robot-cleaner__images">
+                    <div class="why-robot-cleaner__image-group">
+                        <img class="why-robot-cleaner__photo" src="images/why-robot/parking-lot.png" alt="parking lot">
+                        <img class="why-robot-cleaner__icon" src="images/why-robot/thumbs-up.svg" alt="thumbs-up icon">
+                        <p class="why-robot-cleaner__image-text">если у вас уже есть свободный бокс для моечного
+                            комплекса</p>
+                    </div>
+                    <div class="why-robot-cleaner__image-group">
+                        <img class="why-robot-cleaner__photo" src="images/why-robot/land.png" alt="land">
+                        <img class="why-robot-cleaner__icon" src="images/why-robot/thumbs-up.svg" alt="thumbs-up icon">
+                        <p class="why-robot-cleaner__image-text">если у вас есть земельный участок</p>
+                    </div>
+                    <div class="why-robot-cleaner__image-group">
+                        <img class="why-robot-cleaner__photo" src="images/why-robot/money.png" alt="money">
+                        <img class="why-robot-cleaner__icon" src="images/why-robot/thumbs-up.svg" alt="thumbs-up icon">
+                        <p class="why-robot-cleaner__image-text">если вы хотите выгодно вложить деньги</p>
+                    </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="" alt="">
-                    <img src="" alt="thumbs-up icon">
-                </div>
-                <div class="image-wrapper">
-                    <img src="" alt="">
-                    <img src="" alt="thumbs-up icon">
-                </div>
-                <p class="why-robot-cleaner__image-text">если у вас уже есть свободный бокс для моечного комплекса</p>
-                <p class="why-robot-cleaner__image-text">если у вас есть земельный участок</p>
-                <p class="why-robot-cleaner__image-text">если вы хотите выгодно вложить деньги</p>
+
                 <div class="why-robot-cleaner__info">Хотите знать больше роботизированной мойке? Звоните нам по телефону
                     <a href="tel:+37523658070">+375 29 365-80-70</a>
                     или оставьте заявку на сайте. Мы свяжемся с вами, обсудим волнующие вас моменты и ответим на все
@@ -75,18 +80,78 @@
         </div>
 
         <div class="stages-of-construction">
-            <h2 class="stages-of-construction__title">8 этапов работы строительства робот-мойки</h2>
+            <h2 class="stages-of-construction__title">8 этапов строительства робот-мойки</h2>
 
-            <button class="stages-of-construction__button-prev">prev</button>
+            <div class="stages-of-construction__slider">
+                <button class="stages-of-construction__button-prev">prev</button>
 
-            <div class="stages-of-construction__gallery">
-                <!-- <div class="stages-of-construction__number"></div>
-                <h3 class="stages-of-construction__subtitle"></h3>
-                <div class="stages-of-construction__text"></div>
-                <img src="" alt="" class="stages-of-construction__photo"> -->
+                <div class="stages-of-construction__container">
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">1</div>
+                        <h3 class="stages-of-construction__subtitle">Заявка</h3>
+                        <div class="stages-of-construction__text">Ваш звонок по телефону <a href='tel:+37523658070'>+375
+                                29 365-80-70</a> или заявка на сайте. Мы созваниваемся и согласовываем дату и время
+                            встречи</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">2</div>
+                        <h3 class="stages-of-construction__subtitle">Проведение консультации</h3>
+                        <div class="stages-of-construction__text">Разговор со специалистом, выезд на объект. Оценка
+                            места расположения мойки. </div>
+                        <div class="stages-of-construction__text stages-of-construction__text_advice">Наш совет -
+                            размещайте автомойку вблизи с трассой, оживленной улицей, в спальном районе или в
+                            торгово-развлекательном центре</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">3</div>
+                        <h3 class="stages-of-construction__subtitle">Создание проекта</h3>
+                        <div class="stages-of-construction__text">Предоставление вами проекта либо наша консультация. Мы
+                            ответим на все вопросы, которые будут возникать у организации, в которой вы заказали проект
+                            (водоснабжение, слив воды, проведение электричества, вентиляция, отопление и др.)</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">4</div>
+                        <h3 class="stages-of-construction__subtitle">Оценка проекта</h3>
+                        <div class="stages-of-construction__text">Наша оценка проекта и озвучивание стоимости</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">5</div>
+                        <h3 class="stages-of-construction__subtitle">Заключение договора</h3>
+                        <div class="stages-of-construction__text">Заключение договора на работы и закупку оборудования.
+                            Внесение предоплаты</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">6</div>
+                        <h3 class="stages-of-construction__subtitle">Строительные работы</h3>
+                        <div class="stages-of-construction__text">Установка и подключение оборудования, подведение
+                            коммуникаций, создание подъездных путей, благоустройство территории</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">7</div>
+                        <h3 class="stages-of-construction__subtitle">Тестовый запуск</h3>
+                        <div class="stages-of-construction__text">Начало функционирования автомойки. Наладка всех узлов,
+                            исправление неполадок. Обучение персонала всем нюансам работы с моечным оборудованием</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+                    <div class="stages-of-construction__card-wrapper">
+                        <div class="stages-of-construction__number">8</div>
+                        <h3 class="stages-of-construction__subtitle">Окончательная оплата</h3>
+                        <div class="stages-of-construction__text">Подписание актов. Гарантийное и послегарантийное
+                            обслуживание</div>
+                        <img src="" alt="" class="stages-of-construction__photo">
+                    </div>
+
+                </div>
+
+                <button class="stages-of-construction__button-next">next</button>
+
             </div>
-
-            <button class="stages-of-construction__button-next">next</button>
 
             <button class="stages-of-construction__button-order">Заказать робот-мойку</button>
         </div>

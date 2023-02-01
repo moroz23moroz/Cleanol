@@ -1,1 +1,72 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap");
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../fonts/RFDewiExtended-Regular.ttf");
+}
+.why-robot-cleaner {
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #EEF3FD;
+}
+.why-robot-cleaner__title {
+  text-align: center;
+  color: #265FE5;
+  font-family: "RF Dewi Extended";
+  font-size: 45px;
+}
+.why-robot-cleaner__container {
+  margin: auto;
+  display: flex;
+}
+.why-robot-cleaner__images {
+  max-width: 653px;
+  display: flex;
+  justify-content: space-between;
+}
+.why-robot-cleaner__image-group {
+  position: relative;
+  margin-right: 16px;
+  text-align: center;
+}
+.why-robot-cleaner__photo {
+  max-width: 207px;
+}
+.why-robot-cleaner__icon {
+  max-width: 59px;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  z-index: 1;
+}
+.why-robot-cleaner__image-text {
+  margin-top: 40px;
+  color: #3A475E;
+  font-family: "Raleway";
+}
+.why-robot-cleaner__info {
+  max-width: 423px;
+  margin-left: 30px;
+  color: #3A475E;
+  font-family: "Raleway";
+}
+.why-robot-cleaner__info a {
+  color: #265FE5;
+  text-decoration: none;
+  font-family: "RF Dewi Extended";
+}
+.stages-of-construction__slider {
+  width: 1477px;
+  overflow: hidden;
+}
+
+.stages-of-construction__container {
+  display: flex;
+  width: 1077px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.stages-of-construction__card-wrapper {
+  outline: 1px solid darkcyan;
+}/*# sourceMappingURL=style.css.map */

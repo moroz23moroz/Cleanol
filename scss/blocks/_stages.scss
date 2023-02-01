@@ -1,0 +1,32 @@
+// * {
+//     outline: 1px solid darkcyan;
+// }
+.stages-of-construction {
+
+}
+
+.stages-of-construction__title {
+    // max-width: 1139px;
+}
+
+.stages-of-construction__slider {
+    // display: flex;
+    width: 1477px;
+    overflow: hidden;
+}
+
+.stages-of-construction__container {
+    display: flex;
+    // flex-wrap: wrap;
+    width: 1077px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.stages-of-construction__card-wrapper {
+    // width: 368px;
+    // min-width: 368px;
+    outline: 1px solid darkcyan;
+    // max-height: 595px;
+} 
