@@ -1,0 +1,32 @@
+.info-block_sm {
+    display: flex;
+    align-items: center;
+    max-width: 1146px;
+    max-height: 164px;
+    min-height: 164px;
+    border-radius: 50px;
+    // color: $text-color-white;
+}
+
+.info-block_bg-blue {
+    background-color: $bg-deep-blue;
+}
+
+.info-block__text_white {
+    // max-width: 674px;
+    margin-left: 40px;
+    margin-right: 60px;
+    color: $text-color-white;
+}
+
+.info-block-btn_white {
+    max-width: 294px;
+    min-width: 294px;
+    max-height: 54px;
+    min-height: 54px;
+    margin-right: 58px;
+    background-color: $bg-white;
+    color: $text-color-blue;
+}
+
+// .info-block-btn-arrow_blue {}
