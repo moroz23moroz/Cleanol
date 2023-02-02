@@ -15,6 +15,7 @@
     }
 
     &__text {
+        margin-bottom: 1.2em;
         line-height: 30px;
 
         &_bold {
@@ -28,7 +29,6 @@
 }
 
 .info-block-wrapper {
-    // position: relative;
     display: flex;
     max-width: 1146px;
     margin-right: auto;
