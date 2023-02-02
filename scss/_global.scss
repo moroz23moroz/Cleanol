@@ -1,71 +1,9 @@
 * {
-    // border: solid 1px red;
+    border: solid 1px red;
     font-family: $main-font;
 }
 
-.header {
-    display: flex;
-    max-width: 80vw;
-    margin-right: auto;
-    margin-left: auto;
-    // font-family: $main-font;
-}
 
-.header__img {}
-
-.header__title {}
-
-.header-contacts {}
-
-.header-contacts__item {}
-
-.header-contacts__item_blue {}
-
-.header-nav {}
-
-.header-nav__item {}
-
-.main {}
-
-.banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1796px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.banner__nav-arrow {}
-
-.banner__nav-arrow_left {
-    margin-right: -20px;
-}
-
-.banner__nav-arrow_right {
-    margin-left: -20px;
-}
-
-.banner-content {}
-
-.banner-content__slider {
-    max-width: 1700px;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-.banner-content__round-img {}
-
-.banner-content__title {}
-
-.banner-content-block {}
-
-.banner-content-block__icon {}
-
-.banner-content-block__text {}
-
-.banner-content-block__text_bold {}
 
 
 
