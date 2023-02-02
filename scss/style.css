@@ -171,7 +171,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 80px;
+  margin-right: 15px;
 }
 .numbers-wrapper__item {
   box-sizing: border-box;
@@ -187,6 +187,17 @@
 .numbers-wrapper__item_active {
   font-size: 30px;
   color: #265FE5;
+}
+
+.lines-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25px;
+}
+.lines-wrapper__item {
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 .content-wrapper {
