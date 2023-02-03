@@ -5,42 +5,30 @@
     max-width: 1796px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 113px;
+
+    &__round-img {
+        position: absolute;
+        // top: -65px;
+        top: 48px; //для наглядности
+        left: 1570px;
+        max-width: 130px;
+    }
+
+    &__slider {
+        max-width: 1704px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    &__nav-arrow_left {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    &__nav-arrow_right {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
-
-.banner__nav-arrow {}
-
-.banner__nav-arrow_left {
-    margin-top: auto;
-    margin-right: -20px;
-    margin-bottom: auto;
-}
-
-.banner__nav-arrow_right {
-    margin-top: auto;
-    margin-left: -20px;
-    margin-bottom: auto;
-}
-
-.banner-content {}
-
-.banner-content__slider {
-    max-width: 1700px;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-.banner-content__round-img {}
-
-.banner-content__title {
-    font-family: $title-font;
-    color: $text-color-white;
-}
-
-.banner-content-block {}
-
-.banner-content-block__icon {}
-
-.banner-content-block__text {}
-
-.banner-content-block__text_bold {}
