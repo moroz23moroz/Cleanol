@@ -13,9 +13,11 @@
 }
 
 .info-block__text_white {
-    // max-width: 674px;
+    max-width: 680px;
+    margin-top: 20px;
     margin-left: 40px;
     margin-right: 60px;
+    line-height: 25px;
     color: $text-color-white;
 }
 

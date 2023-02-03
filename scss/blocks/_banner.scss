@@ -10,8 +10,11 @@
     &__round-img {
         position: absolute;
         // top: -65px;
-        top: 48px; //для наглядности
-        left: 1570px;
+        // top: 48px; //для наглядности
+        // left: 1570px;
+
+        margin-top: -760px;
+        margin-left: 730px;
         max-width: 130px;
     }
 
