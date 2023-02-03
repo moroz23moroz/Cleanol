@@ -32,6 +32,7 @@
 .numbers-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin-right: 15px;
 
@@ -42,12 +43,16 @@
         max-height: 50px;
         min-height: 50px;
         padding-top: 15px;
+        font-family: $title-font;
         font-size: 20px;
         text-align: center;
         color: #B2C7F6;
 
         &_active {
+            padding-top: 5px;
+            margin-right: 10px;
             font-size: 30px;
+            font-weight: 700;
             color: $text-color-title;
         }
     }
@@ -57,10 +62,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin-right: 25px;
 
     &__item {
-        margin-top: 23px;
+        margin-top: 25px;
         margin-bottom: 23px;
         font-family: $title-font;
     }
@@ -72,21 +78,23 @@
     // gap: 1.2em;
     max-width: 477px;
     min-width: 477px;
-
 }
 
 .title-group {
     display: flex;
-    align-items: center;
+    // align-items: center;
     color: $text-color-title;
 
     &__title {
+        margin-top: 10px;
+        margin-left: 14px;
         font-size: 22px;
         font-weight: 700;
     }
 
     &__icon {
-        max-width: 71px;
+        max-width: 99px;
+        margin-left: -15px;
     }
 }
 

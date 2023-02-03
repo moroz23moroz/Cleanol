@@ -18,7 +18,13 @@
 
     &__text {
         margin-bottom: 1.2em;
-        line-height: 30px;
+        @include block-text (18px, 25px);
+
+        // font-size: 18px;
+        // line-height: 30px;
+        &_expanded {
+            @include block-text (18px, 30px);
+        }
 
         &_bold {
             font-family: $title-font;

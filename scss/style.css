@@ -54,6 +54,11 @@
 }
 .info-block__text {
   margin-bottom: 1.2em;
+  font-size: 18px;
+  line-height: 25px;
+}
+.info-block__text_expanded {
+  font-size: 18px;
   line-height: 30px;
 }
 .info-block__text_bold {
@@ -206,6 +211,7 @@
 .numbers-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-right: 15px;
 }
@@ -216,12 +222,16 @@
   max-height: 50px;
   min-height: 50px;
   padding-top: 15px;
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 20px;
   text-align: center;
   color: #B2C7F6;
 }
 .numbers-wrapper__item_active {
+  padding-top: 5px;
+  margin-right: 10px;
   font-size: 30px;
+  font-weight: 700;
   color: #265FE5;
 }
 
@@ -229,10 +239,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-right: 25px;
 }
 .lines-wrapper__item {
-  margin-top: 23px;
+  margin-top: 25px;
   margin-bottom: 23px;
   font-family: "RF Dewi Extended", sans-serif;
 }
@@ -246,15 +257,17 @@
 
 .title-group {
   display: flex;
-  align-items: center;
   color: #265FE5;
 }
 .title-group__title {
+  margin-top: 10px;
+  margin-left: 14px;
   font-size: 22px;
   font-weight: 700;
 }
 .title-group__icon {
-  max-width: 71px;
+  max-width: 99px;
+  margin-left: -15px;
 }
 
 .info-block-btn_sm {
