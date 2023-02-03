@@ -9,7 +9,7 @@
 }
 
 .info-block_bg-blue {
-    background-color: $bg-deep-blue;
+    background-color: $bg-color-main;
 }
 
 .info-block__text_white {
@@ -25,8 +25,8 @@
     max-height: 54px;
     min-height: 54px;
     margin-right: 58px;
-    background-color: $bg-white;
-    color: $text-color-blue;
+    background-color: $bg-color-white;
+    color: $text-color-title;
 }
 
 // .info-block-btn-arrow_blue {}

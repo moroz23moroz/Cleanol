@@ -11,7 +11,7 @@
         font-size: 45px;
         font-weight: 700;
         text-align: center;
-        color: $text-color-blue;
+        color: $text-color-title;
     }
 
     &__text {
@@ -23,7 +23,7 @@
         }
 
         &_blue {
-            color: $text-color-blue;
+            color: $text-color-title;
         }
     }
 }
@@ -50,12 +50,12 @@
     &__title {
         grid-column: 1/3;
         grid-row: 1/2;
-        color: $text-color-grey;
+        color: $text-color-light;
     }
 
     &__number {
         font-size: 25px;
-        color: $text-color-blue;
+        color: $text-color-title;
     }
 
     &__text {}
@@ -76,7 +76,7 @@
 }
 
 .info-block-btn_blue {
-    background-color: $bg-deep-blue;
+    background-color: $bg-color-main;
     color: $text-color-white;
 }
 
