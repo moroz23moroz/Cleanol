@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap");
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../fonts/RFDewiExtended-Regular.woff");
+  font-weight: 400;
+}
 * {
   border: solid 1px red;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
 .banner {
@@ -14,17 +19,26 @@
 }
 
 .banner__nav-arrow_left {
+  margin-top: auto;
   margin-right: -20px;
+  margin-bottom: auto;
 }
 
 .banner__nav-arrow_right {
+  margin-top: auto;
   margin-left: -20px;
+  margin-bottom: auto;
 }
 
 .banner-content__slider {
   max-width: 1700px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.banner-content__title {
+  font-family: "RF Dewi Extended", sans-serif;
+  color: #FFFFFF;
 }
 
 .info-block {
@@ -36,6 +50,7 @@
   border-radius: 50px;
 }
 .info-block__title {
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 45px;
   font-weight: 700;
   text-align: center;
@@ -46,6 +61,7 @@
   line-height: 30px;
 }
 .info-block__text_bold {
+  font-family: "RF Dewi Extended", sans-serif;
   font-weight: 700;
 }
 .info-block__text_blue {
@@ -74,9 +90,11 @@
 .info-block-list__title {
   grid-column: 1/3;
   grid-row: 1/2;
+  font-family: "RF Dewi Extended", sans-serif;
   color: #3A475E;
 }
 .info-block-list__number {
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 25px;
   color: #265FE5;
 }
@@ -198,6 +216,7 @@
 .lines-wrapper__item {
   margin-top: 23px;
   margin-bottom: 23px;
+  font-family: "RF Dewi Extended", sans-serif;
 }
 
 .content-wrapper {

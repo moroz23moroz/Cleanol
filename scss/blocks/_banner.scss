@@ -10,11 +10,15 @@
 .banner__nav-arrow {}
 
 .banner__nav-arrow_left {
+    margin-top: auto;
     margin-right: -20px;
+    margin-bottom: auto;
 }
 
 .banner__nav-arrow_right {
+    margin-top: auto;
     margin-left: -20px;
+    margin-bottom: auto;
 }
 
 .banner-content {}
@@ -28,7 +32,10 @@
 
 .banner-content__round-img {}
 
-.banner-content__title {}
+.banner-content__title {
+    font-family: $title-font;
+    color: $text-color-white;
+}
 
 .banner-content-block {}
 
