@@ -8,15 +8,18 @@
   border-radius: 50px;
   background-color: #EEF3FD;
 }
+.why-robot-cleaner__container {
+  margin: auto;
+  max-width: 1146px;
+  display: flex;
+  flex-wrap: wrap;
+}
 .why-robot-cleaner__title {
+  width: 100%;
   text-align: center;
   color: #265FE5;
   font-family: "RF Dewi Extended";
-  font-size: 45px;
-}
-.why-robot-cleaner__container {
-  margin: auto;
-  display: flex;
+  font-size: 2.8em;
 }
 .why-robot-cleaner__images {
   max-width: 653px;
@@ -42,18 +45,35 @@
   margin-top: 40px;
   color: #3A475E;
   font-family: "Raleway";
+  font-size: 18px;
 }
-.why-robot-cleaner__info {
+.why-robot-cleaner__info-group {
   max-width: 423px;
   margin-left: 30px;
+}
+.why-robot-cleaner__info {
   color: #3A475E;
   font-family: "Raleway";
+  font-size: 18px;
 }
 .why-robot-cleaner__info a {
   color: #265FE5;
   text-decoration: none;
   font-family: "RF Dewi Extended";
 }
+.why-robot-cleaner__button {
+  max-width: 327px;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #265FE5;
+  color: #FFFFFF;
+}
+
 .stages-of-construction__slider {
   width: 1477px;
   overflow: hidden;

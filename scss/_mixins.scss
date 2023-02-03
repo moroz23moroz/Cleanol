@@ -1,0 +1,30 @@
+@mixin button-main ($max-width, $padding, $font-size) {
+    max-width: $max-width;
+    padding: $padding;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: $main-font;
+    font-size: $font-size;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: $bg-color-main;
+    color: $text-color-white;
+}
+
+
+@mixin button-light ($max-width) {
+    max-width: $max-width;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: $main-font;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: $bg-color-white;
+    color: $text-color-main;
+}
