@@ -4,11 +4,14 @@
     &__container {
         max-width: 1146px;
         display: grid;
-        // grid-template-columns: ;
+        // 490 166 490
+        grid-template-columns: 43% 1fr 43%;
+        row-gap: 57px;
     }
 
     // .advantages__title
     &__title {
+        grid-area: 1/1/2/4;
         @include font-style ($title-font, $title-font-size, 58px);
         color: $text-color-title;
     }
@@ -19,44 +22,69 @@
 
         // .advantages__photo_first
         &_first {
+            grid-area: 2/1/3/2;
         }
 
         // .advantages__photo_second
         &_second {
+            grid-area: 3/3/4/4;
         }
 
         // .advantages__photo_third
         &_third {
+            grid-area: 4/1/5/2;
         }
     }
 
     // .advantages__info
     &__info {
         max-width: 471px;
+
+        &_first {
+            grid-area: 2/3/3/4;
+        }
+
+        &_second {
+            grid-area: 3/1/4/2;
+        }
+
+        &_third {
+            grid-area: 4/3/5/4;
+        }
     }
 
     // .advantages__subtitle
     &__subtitle {
+        @include font-style ($title-font, $subtitle-font-size, 25px);
+        color: $text-color-title;
     }
 
     // .advantages__text
     &__text {
+        @include font-style ($main-font, $text-font-size, 25px);
+        color: $text-color-light;
     }
 
     // .advantages__design-elements
     &__design-elements {
+        grid-area: 2/2/5/3;
     }
 
-    // .advantages__line
-    &__line {
-    }
+    // // .advantages__line
+    // &__line {}
 
     // .advantages__number
     &__number {
+        @include font-style ($title-font, $subtitle-font-size, 25px);
+        max-width: 75px;
+        max-height: 75px;
+        border-radius: 37.5px;
+        background-color: $bg-color-main;
+        color: $text-color-white;
     }
 
     // .advantages__button
     &__button {
+        @include button-main (384px, 12px, 22px);
     }
 }
-
