@@ -19,7 +19,8 @@
   text-align: center;
   color: #265FE5;
   font-family: "RF Dewi Extended";
-  font-size: 2.8em;
+  font-size: 45px;
+  line-height: 62.5px;
 }
 .why-robot-cleaner__images {
   max-width: 653px;
@@ -33,28 +34,31 @@
 }
 .why-robot-cleaner__photo {
   max-width: 207px;
+  margin-bottom: 22px;
 }
 .why-robot-cleaner__icon {
   max-width: 59px;
   position: absolute;
-  left: 30%;
-  top: 50%;
+  left: 34%;
+  top: 42%;
   z-index: 1;
 }
 .why-robot-cleaner__image-text {
-  margin-top: 40px;
   color: #3A475E;
   font-family: "Raleway";
   font-size: 18px;
+  line-height: 25px;
 }
 .why-robot-cleaner__info-group {
   max-width: 423px;
-  margin-left: 30px;
+  margin-left: 70px;
+  padding-top: 8px;
 }
 .why-robot-cleaner__info {
   color: #3A475E;
   font-family: "Raleway";
   font-size: 18px;
+  line-height: 25px;
 }
 .why-robot-cleaner__info a {
   color: #265FE5;
@@ -62,6 +66,7 @@
   font-family: "RF Dewi Extended";
 }
 .why-robot-cleaner__button {
+  margin-top: 49px;
   max-width: 327px;
   padding: 12px 50px;
   border: none;
