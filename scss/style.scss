@@ -1,0 +1,143 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+    padding-top: 45px;
+    margin-bottom: 20px;
+    color: #3A475E;
+
+    &__inner,
+    &__menu-list,
+    &__main,
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    &__main,
+    &__contacts {
+        gap: 55px;
+        color: #222021;
+    }
+
+
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__description {
+        width: 410px;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 500;
+    }
+
+    &__contacts {
+        font-family: 'RFDewi-Regular';
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__email {
+        color: #222021;
+    }
+
+    &__phone {
+        color: #265FE5;
+        font-weight: 600;
+    }
+
+    &__menu,
+    .header-high {
+        padding: 0 45px;
+    }
+
+    &__menu-list {
+        gap: 35px;
+        font-size: 20px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+}
+
+.header-low {
+    margin-top: 45px;
+}
+
+.collection {
+    padding: 100px 0;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__image {
+        height: 100%;
+    }
+}
+
+.form {
+    background-color: #265FE5;
+    border-radius: 50px 50px 0px 0px;
+    color: white;
+    padding-top: 85px;
+    padding-bottom: 410px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__title {
+        font-size: 45px;
+        line-height: 58px;
+        @extend %title-font;
+    }
+}
+
+.footer {
+    position: absolute;
+    color: white;
+    height: 315px;
+    padding-top: 70px;
+    padding-bottom: 45px;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+    background-color: #3A475E;
+    border-radius: 50px 50px 0px 0px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        gap: 65px;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100px;
+    }
+
+    &__menu-item {
+        padding-right: 50px;
+    }
+
+    &__contacts {
+        font-size: 16px;
+    }
+
+    &__adress {
+        width: 240px;
+    }
+}
