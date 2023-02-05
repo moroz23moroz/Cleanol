@@ -2,10 +2,7 @@
 
 @font-face {
     font-family: 'RF Dewi Extended';
-    // src: url("../fonts/RFDewiExtended-Black.ttf");
-    // src: url("../fonts/RFDewiExtended-Light.ttf");
-    src: url("../fonts/RFDewiExtended-Regular.ttf");
+    // src: url("../fonts/RFDewiExtended-Regular.woff2");
+    src: url("../../fonts/RFDewiExtended-Regular.woff2"); //пришлось прописать такой путь из за того, что style.css теперь в папке dist
     // font-weight: 700;
 }
-
-// переделать в wof

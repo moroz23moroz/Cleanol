@@ -3,16 +3,19 @@
     // .advantages__container
     &__container {
         max-width: 1146px;
+        margin: 0 auto;
         display: grid;
         // 490 166 490
         grid-template-columns: 43% 1fr 43%;
-        row-gap: 57px;
+        // row-gap: 57px;
+        align-items: center;
     }
 
     // .advantages__title
     &__title {
         grid-area: 1/1/2/4;
         @include font-style ($title-font, $title-font-size, 58px);
+        text-align: center;
         color: $text-color-title;
     }
 
@@ -56,6 +59,7 @@
     // .advantages__subtitle
     &__subtitle {
         @include font-style ($title-font, $subtitle-font-size, 25px);
+        font-weight: 700;
         color: $text-color-title;
     }
 
@@ -68,23 +72,36 @@
     // .advantages__design-elements
     &__design-elements {
         grid-area: 2/2/5/3;
+        margin: 0 auto;
+        // text-align: center;
     }
 
-    // // .advantages__line
-    // &__line {}
+    // .advantages__line
+    &__line {
+        // margin: 0 auto;
+        margin: 50%;
+    }
 
     // .advantages__number
     &__number {
         @include font-style ($title-font, $subtitle-font-size, 25px);
-        max-width: 75px;
-        max-height: 75px;
+        // font-weight: 600;
+        // max-width: 75px;
+        // max-height: 75px;
+        width: 75px;
+        height: 75px;
         border-radius: 37.5px;
+        text-align: center;
         background-color: $bg-color-main;
         color: $text-color-white;
     }
 
     // .advantages__button
     &__button {
-        @include button-main (384px, 12px, 22px);
+        grid-area: 5/1/6/4;
+        justify-self: center;
+        @include button-main (384px, 12px 50px, $button-font-size);
+        // padding-left: 50px;
+        // padding-right: 50px;
     }
 }

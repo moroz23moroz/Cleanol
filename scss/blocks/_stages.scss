@@ -1,30 +1,81 @@
-// * {
-//     outline: 1px solid darkcyan;
+.stages-of-construction {
+
+    // .stages-of-construction__container
+    &__container {
+        max-width: 1796px;
+    }
+
+    // .stages-of-construction__title
+    &__title {
+        max-width: 1139px;
+        @include font-style ($title-font, $title-font-size, 58px);
+        text-align: center;
+        color: $text-color-title;
+    }
+
+    // .stages-of-construction__slider
+    &__slider {}
+
+    // .stages-of-construction__button-prev
+    &__button-prev {}
+
+    // .stages-of-construction__card-wrapper
+    &__card-wrapper {
+        max-width: 368px;
+        border-radius: 50px;
+        text-align: center;
+        background-color: $bg-color-light;
+    }
+
+    // .stages-of-construction__number
+    &__number {}
+
+    // .stages-of-construction__subtitle
+    &__subtitle {
+        @include font-style ($title-font, $subtitle-font-size, 27px);
+        color: $text-color-title;
+    }
+
+    // .stages-of-construction__text
+    &__text {
+        @include font-style ($main-font, $text-font-size, 25px);
+        color: $text-color-light;
+
+        // .stages-of-construction__text_advice
+        &_advice {}
+    }
+
+    // .stages-of-construction__photo
+    &__photo {}
+
+    // .stages-of-construction__button-next
+    &__button-next {}
+}
+
+// .stages-of-construction {}
+
+// .stages-of-construction__title {
+//     // max-width: 1139px;
 // }
-.stages-of-construction {}
 
-.stages-of-construction__title {
-    // max-width: 1139px;
-}
+// .stages-of-construction__slider {
+//     // display: flex;
+//     width: 1477px;
+//     overflow: hidden;
+// }
 
-.stages-of-construction__slider {
-    // display: flex;
-    width: 1477px;
-    overflow: hidden;
-}
+// .stages-of-construction__container {
+//     display: flex;
+//     // flex-wrap: wrap;
+//     width: 1077px;
+//     position: relative;
+//     left: 0;
+//     transition: all ease 1s;
+// }
 
-.stages-of-construction__container {
-    display: flex;
-    // flex-wrap: wrap;
-    width: 1077px;
-    position: relative;
-    left: 0;
-    transition: all ease 1s;
-}
-
-.stages-of-construction__card-wrapper {
-    // width: 368px;
-    // min-width: 368px;
-    outline: 1px solid darkcyan;
-    // max-height: 595px;
-}
+// .stages-of-construction__card-wrapper {
+//     // width: 368px;
+//     // min-width: 368px;
+//     outline: 1px solid darkcyan;
+//     // max-height: 595px;
+// }
