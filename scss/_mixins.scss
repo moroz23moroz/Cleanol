@@ -7,7 +7,7 @@
 
     font-family: $main-font;
     font-size: $font-size;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
 
     background-color: $bg-color-main;
@@ -24,7 +24,7 @@
 
     font-family: $main-font;
     font-size: $font-size;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
 
     background-color: $bg-color-white;
@@ -35,4 +35,15 @@
     font-family: $font-family;
     font-size: $font-size;
     line-height: $line-height;
+}
+
+@mixin number-circle-icon ($width, $height, $border-radius) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    background-color: $bg-color-main;
+    color: $text-color-white;
 }

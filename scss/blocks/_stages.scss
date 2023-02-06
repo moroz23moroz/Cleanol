@@ -1,55 +1,141 @@
 .stages-of-construction {
+    width: 98vw;
+
+    // * {
+    //     outline: 1px solid violet;
+    // }
 
     // .stages-of-construction__container
-    &__container {
-        max-width: 1796px;
-    }
+    // &__container {
+    //     width: 100%;
+    //     // max-width: 1796px;
+    //     margin: 0 auto;
+    // }
 
     // .stages-of-construction__title
     &__title {
-        max-width: 1139px;
+        margin: 0 auto;
         @include font-style ($title-font, $title-font-size, 58px);
         text-align: center;
         color: $text-color-title;
     }
 
     // .stages-of-construction__slider
-    &__slider {}
+    &__slider {
+        display: flex;
+        width: 93%;
+        margin: 100px auto 0;
+    }
 
-    // .stages-of-construction__button-prev
-    &__button-prev {}
+    &__button {
+        border: none;
+        background-color: $bg-color-white;
+    }
+
+    // .stages-of-construction__button_prev
+    &__button_prev {}
+
+    // .stages-of-construction__button_next
+    &__button_next {}
+
+    &__cards-container {
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+    }
+
+    // .stages-of-construction__number
+    &__number {
+        @include font-style ($title-font, $subtitle-font-size, 25px);
+        @include number-circle-icon(75px, 75px, 37.5px);
+        position: absolute;
+        left: 36%;
+        bottom: 93%;
+    }
 
     // .stages-of-construction__card-wrapper
-    &__card-wrapper {
-        max-width: 368px;
+    &__card {
+        position: relative;
+        width: 23%;
+        padding-top: 80px;
+        // min-height: 595px;
         border-radius: 50px;
         text-align: center;
         background-color: $bg-color-light;
     }
 
-    // .stages-of-construction__number
-    &__number {}
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
     // .stages-of-construction__subtitle
     &__subtitle {
+        max-width: 314px;
+        margin: 0 auto 23px;
         @include font-style ($title-font, $subtitle-font-size, 27px);
         color: $text-color-title;
     }
 
     // .stages-of-construction__text
     &__text {
-        @include font-style ($main-font, $text-font-size, 25px);
+        max-width: 314px;
+        // margin: 0 auto;
+        margin: auto 25px;
+        @include font-style ($main-font, 1em, 1.4em);
         color: $text-color-light;
 
+        a {
+            font-family: $title-font;
+            font-weight: 700;
+            text-decoration: none;
+            color: $text-color-title;
+        }
+
         // .stages-of-construction__text_advice
-        &_advice {}
+        &_advice {
+            margin: 12px 20px;
+            padding: 10px;
+            background-color: $bg-color-white;
+            border-radius: 16px;
+            font-size: 0.9em;
+            line-height: 1.3em;
+            text-align: left;
+        }
+
+        &_bold {
+            @include font-style ($title-font, 14px, 18px);
+            margin: 0;
+            font-weight: 700;
+            color: $text-color-title;
+        }
+    }
+
+    &__text-apart {
+        margin: 40px auto;
     }
 
     // .stages-of-construction__photo
-    &__photo {}
+    &__photo {
+        max-width: 100%;
 
-    // .stages-of-construction__button-next
-    &__button-next {}
+        &_narrow {
+            max-width: 67%;
+            margin: 0 auto;
+        }
+    }
+
+    // &____button-wrapper {
+    //     width: 300px;
+    // }
+
+    &__button-order {
+        @include button-main (387px, 12px 50px, $button-font-size);
+        display: block;
+        margin: 60px auto;
+    }
 }
 
 // .stages-of-construction {}
@@ -64,7 +150,7 @@
 //     overflow: hidden;
 // }
 
-// .stages-of-construction__container {
+// .stages-of-construction__cards-container {
 //     display: flex;
 //     // flex-wrap: wrap;
 //     width: 1077px;
@@ -73,7 +159,7 @@
 //     transition: all ease 1s;
 // }
 
-// .stages-of-construction__card-wrapper {
+// .stages-of-construction__card {
 //     // width: 368px;
 //     // min-width: 368px;
 //     outline: 1px solid darkcyan;

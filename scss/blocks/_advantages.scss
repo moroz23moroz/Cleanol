@@ -3,7 +3,7 @@
     // .advantages__container
     &__container {
         max-width: 1146px;
-        margin: 0 auto;
+        margin: 100px auto 0;
         display: grid;
         // 490 166 490
         grid-template-columns: 43% 1fr 43%;
@@ -21,7 +21,7 @@
 
     // .advantages__photo
     &__photo {
-        max-width: 490px;
+        max-width: 100%;
 
         // .advantages__photo_first
         &_first {
@@ -85,15 +85,7 @@
     // .advantages__number
     &__number {
         @include font-style ($title-font, $subtitle-font-size, 25px);
-        // font-weight: 600;
-        // max-width: 75px;
-        // max-height: 75px;
-        width: 75px;
-        height: 75px;
-        border-radius: 37.5px;
-        text-align: center;
-        background-color: $bg-color-main;
-        color: $text-color-white;
+        @include number-circle-icon(75px, 75px, 37.5px);
     }
 
     // .advantages__button
