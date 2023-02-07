@@ -225,8 +225,12 @@
 
 .stages-of-construction {
   width: 98vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .stages-of-construction__title {
+  width: 100%;
   margin: 0 auto;
   font-family: "RF Dewi Extended";
   font-size: 45px;
@@ -236,17 +240,22 @@
 }
 .stages-of-construction__slider {
   display: flex;
-  width: 93%;
-  margin: 100px auto 0;
+  width: 80%;
+  min-width: 0;
+  margin: 0;
+  padding-top: 100px;
+  overflow-x: hidden;
 }
 .stages-of-construction__button {
   border: none;
   background-color: #FFFFFF;
 }
-.stages-of-construction__cards-container {
-  width: 88%;
+.stages-of-construction__cards-slide {
   display: flex;
+  min-width: 0;
+  width: 88%;
   justify-content: space-between;
+  align-items: stretch;
 }
 .stages-of-construction__number {
   font-family: "RF Dewi Extended";

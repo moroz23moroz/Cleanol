@@ -1,6 +1,11 @@
 .stages-of-construction {
     width: 98vw;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
     // * {
     //     outline: 1px solid violet;
     // }
@@ -14,6 +19,7 @@
 
     // .stages-of-construction__title
     &__title {
+        width: 100%;
         margin: 0 auto;
         @include font-style ($title-font, $title-font-size, 58px);
         text-align: center;
@@ -23,11 +29,15 @@
     // .stages-of-construction__slider
     &__slider {
         display: flex;
-        width: 93%;
-        margin: 100px auto 0;
+        width: 80%;
+        min-width: 0;
+        margin: 0;
+        padding-top: 100px;
+        overflow-x: hidden;
     }
 
     &__button {
+        // width: 3%;
         border: none;
         background-color: $bg-color-white;
     }
@@ -39,10 +49,18 @@
     &__button_next {}
 
     &__cards-container {
-        width: 88%;
-        display: flex;
-        justify-content: space-between;
+        // width: 88%;
+        // display: flex;
+        // justify-content: space-between;
         // flex-wrap: wrap;
+    }
+
+    &__cards-slide {
+        display: flex;
+        min-width: 0;
+        width: 88%;
+        justify-content: space-between;
+        align-items: stretch;
     }
 
     // .stages-of-construction__number
@@ -137,6 +155,8 @@
         margin: 60px auto;
     }
 }
+
+
 
 // .stages-of-construction {}
 
