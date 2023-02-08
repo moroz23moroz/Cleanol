@@ -11,7 +11,7 @@
 }
 .why-robot-cleaner__container {
   margin: auto;
-  max-width: 1146px;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -348,4 +348,25 @@
   color: #FFFFFF;
   display: block;
   margin: 60px auto;
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .why-robot-cleaner__title {
+    font-family: "RF Dewi Extended";
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .why-robot-cleaner__images {
+    max-width: 100%;
+  }
+  .why-robot-cleaner__info-group {
+    max-width: 100%;
+    margin: 20px 15px auto;
+  }
+  .why-robot-cleaner__info a {
+    font-weight: 700;
+  }
+  .why-robot-cleaner__button {
+    margin-top: 20px;
+  }
 }

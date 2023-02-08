@@ -4,16 +4,12 @@
     border-radius: 50px;
     background-color: $bg-color-light;
 
-    // .why-robot-cleaner__container
-
     &__container {
         margin: auto;
-        max-width: 1146px;
+        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
-
-    // .why-robot-cleaner__title
 
     &__title {
         width: 100%;
@@ -24,11 +20,10 @@
 
     &__images {
         max-width: 653px;
+        // max-width: 100%;
         display: flex;
         justify-content: space-between;
     }
-
-    // .why-robot-cleaner__image-group
 
     &__image-group {
         position: relative;
@@ -49,8 +44,6 @@
         z-index: 1;
     }
 
-    // .why-robot-cleaner__image-text
-
     &__image-text {
         @include font-style ($main-font, $text-font-size, 25px);
         color: $text-color-light;
@@ -62,8 +55,6 @@
         padding-top: 8px;
     }
 
-    // .why-robot-cleaner__info
-
     &__info {
         color: $text-color-light;
         @include font-style ($main-font, $text-font-size, 25px);
@@ -74,8 +65,6 @@
             font-family: $title-font;
         }
     }
-
-    // .why-robot-cleaner__button
 
     &__button {
         margin-top: 49px;

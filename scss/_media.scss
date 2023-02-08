@@ -1,0 +1,35 @@
+// tablet
+@media screen and (max-width:768px) and (min-width:425px) {
+
+    // block why-robot
+
+    .why-robot-cleaner {
+
+        &__title {
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__images {
+            max-width: 100%;
+        }
+
+        &__info-group {
+            max-width: 100%;
+            margin: 20px 15px auto;
+        }
+
+        &__info {
+            a {
+                font-weight: 700;
+            }
+        }
+
+        &__button {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+
+// @media screen and (max-width:424px) {}
