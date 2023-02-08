@@ -1,0 +1,84 @@
+.why-robot-cleaner {
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 50px;
+    background-color: $bg-color-light;
+
+    // .why-robot-cleaner__container
+
+    &__container {
+        margin: auto;
+        max-width: 1146px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    // .why-robot-cleaner__title
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        color: $text-color-title;
+        @include font-style ($title-font, $title-font-size, 62.5px);
+    }
+
+    &__images {
+        max-width: 653px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .why-robot-cleaner__image-group
+
+    &__image-group {
+        position: relative;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    &__photo {
+        max-width: 207px;
+        margin-bottom: 22px;
+    }
+
+    &__icon {
+        max-width: 59px;
+        position: absolute;
+        left: 34%;
+        top: 42%;
+        z-index: 1;
+    }
+
+    // .why-robot-cleaner__image-text
+
+    &__image-text {
+        @include font-style ($main-font, $text-font-size, 25px);
+        color: $text-color-light;
+    }
+
+    &__info-group {
+        max-width: 423px;
+        margin-left: 70px;
+        padding-top: 8px;
+    }
+
+    // .why-robot-cleaner__info
+
+    &__info {
+        color: $text-color-light;
+        @include font-style ($main-font, $text-font-size, 25px);
+
+        a {
+            color: $text-color-title;
+            text-decoration: none;
+            font-family: $title-font;
+        }
+    }
+
+    // .why-robot-cleaner__button
+
+    &__button {
+        margin-top: 49px;
+        @include button-main (327px, 12px 50px, 22px);
+    }
+}

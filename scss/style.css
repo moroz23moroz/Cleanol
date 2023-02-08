@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap");
 
+
 @font-face {
   font-family: "RF Dewi Extended";
   src: url("../fonts/RFDewiExtended-Regular.woff2"), url("../fonts/RFDewiExtended-Regular.woff");
@@ -10,70 +11,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-.form__title {
-  font-family: "RF Dewi Extended";
-  font-weight: 700;
-}
-
-/* @font-face {
-  font-family: "RFDewiExtended";
-  src: url("../fonts/RFDewi-Regular.woff2") format("woff2"), url("../fonts/RFDewi-Regular.woff") format("woff");
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-img {
-  display: block;
-  padding: 0;
-}
-
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-html,
-body {
-  height: 100%
-}
-
- */
 html {
   box-sizing: border-box;
 }
@@ -180,8 +117,6 @@ a {
 .header-low {
   margin-top: 45px;
 }
-
-
 
 .banner {
   display: flex;
@@ -323,6 +258,92 @@ a {
 .info-block-btn_blue {
   background-color: #265FE5;
   color: #FFFFFF;
+}
+
+.why-robot-cleaner {
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #EEF3FD;
+}
+.why-robot-cleaner__container {
+  margin: auto;
+  max-width: 1146px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.why-robot-cleaner__title {
+  width: 100%;
+  text-align: center;
+  color: #265FE5;
+  font-family: "RF Dewi Extended";
+  font-size: 45px;
+  line-height: 62.5px;
+}
+.why-robot-cleaner__images {
+  max-width: 653px;
+  display: flex;
+  justify-content: space-between;
+}
+.why-robot-cleaner__image-group {
+  position: relative;
+  margin-right: 16px;
+  text-align: center;
+}
+.why-robot-cleaner__photo {
+  max-width: 207px;
+  margin-bottom: 22px;
+}
+.why-robot-cleaner__icon {
+  max-width: 59px;
+  position: absolute;
+  left: 34%;
+  top: 42%;
+  z-index: 1;
+}
+.why-robot-cleaner__image-text {
+  color: #3A475E;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 25px;
+}
+.why-robot-cleaner__info-group {
+  max-width: 423px;
+  margin-left: 70px;
+  padding-top: 8px;
+}
+.why-robot-cleaner__info {
+  color: #3A475E;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 25px;
+}
+.why-robot-cleaner__info a {
+  color: #265FE5;
+  text-decoration: none;
+  font-family: "RF Dewi Extended";
+}
+.why-robot-cleaner__button {
+  margin-top: 49px;
+  max-width: 327px;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+
+.stages-of-construction__slider {
+  width: 1477px;
+  overflow: hidden;
+}
+
+.stages-of-construction__container {
+  display: flex;
+  width: 1077px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 
 .info-block-btn-arrow {
@@ -521,6 +542,8 @@ a {
 }
 
 .form__title {
+font-family: "RF Dewi Extended";
+  font-weight: 700;
   font-size: 45px;
   line-height: 58px;
 }
