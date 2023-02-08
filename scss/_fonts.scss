@@ -6,3 +6,6 @@
     src: url("../../fonts/RFDewiExtended-Regular.woff2"); //пришлось прописать такой путь из за того, что style.css теперь в папке dist
     // font-weight: 700;
 }
+    src: url("../fonts/RFDewiExtended-Regular.woff");
+    font-weight: 400;
+}
