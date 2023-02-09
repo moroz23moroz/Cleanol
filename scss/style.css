@@ -260,6 +260,21 @@ a {
   color: #FFFFFF;
 }
 
+.collection {
+  padding: 100px 0;
+}
+
+.collection__inner {
+  display: -ms-grid;
+  display: grid;
+  /* -ms-grid-columns: (1fr)[3]; */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.collection__image {
+  height: 100%
+}
+
 .why-robot-cleaner {
   padding: 30px;
   border-radius: 50px;
@@ -343,6 +358,313 @@ a {
   font-size: 22px;
   font-weight: 600;
   text-align: center;
+}
+
+.advantages__container {
+  max-width: 1146px;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-columns: 43% 1fr 43%;
+  align-items: center;
+}
+
+.advantages__title {
+  grid-area: 1/1/2/4;
+  font-family: "RF Dewi Extended";
+  font-size: 45px;
+  line-height: 58px;
+  text-align: center;
+  color: #265FE5;
+}
+
+.advantages__photo {
+  max-width: 100%;
+}
+
+.advantages__photo_first {
+  grid-area: 2/1/3/2;
+}
+
+.advantages__photo_second {
+  grid-area: 3/3/4/4;
+}
+
+.advantages__photo_third {
+  grid-area: 4/1/5/2;
+}
+
+.advantages__info {
+  max-width: 471px;
+}
+
+.advantages__info_first {
+  grid-area: 2/3/3/4;
+}
+
+.advantages__info_second {
+  grid-area: 3/1/4/2;
+}
+
+.advantages__info_third {
+  grid-area: 4/3/5/4;
+}
+
+.advantages__subtitle {
+  font-family: "RF Dewi Extended";
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #265FE5;
+}
+
+.advantages__text {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 25px;
+  color: #3A475E;
+}
+
+.advantages__design-elements {
+  grid-area: 2/2/5/3;
+  margin: 0 auto;
+}
+
+.advantages__line {
+  margin: 50%;
+}
+
+.advantages__number {
+  font-family: "RF Dewi Extended";
+  font-size: 24px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 37.5px;
+  background-color: #265FE5;
+  color: #FFFFFF;
+}
+
+.advantages__button {
+  grid-area: 5/1/6/4;
+  justify-self: center;
+  max-width: 384px;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #265FE5;
+  color: #FFFFFF;
+}
+
+.price {
+  max-width: 1146px;
+  margin: 94px auto;
+  border-radius: 50px;
+  background-color: #265FE5;
+}
+
+.price__container {
+  max-width: 973px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 34%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price__title {
+  margin-top: 69px;
+  grid-area: 1/1/2/2;
+  font-family: "RF Dewi Extended";
+  font-size: 45px;
+  line-height: 62.5px;
+  color: #FFFFFF;
+}
+
+.price__photo {
+  grid-area: 1/2/4/3;
+  max-width: 100%;
+}
+
+.price__text {
+  grid-area: 2/1/3/2;
+  max-width: 516px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.price__text a {
+  font-family: "RF Dewi Extended";
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.price__button {
+  grid-area: 3/1/4/2;
+  max-width: 327px;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #265FE5;
+  margin: 70px 0;
+}
+
+.stages-of-construction {
+  width: 98vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stages-of-construction__title {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "RF Dewi Extended";
+  font-size: 45px;
+  line-height: 58px;
+  text-align: center;
+  color: #265FE5;
+}
+
+.stages-of-construction__slider {
+  display: flex;
+  width: 80%;
+  min-width: 0;
+  margin: 0;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.stages-of-construction__button {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.stages-of-construction__cards-slide {
+  display: flex;
+  min-width: 0;
+  width: 88%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.stages-of-construction__number {
+  font-family: "RF Dewi Extended";
+  font-size: 24px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 37.5px;
+  background-color: #265FE5;
+  color: #FFFFFF;
+  position: absolute;
+  left: 36%;
+  bottom: 93%;
+}
+
+.stages-of-construction__card {
+  position: relative;
+  width: 23%;
+  padding-top: 80px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #EEF3FD;
+}
+
+.stages-of-construction__card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.stages-of-construction__subtitle {
+  max-width: 314px;
+  margin: 0 auto 23px;
+  font-family: "RF Dewi Extended";
+  font-size: 24px;
+  line-height: 27px;
+  color: #265FE5;
+}
+
+.stages-of-construction__text {
+  max-width: 314px;
+  margin: auto 25px;
+  font-family: "Raleway";
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #3A475E;
+}
+
+.stages-of-construction__text a {
+  font-family: "RF Dewi Extended";
+  font-weight: 700;
+  text-decoration: none;
+  color: #265FE5;
+}
+
+.stages-of-construction__text_advice {
+  margin: 12px 20px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  text-align: left;
+}
+
+.stages-of-construction__text_bold {
+  font-family: "RF Dewi Extended";
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  font-weight: 700;
+  color: #265FE5;
+}
+
+.stages-of-construction__text-apart {
+  margin: 40px auto;
+}
+
+.stages-of-construction__photo {
+  max-width: 100%;
+}
+
+.stages-of-construction__photo_narrow {
+  max-width: 67%;
+  margin: 0 auto;
+}
+
+.stages-of-construction__button-order {
+  max-width: 387px;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #265FE5;
+  color: #FFFFFF;
+  display: block;
+  margin: 60px auto;
 }
 
 .stages-of-construction__slider {
@@ -515,20 +837,6 @@ a {
 
 /*# sourceMappingURL=style.css.map */
 
-.collection {
-  padding: 100px 0;
-}
-
-.collection__inner {
-  display: -ms-grid;
-  display: grid;
-  /* -ms-grid-columns: (1fr)[3]; */
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.collection__image {
-  height: 100%
-}
 
 .form {
   background-color: #265fe5;
