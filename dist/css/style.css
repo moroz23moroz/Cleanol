@@ -2,7 +2,13 @@
 @font-face {
   font-family: "RF Dewi Extended";
   src: url("../../fonts/RFDewiExtended-Regular.woff2");
+  src: url("../fonts/RFDewiExtended-Regular.woff");
+  font-weight: 400;
 }
+* {
+  font-family: "Raleway", sans-serif;
+}
+
 .why-robot-cleaner {
   padding: 30px;
   margin-top: 50px;
@@ -19,7 +25,7 @@
   width: 100%;
   text-align: center;
   color: #265FE5;
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 45px;
   line-height: 62.5px;
 }
@@ -45,7 +51,7 @@
   z-index: 1;
 }
 .why-robot-cleaner__image-text {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 25px;
   color: #3A475E;
@@ -57,14 +63,14 @@
 }
 .why-robot-cleaner__info {
   color: #3A475E;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 25px;
 }
 .why-robot-cleaner__info a {
   color: #265FE5;
   text-decoration: none;
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
 }
 .why-robot-cleaner__button {
   margin-top: 49px;
@@ -72,7 +78,7 @@
   padding: 12px 50px;
   border: none;
   border-radius: 8px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
@@ -89,7 +95,7 @@
 }
 .advantages__title {
   grid-area: 1/1/2/4;
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 45px;
   line-height: 58px;
   text-align: center;
@@ -120,14 +126,14 @@
   grid-area: 4/3/5/4;
 }
 .advantages__subtitle {
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
   line-height: 25px;
   font-weight: 700;
   color: #265FE5;
 }
 .advantages__text {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 25px;
   color: #3A475E;
@@ -140,7 +146,7 @@
   margin: 50%;
 }
 .advantages__number {
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
   line-height: 25px;
   display: flex;
@@ -159,7 +165,7 @@
   padding: 12px 50px;
   border: none;
   border-radius: 8px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
@@ -184,7 +190,7 @@
 .price__title {
   margin-top: 69px;
   grid-area: 1/1/2/2;
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 45px;
   line-height: 62.5px;
   color: #FFFFFF;
@@ -196,13 +202,13 @@
 .price__text {
   grid-area: 2/1/3/2;
   max-width: 516px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
 }
 .price__text a {
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 18px;
   line-height: 25px;
   text-decoration: none;
@@ -214,7 +220,7 @@
   padding: 12px 50px;
   border: none;
   border-radius: 8px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
@@ -232,7 +238,7 @@
 .stages-of-construction__title {
   width: 100%;
   margin: 0 auto;
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 45px;
   line-height: 58px;
   text-align: center;
@@ -258,7 +264,7 @@
   align-items: stretch;
 }
 .stages-of-construction__number {
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
   line-height: 25px;
   display: flex;
@@ -289,7 +295,7 @@
 .stages-of-construction__subtitle {
   max-width: 314px;
   margin: 0 auto 23px;
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
   line-height: 27px;
   color: #265FE5;
@@ -297,13 +303,13 @@
 .stages-of-construction__text {
   max-width: 314px;
   margin: auto 25px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 1em;
   line-height: 1.4em;
   color: #3A475E;
 }
 .stages-of-construction__text a {
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #265FE5;
@@ -318,7 +324,7 @@
   text-align: left;
 }
 .stages-of-construction__text_bold {
-  font-family: "RF Dewi Extended";
+  font-family: "RF Dewi Extended", sans-serif;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
@@ -340,7 +346,7 @@
   padding: 12px 50px;
   border: none;
   border-radius: 8px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
@@ -350,9 +356,287 @@
   margin: 60px auto;
 }
 
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1796px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 113px;
+}
+.banner__round-img {
+  position: absolute;
+  margin-top: -760px;
+  margin-left: 730px;
+  max-width: 130px;
+}
+.banner__slider {
+  max-width: 1704px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.banner__nav-arrow_left {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.banner__nav-arrow_right {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.info-block {
+  max-width: 1522px;
+  margin-right: auto;
+  margin-bottom: 45px;
+  margin-left: auto;
+  border-radius: 50px;
+}
+.info-block__title {
+  padding-top: 40px;
+  font-family: "RF Dewi Extended", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #265FE5;
+}
+.info-block__text {
+  margin-bottom: 1.2em;
+  font-size: 18px;
+  line-height: 25px;
+}
+.info-block__text_expanded {
+  font-size: 18px;
+  line-height: 30px;
+}
+.info-block__text_bold {
+  font-family: "RF Dewi Extended", sans-serif;
+  font-weight: 700;
+}
+.info-block__text_blue {
+  color: #265FE5;
+}
+
+.info-block-wrapper {
+  display: flex;
+  max-width: 1146px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.info-block-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 588px;
+}
+
+.info-block-list {
+  display: grid;
+  max-width: 588px;
+  grid-template-columns: 0.5fr 5fr;
+  grid-template-rows: repeat(4, 0.5fr);
+}
+.info-block-list__title {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "RF Dewi Extended", sans-serif;
+  font-size: 25px;
+  color: #3A475E;
+}
+.info-block-list__number {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: "RF Dewi Extended", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #265FE5;
+}
+.info-block-list__number_03 {
+  margin-bottom: 37px;
+}
+.info-block-list__text {
+  align-self: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.info-block-list__text_03 {
+  margin-bottom: 30px;
+}
+
+.info-block-btn {
+  max-width: 263px;
+  min-width: 263px;
+  max-height: 54px;
+  min-height: 54px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.info-block-btn_blue {
+  background-color: #265FE5;
+  color: #FFFFFF;
+}
+
+.info-block-btn-arrow {
+  padding-left: 7px;
+}
+
+.info-block__img {
+  align-self: center;
+  margin-left: 68px;
+}
+
+.info-block_sm {
+  display: flex;
+  align-items: center;
+  max-width: 1146px;
+  max-height: 164px;
+  min-height: 164px;
+  border-radius: 50px;
+}
+
+.info-block_bg-blue {
+  background-color: #265FE5;
+}
+
+.info-block__text_white {
+  max-width: 680px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 60px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.info-block-btn_white {
+  max-width: 294px;
+  min-width: 294px;
+  max-height: 54px;
+  min-height: 54px;
+  margin-right: 58px;
+  background-color: #FFFFFF;
+  color: #265FE5;
+}
+
+.info-block_bg-light-blue {
+  position: relative;
+  background-color: #EEF3FD;
+}
+
+.block4_img {
+  position: absolute;
+  max-width: 539px;
+  min-width: 539px;
+  margin-top: 0;
+  margin-left: -75px;
+  z-index: 2;
+}
+
+.image-bg {
+  max-width: 412px;
+  min-width: 412px;
+  max-height: 366px;
+  min-height: 366px;
+  margin-top: 53px;
+  border-radius: 183px;
+  background: radial-gradient(circle, rgba(38, 95, 229, 0.4) 30%, rgb(238, 243, 253) 70%);
+  z-index: 1;
+}
+
+.vertical-slider {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 59px;
+}
+
+.numbers-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+.numbers-wrapper__item {
+  box-sizing: border-box;
+  max-width: 29px;
+  min-width: 29px;
+  max-height: 50px;
+  min-height: 50px;
+  padding-top: 15px;
+  font-family: "RF Dewi Extended", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #B2C7F6;
+}
+.numbers-wrapper__item_active {
+  padding-top: 5px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #265FE5;
+}
+
+.lines-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+.lines-wrapper__item {
+  margin-top: 25px;
+  margin-bottom: 23px;
+  font-family: "RF Dewi Extended", sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 477px;
+  min-width: 477px;
+}
+
+.title-group {
+  display: flex;
+  color: #265FE5;
+}
+.title-group__title {
+  margin-top: 10px;
+  margin-left: 14px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.title-group__icon {
+  max-width: 99px;
+  margin-left: -15px;
+}
+
+.info-block-btn_sm {
+  max-width: 246px;
+  min-width: 246px;
+  margin-top: 20px;
+}
+
+.info-block-btn_lg {
+  max-width: 295px;
+  min-width: 295px;
+  margin-top: 9px;
+}
+
+#block_5 {
+  margin-top: 147px;
+}
+
 @media screen and (max-width: 768px) and (min-width: 425px) {
   .why-robot-cleaner__title {
-    font-family: "RF Dewi Extended";
+    font-family: "RF Dewi Extended", sans-serif;
     font-size: 35px;
     line-height: 42px;
   }
@@ -369,4 +653,7 @@
   .why-robot-cleaner__button {
     margin-top: 20px;
   }
+}
+* {
+  outline: 1px solid red;
 }
