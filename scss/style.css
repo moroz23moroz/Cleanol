@@ -275,6 +275,123 @@ a {
   height: 100%
 }
 
+.functions {
+  text-align: center;
+  margin-bottom: 355px;
+}
+
+.functions__title,
+.functions__main-title,
+.functions__additional-title,
+.functions__technical-title {
+  font-family: "RF Dewi Extended";
+  font-weight: 700;
+  margin: 0;
+}
+
+.functions__title {
+  margin-bottom: 70px;
+  line-height: 62.5px;
+  font-size: 45px;
+}
+
+.functions__title,
+.functions__technical-title {
+  color: #265FE5;
+}
+
+.functions__inner {
+  margin: 0 auto;
+  height: 815px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 25px;
+  color: #3A475E;
+  line-height: 40px;
+}
+
+.functions__main-title,
+.functions__additional-title,
+.functions__technical-title {
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.functions__main-title {
+  color: #fff;
+}
+
+.functions__main,
+.functions__additional {
+  border-radius: 50px;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.functions__main {
+  grid-row: span 2;
+  background-color: #265FE5;
+}
+
+.functions__main-title {
+  margin: 0;
+}
+
+.functions__main-item,
+.functions__additional-item {
+  border-radius: 14px;
+  padding-left: 65px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+}
+
+.functions__main-item {
+  background-color: #EEF3FD;
+  position: relative;
+}
+
+.functions__main-item::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/icon1.svg);
+  width: 75px;
+  height: 58px;
+  left: -13px;
+  bottom: 0;
+
+}
+
+.functions__main-item,
+.functions__additional-item,
+.funtions__technical-table {
+  text-align: start;
+}
+
+.functions__additional {
+  background-color: #EEF3FD;
+  gap: 10px;
+}
+
+.functions__additional-item {
+  background-color: white;
+  position: relative;
+}
+
+.functions__additional-item::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/icon1.svg);
+  width: 75px;
+  height: 58px;
+  left: -13px;
+  bottom: 0;
+
+}
+
 .why-robot-cleaner {
   padding: 30px;
   border-radius: 50px;
