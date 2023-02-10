@@ -1,3 +1,4 @@
+
 @mixin button-main ($max-width, $padding, $font-size) {
     max-width: $max-width;
     padding: $padding;
@@ -46,4 +47,9 @@
     border-radius: $border-radius;
     background-color: $bg-color-main;
     color: $text-color-white;
+}
+
+@mixin block-text($font-size: 18px, $line-height: 25px) {
+    font-size: $font-size;
+    line-height: $line-height;
 }
