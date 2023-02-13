@@ -1,21 +1,22 @@
-
 @import "fonts"; //Шрифты
 @import "vars"; //Переменные
 @import "mixins"; //Миксины 
+@import "global";
+@import "reset";
 
 @import "blocks/why-robot"; //Ильвина блок "В каком случае вам подойдет робот-мойка"
 @import "blocks/advantages"; //Ильвина блок "3 основных преимущества покупки"
 @import "blocks/price"; //Ильвина блок "Цена робот-мойки"
 @import "blocks/stages"; //Ильвина блок "8 этапов строительства робот-мойки"
-@import './vars.scss' ;
-@import './fonts.scss';
-@import './global.scss';
-@import './media.scss';
-@import './reset.scss';
-@import './mixins.scss';
+@import 'blocks/banner';
+@import 'blocks/block_3';
+@import 'blocks/block_3.1';
+@import 'blocks/block_4';
+@import 'blocks/block_5';
 
-@import './blocks/banner';
-@import './blocks/block_3';
-@import './blocks/block_3.1';
-@import './blocks/block_4';
-@import './blocks/block_5';
+@import "blocks/header";
+@import "blocks/collection";
+@import "blocks/functions";
+@import "blocks/footer";
+
+@import "media"; //Медиазапросы 

@@ -1,0 +1,44 @@
+// tablet
+@media screen and (max-width:1221px) and (min-width:425px) {
+
+    // block why-robot
+    .why-robot-cleaner {
+        &__container {
+            max-width: 768px;
+        }
+
+        &__title {
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__images {
+            max-width: 100%;
+        }
+
+        &__photo {
+            max-width: 100%;
+        }
+
+        &__info-group {
+            max-width: 100%;
+            margin: 20px 15px auto;
+        }
+
+        &__info {
+            a {
+                font-weight: 700;
+                display: inline-block;
+            }
+        }
+
+        &__button {
+            margin-top: 20px;
+        }
+    }
+
+
+    // block advantages
+}
+
+
+// @media screen and (max-width:424px) {}

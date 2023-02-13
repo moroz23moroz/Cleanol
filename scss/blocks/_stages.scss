@@ -5,11 +5,6 @@
     flex-wrap: wrap;
     justify-content: center;
 
-
-    // * {
-    //     outline: 1px solid violet;
-    // }
-
     // .stages-of-construction__container
     // &__container {
     //     width: 100%;
@@ -17,7 +12,6 @@
     //     margin: 0 auto;
     // }
 
-    // .stages-of-construction__title
     &__title {
         width: 100%;
         margin: 0 auto;
@@ -26,7 +20,6 @@
         color: $text-color-title;
     }
 
-    // .stages-of-construction__slider
     &__slider {
         display: flex;
         width: 80%;
@@ -37,15 +30,12 @@
     }
 
     &__button {
-        // width: 3%;
         border: none;
         background-color: $bg-color-white;
     }
 
-    // .stages-of-construction__button_prev
     &__button_prev {}
 
-    // .stages-of-construction__button_next
     &__button_next {}
 
     &__cards-container {
@@ -63,7 +53,6 @@
         align-items: stretch;
     }
 
-    // .stages-of-construction__number
     &__number {
         @include font-style ($title-font, $subtitle-font-size, 25px);
         @include number-circle-icon(75px, 75px, 37.5px);
@@ -72,7 +61,6 @@
         bottom: 93%;
     }
 
-    // .stages-of-construction__card-wrapper
     &__card {
         position: relative;
         width: 23%;
@@ -89,7 +77,6 @@
         height: 100%;
     }
 
-    // .stages-of-construction__subtitle
     &__subtitle {
         max-width: 314px;
         margin: 0 auto 23px;
@@ -97,7 +84,6 @@
         color: $text-color-title;
     }
 
-    // .stages-of-construction__text
     &__text {
         max-width: 314px;
         // margin: 0 auto;
@@ -112,7 +98,6 @@
             color: $text-color-title;
         }
 
-        // .stages-of-construction__text_advice
         &_advice {
             margin: 12px 20px;
             padding: 10px;
@@ -135,7 +120,6 @@
         margin: 40px auto;
     }
 
-    // .stages-of-construction__photo
     &__photo {
         max-width: 100%;
 
@@ -144,10 +128,6 @@
             margin: 0 auto;
         }
     }
-
-    // &____button-wrapper {
-    //     width: 300px;
-    // }
 
     &__button-order {
         @include button-main (387px, 12px 50px, $button-font-size);
