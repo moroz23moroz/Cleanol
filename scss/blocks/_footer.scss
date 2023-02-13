@@ -1,0 +1,100 @@
+.form {
+    background-color: #265fe5;
+    border-radius: 50px 50px 0px 0px;
+    color: #fff;
+    padding-top: 85px;
+    padding-bottom: 410px;
+}
+
+.form__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.form__text {
+    width: 559px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.form__title {
+    font-family: "RF Dewi Extended";
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+}
+
+.form__main {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__main-input_text {
+    height: 130px;
+}
+
+.form__main-button {
+    width: 239px;
+}
+
+.footer {
+    position: absolute;
+    color: #fff;
+    height: 315px;
+    padding-top: 70px;
+    padding-bottom: 45px;
+    width: 100%;
+    // bottom: 0;
+    z-index: 5;
+    background-color: #3a475e;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.footer__menu-item {
+    padding-right: 50px;
+}
+
+.footer__contacts {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__phone {
+    font-family: "RFDewi-Regular"
+}
+
+.footer__email {
+    width: 100px;
+}
+
+.container__low {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
