@@ -230,6 +230,7 @@
   background-color: #FFFFFF;
   color: #265FE5;
   margin: 70px 0;
+  font-weight: 600;
 }
 
 .stages-of-construction {
@@ -237,6 +238,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.stages-of-construction * {
+  outline: 1px solid violet;
 }
 .stages-of-construction__title {
   width: 100%;
@@ -252,17 +256,17 @@
   width: 80%;
   min-width: 0;
   margin: 0;
-  padding-top: 100px;
   overflow-x: hidden;
 }
 .stages-of-construction__button {
   border: none;
   background-color: #FFFFFF;
 }
-.stages-of-construction__cards-slide {
+.stages-of-construction__cards-container {
   display: flex;
+  margin-top: 90px;
   min-width: 0;
-  width: 88%;
+  width: 90%;
   justify-content: space-between;
   align-items: stretch;
 }
@@ -284,7 +288,8 @@
 }
 .stages-of-construction__card {
   position: relative;
-  width: 23%;
+  width: 20%;
+  margin-right: 10px;
   padding-top: 80px;
   border-radius: 50px;
   text-align: center;
@@ -296,7 +301,7 @@
   height: 100%;
 }
 .stages-of-construction__subtitle {
-  max-width: 314px;
+  max-width: 80%;
   margin: 0 auto 23px;
   font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
@@ -304,7 +309,7 @@
   color: #265FE5;
 }
 .stages-of-construction__text {
-  max-width: 314px;
+  max-width: 90%;
   margin: auto 25px;
   font-family: "Raleway", sans-serif;
   font-size: 1em;
@@ -943,6 +948,9 @@
 }
 
 @media screen and (max-width: 1221px) and (min-width: 425px) {
+  .why-robot-cleaner {
+    margin-top: 150px;
+  }
   .why-robot-cleaner__container {
     max-width: 768px;
   }
@@ -957,6 +965,9 @@
   .why-robot-cleaner__photo {
     max-width: 100%;
   }
+  .why-robot-cleaner__icon {
+    left: 37%;
+  }
   .why-robot-cleaner__info-group {
     max-width: 100%;
     margin: 20px 15px auto;
@@ -967,5 +978,89 @@
   }
   .why-robot-cleaner__button {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 425px) {
+  .advantages__container {
+    grid-template-columns: 100%;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .advantages__title {
+    grid-area: 1/1/2/2;
+    max-width: 70%;
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .advantages__photo_first {
+    grid-area: 2/1/3/2;
+  }
+  .advantages__photo_second {
+    grid-area: 4/1/5/2;
+  }
+  .advantages__photo_third {
+    grid-area: 6/1/7/2;
+  }
+  .advantages__info {
+    margin: 50px auto 30px;
+  }
+  .advantages__info_first {
+    grid-area: 3/1/4/2;
+  }
+  .advantages__info_second {
+    grid-area: 5/1/6/2;
+  }
+  .advantages__info_third {
+    grid-area: 7/1/8/2;
+  }
+  .advantages__line {
+    display: none;
+  }
+  .advantages__number {
+    position: absolute;
+    left: 46%;
+  }
+  .advantages__number_one {
+    top: 24.5%;
+  }
+  .advantages__number_two {
+    top: 54%;
+  }
+  .advantages__number_three {
+    top: 85%;
+  }
+  .advantages__button {
+    display: none;
+  }
+  .price {
+    max-width: 656px;
+    margin: 50px auto;
+  }
+  .price__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .price__title {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 35px;
+    line-height: 62.5px;
+  }
+  .price__text {
+    max-width: 80%;
+  }
+  .price__text a {
+    font-weight: 700;
+  }
+  .price__button {
+    margin: 15px auto 47px;
+  }
+  .stages-of-construction * {
+    outline: 1px solid violet;
+  }
+  .stages-of-construction__button {
+    display: none;
   }
 }

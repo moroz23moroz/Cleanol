@@ -1,48 +1,27 @@
 "use strict";
 
-new Swiper('.stages-of-construction__slider',  {
-    navigation: {
-        nextEl: '.stages-of-construction__button_next',
-        prevEl: '.stages-of-construction__button_prev'
-    },
-});
-
 // // Ильвина начало
 // // Блок 8 этапов строительства (галерея карточек)
-// let offset = 0;
-// const sliderLine = document.querySelector('.stages-of-construction__container');
+const mediaQueryDesktop = window.matchMedia('(min-width: 1024px)');
+const mediaQueryTablet = window.matchMedia('(min-width: 425px)' && '(max-width: 1023px)');
 
-// const slideCards = (direction) => {
-//     if (direction === 'prev') {
-//         offset += 736;
-//         if (offset > 768) {
-//             offset = 0;
-//         }
-//         sliderLine.style.left = -offset + 'px';
-//     }
+if (mediaQueryDesktop.matches) {
+    // alert('Media desktop!')
+    new Swiper('.stages-of-construction__slider',  {
+        navigation: {
+            nextEl: '.stages-of-construction__button_next',
+            prevEl: '.stages-of-construction__button_prev'
+        },
+        slidesPerView: 4,
+    });
+}
 
-//     if (direction === 'next') {
-//         offset -= 736;
-//         // if (offset < 0) {
-//         //     offset = 768;
-//         // }
-//         sliderLine.style.left = offset + 'px';
-//     }
-
-//     // sliderLine.style.left = -offset + 'px';
-// }
-
-// document.querySelector('.stages-of-construction__button-prev').addEventListener('click', (direction) => {
-//     offset += 736;
-//     if (offset > 768) {
-//         offset = 0;
-//     }
-//     sliderLine.style.left = -offset + 'px';
-// })
-
-// document.querySelector('.stages-of-construction__button-next').addEventListener('click', () => {
-    
-// })
+if (mediaQueryTablet.matches) {
+    // alert('Media Tablet!')
+    new Swiper('.stages-of-construction__slider',  {
+    slidesPerView: 1.8,
+});
+}
 
 // // Конец Блок 8 этапов строительства
 // // Ильвина конец

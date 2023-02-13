@@ -51,5 +51,6 @@
         grid-area: 3/1/4/2;
         @include button-light (327px, 12px 50px, $button-font-size);
         margin: 70px 0;
+        font-weight: 600;
     }
 }

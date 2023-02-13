@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    * {
+        outline: 1px solid violet;
+    }
+
     // .stages-of-construction__container
     // &__container {
     //     width: 100%;
@@ -24,9 +28,13 @@
         display: flex;
         width: 80%;
         min-width: 0;
+        // min-height: 853px;
         margin: 0;
-        padding-top: 100px;
+        // padding-top: 90px;
         overflow-x: hidden;
+        // из-за скролла вертикального:
+        // padding-bottom: 200px;
+        // margin-bottom: -200px;
     }
 
     &__button {
@@ -43,15 +51,16 @@
         // display: flex;
         // justify-content: space-between;
         // flex-wrap: wrap;
-    }
 
-    &__cards-slide {
         display: flex;
+        margin-top: 90px;
         min-width: 0;
-        width: 88%;
+        width: 90%;
         justify-content: space-between;
         align-items: stretch;
     }
+
+    &__cards-slide {}
 
     &__number {
         @include font-style ($title-font, $subtitle-font-size, 25px);
@@ -63,7 +72,8 @@
 
     &__card {
         position: relative;
-        width: 23%;
+        width: 20%;
+        margin-right: 10px;
         padding-top: 80px;
         // min-height: 595px;
         border-radius: 50px;
@@ -78,14 +88,14 @@
     }
 
     &__subtitle {
-        max-width: 314px;
+        max-width: 80%;
         margin: 0 auto 23px;
         @include font-style ($title-font, $subtitle-font-size, 27px);
         color: $text-color-title;
     }
 
     &__text {
-        max-width: 314px;
+        max-width: 90%;
         // margin: 0 auto;
         margin: auto 25px;
         @include font-style ($main-font, 1em, 1.4em);
@@ -135,33 +145,3 @@
         margin: 60px auto;
     }
 }
-
-
-
-// .stages-of-construction {}
-
-// .stages-of-construction__title {
-//     // max-width: 1139px;
-// }
-
-// .stages-of-construction__slider {
-//     // display: flex;
-//     width: 1477px;
-//     overflow: hidden;
-// }
-
-// .stages-of-construction__cards-container {
-//     display: flex;
-//     // flex-wrap: wrap;
-//     width: 1077px;
-//     position: relative;
-//     left: 0;
-//     transition: all ease 1s;
-// }
-
-// .stages-of-construction__card {
-//     // width: 368px;
-//     // min-width: 368px;
-//     outline: 1px solid darkcyan;
-//     // max-height: 595px;
-// }
