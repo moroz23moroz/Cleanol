@@ -5,9 +5,9 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    * {
-        outline: 1px solid violet;
-    }
+    // * {
+    //     outline: 1px solid violet;
+    // }
 
     // .stages-of-construction__container
     // &__container {
@@ -30,7 +30,7 @@
         min-width: 0;
         // min-height: 853px;
         margin: 0;
-        // padding-top: 90px;
+        padding-top: 90px;
         overflow-x: hidden;
         // из-за скролла вертикального:
         // padding-bottom: 200px;
@@ -38,6 +38,8 @@
     }
 
     &__button {
+        height: 75px;
+        margin: auto 0;
         border: none;
         background-color: $bg-color-white;
     }
@@ -52,12 +54,12 @@
         // justify-content: space-between;
         // flex-wrap: wrap;
 
-        display: flex;
-        margin-top: 90px;
+        // display: flex;
+        // margin-top: 90px;
         min-width: 0;
         width: 90%;
-        justify-content: space-between;
-        align-items: stretch;
+        // justify-content: space-between;
+        // align-items: stretch;
     }
 
     &__cards-slide {}
@@ -72,32 +74,44 @@
 
     &__card {
         position: relative;
-        width: 20%;
-        margin-right: 10px;
+        width: 26% !important;
+        box-sizing: border-box;
+        margin-right: 24px;
         padding-top: 80px;
-        // min-height: 595px;
+        // padding-bottom: 0;
         border-radius: 50px;
         text-align: center;
         background-color: $bg-color-light;
+
+
+
+        // display: flex;
+        // flex-direction: column;
+        // height: 100%;
     }
 
     &__card-content {
-        display: flex;
-        flex-direction: column;
         height: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        // height: 100%;
+        // display: grid;
+        // grid-template-rows: 15% 35% 30%;
     }
 
     &__subtitle {
-        max-width: 80%;
+        // width: 80%;
         margin: 0 auto 23px;
         @include font-style ($title-font, $subtitle-font-size, 27px);
         color: $text-color-title;
     }
 
     &__text {
-        max-width: 90%;
+        // width: 90%;
         // margin: 0 auto;
-        margin: auto 25px;
+        margin: 0 auto;
         @include font-style ($main-font, 1em, 1.4em);
         color: $text-color-light;
 
@@ -131,10 +145,10 @@
     }
 
     &__photo {
-        max-width: 100%;
+        width: 100%;
 
         &_narrow {
-            max-width: 67%;
+            width: 67%;
             margin: 0 auto;
         }
     }

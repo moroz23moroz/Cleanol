@@ -239,9 +239,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.stages-of-construction * {
-  outline: 1px solid violet;
-}
 .stages-of-construction__title {
   width: 100%;
   margin: 0 auto;
@@ -256,19 +253,18 @@
   width: 80%;
   min-width: 0;
   margin: 0;
+  padding-top: 90px;
   overflow-x: hidden;
 }
 .stages-of-construction__button {
+  height: 75px;
+  margin: auto 0;
   border: none;
   background-color: #FFFFFF;
 }
 .stages-of-construction__cards-container {
-  display: flex;
-  margin-top: 90px;
   min-width: 0;
   width: 90%;
-  justify-content: space-between;
-  align-items: stretch;
 }
 .stages-of-construction__number {
   font-family: "RF Dewi Extended", sans-serif;
@@ -288,20 +284,22 @@
 }
 .stages-of-construction__card {
   position: relative;
-  width: 20%;
-  margin-right: 10px;
+  width: 26% !important;
+  box-sizing: border-box;
+  margin-right: 24px;
   padding-top: 80px;
   border-radius: 50px;
   text-align: center;
   background-color: #EEF3FD;
 }
 .stages-of-construction__card-content {
-  display: flex;
-  flex-direction: column;
   height: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 .stages-of-construction__subtitle {
-  max-width: 80%;
   margin: 0 auto 23px;
   font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
@@ -309,8 +307,7 @@
   color: #265FE5;
 }
 .stages-of-construction__text {
-  max-width: 90%;
-  margin: auto 25px;
+  margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 1em;
   line-height: 1.4em;
@@ -343,10 +340,10 @@
   margin: 40px auto;
 }
 .stages-of-construction__photo {
-  max-width: 100%;
+  width: 100%;
 }
 .stages-of-construction__photo_narrow {
-  max-width: 67%;
+  width: 67%;
   margin: 0 auto;
 }
 .stages-of-construction__button-order {
