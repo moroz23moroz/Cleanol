@@ -15,8 +15,8 @@
 
 <body>
 
-    <!-- header -->
     <div class="wrapper">
+        <!-- header -->
         <header class="header">
             <div class="container">
                 <div class="header-high">
@@ -80,26 +80,19 @@
         <main class="main">
             <!-- banner -->
             <div class="banner">
-                <img src="./images/banner/round_img_header.svg" alt="" class="banner__round-img">
+                <!-- <img src="./images/banner/round_img_header.svg" alt="" class="banner__round-img"> -->
+
                 <img src="./images/banner/banner_arrow_left.svg" alt=""
                     class="banner__nav-arrow banner__nav-arrow_left">
-                <img src="./images/banner/slide_1.png" alt="" class="banner__slider">
-                <!-- <div class="banner-content">
-                <h1 class="banner-content__title">Робот-мойка</h1>
-                <div class="banner-content-block">
-                    <img src="./images/banner/banner_icon_key.svg" alt="key icon" class="banner-content-block__icon">
-                    <p class="banner-content-block__text">Готовый бизнес с доходом </p>
-                    <p class="banner-content-block__text">от <span
-                            class="banner-content-block__text banner-content-block__text_bold">17 000</span> бел.
-                        руб/мес</p>
+
+                <div class="banner-slider-container swiper-container">
+                    <div class="banner-slider-wrapper swiper-wrapper">
+                        <img src="./images/banner/slider_1.png" alt="robo car washer" class="banner__slide swiper-slide">
+                        <img src="./images/banner/slider_2.png" alt="invest properly" class="banner__slide swiper-slide">
+                        <img src="./images/banner/slider_3.png" alt="earn money right now" class="banner__slide swiper-slide">
+                    </div>
                 </div>
-                <div class="banner-content-block">
-                    <img src="./images/banner/banner_icon_time.svg" alt="watch icon" class="banner-content-block__icon">
-                    <p class="banner-content-block__text">Срок окупаемости </p>
-                    <p class="banner-content-block__text"><span
-                            class="banner-content-block__text banner-content-block__text_bold">14</span> месяцев</p>
-                </div>
-            </div> -->
+
                 <img src="./images/banner/banner_arrow_right.svg" alt=""
                     class="banner__nav-arrow banner__nav-arrow_right">
             </div>
@@ -162,55 +155,192 @@
                 <h2 class="info-block__title">8 основных характеристик <br> роботизированной мойки</h2>
                 <div class="info-block-wrapper">
                     <div class="image-bg"></div>
-                    <img src="./images/block_4/block_4_image.png" alt="" class="block4_img">
+                    <img src="./images/block_4/block_4_image.png" alt="car washer" class="block4_img">
                     <!-- vertical-slider -->
                     <div class="vertical-slider">
                         <div class="numbers-wrapper">
-                            <!-- <div class="numbers-wrapper__item numbers-wrapper__item_active js">01</div> -->
-                            <div class="numbers-wrapper__item js">01</div>
-                            <div class="numbers-wrapper__item js">02</div>
-                            <div class="numbers-wrapper__item js">03</div>
-                            <div class="numbers-wrapper__item js">04</div>
-                            <div class="numbers-wrapper__item js">05</div>
-                            <div class="numbers-wrapper__item js">06</div>
-                            <div class="numbers-wrapper__item js">07</div>
-                            <div class="numbers-wrapper__item js">08</div>
+                            <div class="numbers-wrapper__item js active" id="n0">01</div>
+                            <div class="numbers-wrapper__item js" id="n1">02</div>
+                            <div class="numbers-wrapper__item js" id="n2">03</div>
+                            <div class="numbers-wrapper__item js" id="n3">04</div>
+                            <div class="numbers-wrapper__item js" id="n4">05</div>
+                            <div class="numbers-wrapper__item js" id="n5">06</div>
+                            <div class="numbers-wrapper__item js" id="n6">07</div>
+                            <div class="numbers-wrapper__item js" id="n7">08</div>
                         </div>
-
+                        
                         <div class="lines-wrapper">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
-                            <img src="./images/block_4/block_4_line.svg" alt="line" class="lines-wrapper__item">
+                            <div class="lines-wrapper__item lines-wrapper__item_active" id="l0"></div>
+                            <div class="lines-wrapper__item" id="l1"></div>
+                            <div class="lines-wrapper__item" id="l2"></div>
+                            <div class="lines-wrapper__item" id="l3"></div>
+                            <div class="lines-wrapper__item" id="l4"></div>
+                            <div class="lines-wrapper__item" id="l5"></div>
+                            <div class="lines-wrapper__item" id="l6"></div>
+                            <div class="lines-wrapper__item" id="l7"></div>
                         </div>
 
-                        <div class="content-wrapper">
-                            <div class="title-group">
-                                <img src="./images/block_4/quality-icon_01.svg" alt="" class="title-group__icon">
-                                <h3 class="title-group__title">Собственное программное обеспечение</h3>
+                        <div class="swiper-pagination"></div>
+                        <div class="slider-wrapper swiper-wrapper">
+                            <!-- slide 01 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_01.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Собственное программное обеспечение</h3>
+                                </div>
+
+                                <div class="info-block__text">Вы можете управлять комплексом программ самостоятельно. А
+                                    именно
+                                    их
+                                    порядком и продолжительностью в зависимости от потребностей клиентов и вашего
+                                    запланированного
+                                    бюджета
+                                </div>
+
+                                <div class="info-block__text"><span
+                                        class="info-block__text_bold info-block__text_blue">Помните!</span>
+                                    Клиенты будут выбирать ту мойку, на которой за наименьшее количество средств им
+                                    будет
+                                    предоставляться наиболее эффективная услуга
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
-                            <div class="info-block__text">Вы можете управлять комплексом программ самостоятельно. А
-                                именно
-                                их
-                                порядком и продолжительностью в зависимости от потребностей клиентов и вашего
-                                запланированного
-                                бюджета
+                            <!-- slide 02 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_02.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Экономия воды, электроэнергии и автохимии</h3>
+                                </div>
+
+                                <div class="info-block__text">Система учитывает географические, климатические
+                                    особенности
+                                    региона. Также считывает габариты автомобилей и учитывает эти характеристики для
+                                    экономного
+                                    расхода энергии и моющих средств
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
-                            <div class="info-block__text"><span
-                                    class="info-block__text_bold info-block__text_blue">Помните!</span>
-                                Клиенты будут выбирать ту мойку, на которой за наименьшее количество средств им будет
-                                предоставляться наиболее эффективная услуга
+                            <!-- slide 03 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_03.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Высокое качество комплектующих</h3>
+                                </div>
+
+                                <div class="info-block__text">От немецких и итальянских производителей. Импортируем
+                                    запчасти
+                                    напрямую с заводов R+M (Германия) и Komatsu (Италия).
+                                </div>
+
+                                <div class="info-block__text"><span
+                                        class="info-block__text_bold info-block__text_blue">Важно!</span> Отличительная
+                                    черта
+                                    комплектующих роботизированной мойки нашего производства - повышенная
+                                    износостойкость,
+                                    по
+                                    сравнению с конкурентами, которые используют полностью китайские механизмы
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
-                            <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
-                                    src="./images/btn_arrow_white.svg" alt="white arrow"
-                                    class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                            <!-- slide 04 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_04.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Сервис 24/7 и гарантия</h3>
+                                </div>
+
+                                <div class="info-block__text">Сервисная служба выезжает на объект бесплатно в рамках
+                                    гарантийных случаев (до 5 лет). На комплектующие действует расширенная гарантия.
+                                    Замена
+                                    быстрая и стабильная в связи с отсутствием перебоев с поставками
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                            </div>
+
+                            <!-- slide 05 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_05.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Интеллектуальная система трехмерного мониторинга</h3>
+                                </div>
+
+                                <div class="info-block__text">Вы контролируете финансовые поступления, расходы и доходы
+                                    моечного комплекса, информацию о сбоях в работе оборудования, о его поломках онлайн
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                            </div>
+
+                            <!-- slide 06 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_06.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Индивидуальный подход к системе водоподготовки</h3>
+                                </div>
+
+                                <div class="info-block__text">в зависимости от характеристик воды. Система
+                                    водоподготовки
+                                    способствует повышению качества воды. Также защищает водопроводные трубы и
+                                    присоединенные к ним компоненты, гарантирует надежность в эксплуатации и длительный
+                                    срок
+                                    службы
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                            </div>
+
+                            <!-- slide 07 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_07.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Два вида терминала</h3>
+                                </div>
+
+                                <div class="info-block__text">Навесной и на стойке. Закалённое стекло и брендирование
+                                    под
+                                    ваш фирменный стиль
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                            </div>
+
+                            <!-- slide 08 -->
+                            <div class="content-wrapper swiper-slide">
+                                <div class="title-group">
+                                    <img src="./images/block_4/quality-icon_08.svg" alt="" class="title-group__icon">
+                                    <h3 class="title-group__title">Мобильное приложение</h3>
+                                </div>
+
+                                <div class="info-block__text">Возможность интеграции с любым мобильным приложением
+                                    владельца
+                                    роботизированной мойки
+                                </div>
+
+                                <button class="info-block-btn info-block-btn_sm info-block-btn_blue">Купить <img
+                                        src="./images/btn_arrow_white.svg" alt="white arrow"
+                                        class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                            </div>
                         </div>
                     </div>
                     <!-- vertical-slider -->
