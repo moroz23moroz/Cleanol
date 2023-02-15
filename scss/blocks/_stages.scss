@@ -1,16 +1,11 @@
-.stages-of-construction {
+.stages {
     width: 98vw;
+    max-width: 1668px;
+    margin: 0 auto;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    // .stages-of-construction__container
-    // &__container {
-    //     width: 100%;
-    //     // max-width: 1796px;
-    //     margin: 0 auto;
-    // }
 
     &__title {
         width: 100%;
@@ -25,33 +20,24 @@
         width: 80%;
         min-width: 0;
         margin: 0;
-        padding-top: 100px;
+        padding-top: 90px;
         overflow-x: hidden;
     }
 
     &__button {
+        height: 75px;
+        margin: auto 0;
         border: none;
         background-color: $bg-color-white;
     }
 
-    &__button_prev {}
-
-    &__button_next {}
-
     &__cards-container {
-        // width: 88%;
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
-    }
-
-    &__cards-slide {
         display: flex;
         min-width: 0;
-        width: 88%;
-        justify-content: space-between;
-        align-items: stretch;
+        width: 90%;
     }
+
+    &__cards-slide {}
 
     &__number {
         @include font-style ($title-font, $subtitle-font-size, 25px);
@@ -63,32 +49,30 @@
 
     &__card {
         position: relative;
-        width: 23%;
+        box-sizing: border-box;
         padding-top: 80px;
-        // min-height: 595px;
         border-radius: 50px;
         text-align: center;
         background-color: $bg-color-light;
     }
 
     &__card-content {
-        display: flex;
-        flex-direction: column;
         height: 100%;
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
 
     &__subtitle {
-        max-width: 314px;
         margin: 0 auto 23px;
         @include font-style ($title-font, $subtitle-font-size, 27px);
         color: $text-color-title;
     }
 
     &__text {
-        max-width: 314px;
-        // margin: 0 auto;
-        margin: auto 25px;
-        @include font-style ($main-font, 1em, 1.4em);
+        margin: 0 auto;
+        @include font-style ($main-font, 18px, 25px);
         color: $text-color-light;
 
         a {
@@ -99,7 +83,7 @@
         }
 
         &_advice {
-            margin: 12px 20px;
+            margin: 12px auto;
             padding: 10px;
             background-color: $bg-color-white;
             border-radius: 16px;
@@ -121,10 +105,10 @@
     }
 
     &__photo {
-        max-width: 100%;
+        width: 100%;
 
         &_narrow {
-            max-width: 67%;
+            width: 67%;
             margin: 0 auto;
         }
     }
@@ -135,33 +119,3 @@
         margin: 60px auto;
     }
 }
-
-
-
-// .stages-of-construction {}
-
-// .stages-of-construction__title {
-//     // max-width: 1139px;
-// }
-
-// .stages-of-construction__slider {
-//     // display: flex;
-//     width: 1477px;
-//     overflow: hidden;
-// }
-
-// .stages-of-construction__cards-container {
-//     display: flex;
-//     // flex-wrap: wrap;
-//     width: 1077px;
-//     position: relative;
-//     left: 0;
-//     transition: all ease 1s;
-// }
-
-// .stages-of-construction__card {
-//     // width: 368px;
-//     // min-width: 368px;
-//     outline: 1px solid darkcyan;
-//     // max-height: 595px;
-// }

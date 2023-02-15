@@ -3,6 +3,8 @@
 
     // block why-robot
     .why-robot-cleaner {
+        margin-top: 150px;
+
         &__container {
             max-width: 768px;
         }
@@ -17,6 +19,10 @@
 
         &__photo {
             max-width: 100%;
+        }
+
+        &__icon {
+            left: 37%;
         }
 
         &__info-group {
@@ -35,10 +41,327 @@
             margin-top: 20px;
         }
     }
-
-
-    // block advantages
 }
 
+@media screen and (max-width:1023px) and (min-width:425px) {
 
-// @media screen and (max-width:424px) {}
+    // block advantages
+    .advantages {
+        &__container {
+            grid-template-columns: 100%;
+            justify-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        &__title {
+            grid-area: 1/1/2/2;
+            max-width: 70%;
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__photo {
+            &_first {
+                grid-area: 2/1/3/2;
+            }
+
+            &_second {
+                grid-area: 4/1/5/2;
+            }
+
+            &_third {
+                grid-area: 6/1/7/2;
+            }
+        }
+
+        &__info {
+            margin: 50px auto 30px;
+
+            &_first {
+                grid-area: 3/1/4/2;
+            }
+
+            &_second {
+                grid-area: 5/1/6/2;
+            }
+
+            &_third {
+                grid-area: 7/1/8/2;
+            }
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__number {
+            position: absolute;
+            left: 46%;
+
+            &_one {
+                top: 24.5%;
+            }
+
+            &_two {
+                top: 54%;
+            }
+
+            &_three {
+                top: 85%;
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+
+    // block price
+    .price {
+        max-width: 656px;
+        margin: 50px auto;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__title {
+            @include font-style ($title-font, $title-font-size-tablet, 62.5px);
+        }
+
+        &__text {
+            max-width: 80%;
+        }
+
+        &__button {
+            margin: 15px auto 47px;
+        }
+    }
+
+    // block stages
+    .stages {
+        &__title {
+            width: 80%;
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width:424px) {
+
+    // block why-robot
+    .why-robot-cleaner {
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 100px;
+        padding: 20px;
+
+        &__title {
+            @include font-style ($title-font, $title-font-size-mobile, 30px);
+        }
+
+        &__images {
+            flex-direction: column;
+        }
+
+        &__image-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        &__photo {
+            width: 152px;
+            margin-bottom: 0;
+        }
+
+        &__icon {
+            top: 30%;
+        }
+
+        &__image-text {
+            width: 47%;
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+        }
+
+        &__info-group {
+            margin: 0 auto;
+        }
+
+        &__info {
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+
+            a {
+                display: inline-block;
+            }
+        }
+
+        &__button {
+            display: block;
+            margin: 30px auto;
+            font-size: $text-font-size;
+        }
+    }
+
+    // block advantages
+    .advantages {
+        &__container {
+            grid-template-columns: 100%;
+            justify-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        &__title {
+            grid-area: 1/1/2/2;
+            max-width: 100%;
+            @include font-style ($title-font, $title-font-size-mobile, 30px);
+        }
+
+        &__photo {
+            &_first {
+                grid-area: 2/1/3/2;
+            }
+
+            &_second {
+                grid-area: 4/1/5/2;
+            }
+
+            &_third {
+                grid-area: 6/1/7/2;
+            }
+        }
+
+        &__info {
+            margin: 25px auto;
+
+            &_first {
+                grid-area: 3/1/4/2;
+            }
+
+            &_second {
+                grid-area: 5/1/6/2;
+            }
+
+            &_third {
+                grid-area: 7/1/8/2;
+            }
+        }
+
+        &__subtitle {
+            @include font-style ($title-font, $subtitle-font-size-mobile, 25px);
+        }
+
+        &__text {
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__number {
+            position: absolute;
+            left: 41%;
+
+            &_one {
+                top: 23.5%;
+            }
+
+            &_two {
+                top: 53%;
+            }
+
+            &_three {
+                top: 83.5%;
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+
+    // block price
+    .price {
+        max-width: 424px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__title {
+            margin-top: 25px;
+            @include font-style ($title-font, $title-font-size-mobile, 62.5px);
+        }
+
+        &__photo {
+            max-width: 85%;
+        }
+
+        &__text {
+            max-width: 80%;
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+
+            a {
+                display: inline-block;
+                font-size: $text-font-size-mobile;
+            }
+        }
+
+        &__button {
+            font-size: $text-font-size;
+            margin: 15px auto 47px;
+        }
+    }
+
+    // block stages
+    .stages {
+        &__title {
+            width: 85%;
+            @include font-style ($title-font, $title-font-size-mobile, 30px);
+        }
+
+        &__slider {
+            width: 95%;
+            padding-top: 70px;
+        }
+
+        &__subtitle {
+            @include font-style ($title-font, $subtitle-font-size-mobile, 24px);
+        }
+
+        &__text {
+            @include font-style ($main-font, $text-font-size-mobile, 19px);
+
+            a {
+                @include font-style ($title-font, $text-font-size, 24px);
+            }
+        }
+
+        &__text-apart {
+            margin: 20px auto;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__button-order {
+            @include button-main (80%, 12px 30px, $text-font-size);
+        }
+    }
+}
