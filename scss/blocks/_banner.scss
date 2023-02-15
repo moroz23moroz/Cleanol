@@ -1,11 +1,13 @@
 .banner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1796px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 113px;
+    margin-top: -60px;
+    margin-bottom: -60px;
 
     &__round-img {
         position: absolute;
@@ -14,24 +16,37 @@
         // left: 1570px;
 
         margin-top: -760px;
-        margin-left: 730px;
+        margin-left: 725px;
         max-width: 130px;
     }
 
-    &__slider {
-        max-width: 1704px;
-        margin-right: auto;
-        margin-left: auto;
-
-    }
-
     &__nav-arrow_left {
+        max-width: 55px;
         margin-top: auto;
+        margin-right: -5px;
         margin-bottom: auto;
     }
 
     &__nav-arrow_right {
+        max-width: 55px;
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: -5px;
     }
+}
+
+//swiper-container
+.banner-slider-container {
+    display: flex;
+    min-width: 0;
+    overflow-x: hidden;
+}
+
+//swiper-slide
+.banner__slide {
+    min-width: 0;
+    width: 1704px;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-top: 36px;
 }

@@ -1,13 +1,25 @@
 * {
-    // border: solid 1px red;
-    font-family: $main-font;
+  // border: solid 1px red;
+  font-family: $main-font;
 }
 
+html {
+  box-sizing: border-box;
+}
 
+ul[class] {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+body {
+  font-family: $main-font;
+}
 
-
-
-
-
+.wrapper {
+  position: relative;
+}

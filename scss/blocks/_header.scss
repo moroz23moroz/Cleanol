@@ -2,66 +2,66 @@
     max-width: 1730px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.header {
+  }
+  
+  .header {
     padding-top: 45px;
     margin-bottom: 20px;
     color: #3a475e;
-}
-
-З .header__inner,
-.header__menu-list,
-.header__main,
-.header__contacts {
+  }
+  
+  .header__inner,
+  .header__menu-list,
+  .header__main,
+  .header__contacts {
     display: flex;
     align-items: center;
-}
-
-.header__main,
-.header__contacts {
+  }
+  
+  .header__main,
+  .header__contacts {
     gap: 55px;
     color: #222021;
-}
-
-.header__inner {
+  }
+  
+  .header__inner {
     justify-content: space-between;
-}
-
-.header__description {
+  }
+  
+  .header__description {
     width: 410px;
     font-size: 18px;
     line-height: 25px;
     font-weight: 500;
-}
-
-.header__contacts {
+  }
+  
+  .header__contacts {
     font-family: "RFDewi-Regular";
     font-size: 20px;
     line-height: 30px;
-}
-
-.header__email {
+  }
+  
+  .header__email {
     color: #222021;
-}
-
-.header__phone {
+  }
+  
+  .header__phone {
     color: #265fe5;
     font-weight: 600;
-}
-
-.header__menu,
-.header .header-high {
+  }
+  
+  .header__menu,
+  .header .header-high {
     padding: 0 45px;
-}
-
-.header__menu-list {
+  }
+  
+  .header__menu-list {
     gap: 35px;
     font-size: 20px;
     line-height: 16px;
     font-weight: 600;
-}
-
-.header-low {
+  }
+  
+  .header-low {
     margin-top: 45px;
-}
+  }
