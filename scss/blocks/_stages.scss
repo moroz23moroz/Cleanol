@@ -1,20 +1,11 @@
-.stages-of-construction {
+.stages {
     width: 98vw;
+    max-width: 1668px;
+    margin: 0 auto;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    // * {
-    //     outline: 1px solid violet;
-    // }
-
-    // .stages-of-construction__container
-    // &__container {
-    //     width: 100%;
-    //     // max-width: 1796px;
-    //     margin: 0 auto;
-    // }
 
     &__title {
         width: 100%;
@@ -28,13 +19,9 @@
         display: flex;
         width: 80%;
         min-width: 0;
-        // min-height: 853px;
         margin: 0;
         padding-top: 90px;
         overflow-x: hidden;
-        // из-за скролла вертикального:
-        // padding-bottom: 200px;
-        // margin-bottom: -200px;
     }
 
     &__button {
@@ -44,22 +31,10 @@
         background-color: $bg-color-white;
     }
 
-    &__button_prev {}
-
-    &__button_next {}
-
     &__cards-container {
-        // width: 88%;
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
-
-        // display: flex;
-        // margin-top: 90px;
+        display: flex;
         min-width: 0;
         width: 90%;
-        // justify-content: space-between;
-        // align-items: stretch;
     }
 
     &__cards-slide {}
@@ -74,45 +49,30 @@
 
     &__card {
         position: relative;
-        width: 26% !important;
         box-sizing: border-box;
-        margin-right: 24px;
         padding-top: 80px;
-        // padding-bottom: 0;
         border-radius: 50px;
         text-align: center;
         background-color: $bg-color-light;
-
-
-
-        // display: flex;
-        // flex-direction: column;
-        // height: 100%;
     }
 
     &__card-content {
         height: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
-        // height: 100%;
-        // display: grid;
-        // grid-template-rows: 15% 35% 30%;
     }
 
     &__subtitle {
-        // width: 80%;
         margin: 0 auto 23px;
         @include font-style ($title-font, $subtitle-font-size, 27px);
         color: $text-color-title;
     }
 
     &__text {
-        // width: 90%;
-        // margin: 0 auto;
         margin: 0 auto;
-        @include font-style ($main-font, 1em, 1.4em);
+        @include font-style ($main-font, 18px, 25px);
         color: $text-color-light;
 
         a {
@@ -123,7 +83,7 @@
         }
 
         &_advice {
-            margin: 12px 20px;
+            margin: 12px auto;
             padding: 10px;
             background-color: $bg-color-white;
             border-radius: 16px;

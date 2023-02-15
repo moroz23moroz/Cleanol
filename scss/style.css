@@ -74,6 +74,7 @@
   color: #265FE5;
   text-decoration: none;
   font-family: "RF Dewi Extended", sans-serif;
+  font-weight: 700;
 }
 .why-robot-cleaner__button {
   margin-top: 49px;
@@ -215,6 +216,7 @@
   font-size: 18px;
   line-height: 25px;
   text-decoration: none;
+  font-weight: 700;
   color: #FFFFFF;
 }
 .price__button {
@@ -233,13 +235,15 @@
   font-weight: 600;
 }
 
-.stages-of-construction {
+.stages {
   width: 98vw;
+  max-width: 1668px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.stages-of-construction__title {
+.stages__title {
   width: 100%;
   margin: 0 auto;
   font-family: "RF Dewi Extended", sans-serif;
@@ -248,7 +252,7 @@
   text-align: center;
   color: #265FE5;
 }
-.stages-of-construction__slider {
+.stages__slider {
   display: flex;
   width: 80%;
   min-width: 0;
@@ -256,17 +260,18 @@
   padding-top: 90px;
   overflow-x: hidden;
 }
-.stages-of-construction__button {
+.stages__button {
   height: 75px;
   margin: auto 0;
   border: none;
   background-color: #FFFFFF;
 }
-.stages-of-construction__cards-container {
+.stages__cards-container {
+  display: flex;
   min-width: 0;
   width: 90%;
 }
-.stages-of-construction__number {
+.stages__number {
   font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
   line-height: 25px;
@@ -282,45 +287,43 @@
   left: 36%;
   bottom: 93%;
 }
-.stages-of-construction__card {
+.stages__card {
   position: relative;
-  width: 26% !important;
   box-sizing: border-box;
-  margin-right: 24px;
   padding-top: 80px;
   border-radius: 50px;
   text-align: center;
   background-color: #EEF3FD;
 }
-.stages-of-construction__card-content {
+.stages__card-content {
   height: 100%;
-  padding: 0 10px;
+  padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
 }
-.stages-of-construction__subtitle {
+.stages__subtitle {
   margin: 0 auto 23px;
   font-family: "RF Dewi Extended", sans-serif;
   font-size: 24px;
   line-height: 27px;
   color: #265FE5;
 }
-.stages-of-construction__text {
+.stages__text {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  font-size: 1em;
-  line-height: 1.4em;
+  font-size: 18px;
+  line-height: 25px;
   color: #3A475E;
 }
-.stages-of-construction__text a {
+.stages__text a {
   font-family: "RF Dewi Extended", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #265FE5;
 }
-.stages-of-construction__text_advice {
-  margin: 12px 20px;
+.stages__text_advice {
+  margin: 12px auto;
   padding: 10px;
   background-color: #FFFFFF;
   border-radius: 16px;
@@ -328,7 +331,7 @@
   line-height: 1.3em;
   text-align: left;
 }
-.stages-of-construction__text_bold {
+.stages__text_bold {
   font-family: "RF Dewi Extended", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -336,17 +339,17 @@
   font-weight: 700;
   color: #265FE5;
 }
-.stages-of-construction__text-apart {
+.stages__text-apart {
   margin: 40px auto;
 }
-.stages-of-construction__photo {
+.stages__photo {
   width: 100%;
 }
-.stages-of-construction__photo_narrow {
+.stages__photo_narrow {
   width: 67%;
   margin: 0 auto;
 }
-.stages-of-construction__button-order {
+.stages__button-order {
   max-width: 387px;
   padding: 12px 50px;
   border: none;
@@ -1048,16 +1051,207 @@
   .price__text {
     max-width: 80%;
   }
-  .price__text a {
-    font-weight: 700;
-  }
   .price__button {
     margin: 15px auto 47px;
   }
-  .stages-of-construction * {
-    outline: 1px solid violet;
+  .stages__title {
+    width: 80%;
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 35px;
+    line-height: 42px;
   }
-  .stages-of-construction__button {
+  .stages__button {
     display: none;
+  }
+}
+@media screen and (max-width: 424px) {
+  .why-robot-cleaner {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .why-robot-cleaner__title {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .why-robot-cleaner__images {
+    flex-direction: column;
+  }
+  .why-robot-cleaner__image-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .why-robot-cleaner__photo {
+    width: 152px;
+    margin-bottom: 0;
+  }
+  .why-robot-cleaner__icon {
+    top: 30%;
+  }
+  .why-robot-cleaner__image-text {
+    width: 47%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .why-robot-cleaner__info-group {
+    margin: 0 auto;
+  }
+  .why-robot-cleaner__info {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .why-robot-cleaner__info a {
+    display: inline-block;
+  }
+  .why-robot-cleaner__button {
+    display: block;
+    margin: 30px auto;
+    font-size: 18px;
+  }
+  .advantages__container {
+    grid-template-columns: 100%;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .advantages__title {
+    grid-area: 1/1/2/2;
+    max-width: 100%;
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .advantages__photo_first {
+    grid-area: 2/1/3/2;
+  }
+  .advantages__photo_second {
+    grid-area: 4/1/5/2;
+  }
+  .advantages__photo_third {
+    grid-area: 6/1/7/2;
+  }
+  .advantages__info {
+    margin: 25px auto;
+  }
+  .advantages__info_first {
+    grid-area: 3/1/4/2;
+  }
+  .advantages__info_second {
+    grid-area: 5/1/6/2;
+  }
+  .advantages__info_third {
+    grid-area: 7/1/8/2;
+  }
+  .advantages__subtitle {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .advantages__text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .advantages__line {
+    display: none;
+  }
+  .advantages__number {
+    position: absolute;
+    left: 41%;
+  }
+  .advantages__number_one {
+    top: 23.5%;
+  }
+  .advantages__number_two {
+    top: 53%;
+  }
+  .advantages__number_three {
+    top: 83.5%;
+  }
+  .advantages__button {
+    display: none;
+  }
+  .price {
+    max-width: 424px;
+  }
+  .price__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .price__title {
+    margin-top: 25px;
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 25px;
+    line-height: 62.5px;
+  }
+  .price__photo {
+    max-width: 85%;
+  }
+  .price__text {
+    max-width: 80%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .price__text a {
+    display: inline-block;
+    font-size: 16px;
+  }
+  .price__button {
+    font-size: 18px;
+    margin: 15px auto 47px;
+  }
+  .stages__title {
+    width: 85%;
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .stages__slider {
+    width: 95%;
+    padding-top: 70px;
+  }
+  .stages__subtitle {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stages__text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .stages__text a {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .stages__text-apart {
+    margin: 20px auto;
+  }
+  .stages__button {
+    display: none;
+  }
+  .stages__button-order {
+    max-width: 80%;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #265FE5;
+    color: #FFFFFF;
   }
 }
