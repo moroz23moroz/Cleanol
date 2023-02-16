@@ -47,7 +47,6 @@ if (mediaQueryMobile.matches) {
 // // Конец Блок 8 этапов строительства
 // // Ильвина конец
 
-
 //banner slider
 new Swiper('.banner-slider-container', {
     navigation: {
@@ -74,7 +73,7 @@ slider.on('slideChange', () => {
     let index = slider.activeIndex;
     let numberItem = document.getElementById(`n${index}`);
     let lineItem = document.getElementById(`l${index}`);
-    numberItem.classList.add('active');
+    numberItem.classList.add('numbers-wrapper__item_active');
     lineItem.classList.add('lines-wrapper__item_active');
 })
 
@@ -83,7 +82,7 @@ const toggle = () => {
     const lineItems = document.querySelectorAll('.lines-wrapper__item')
 
     for (let numberItem of numberItems) {
-        if (numberItem.classList.contains('active')) numberItem.classList.remove('active')
+        if (numberItem.classList.contains('numbers-wrapper__item_active')) numberItem.classList.remove('numbers-wrapper__item_active')
     }
 
     for (let lineItem of lineItems) {

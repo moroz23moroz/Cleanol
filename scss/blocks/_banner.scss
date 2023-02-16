@@ -6,19 +6,15 @@
     max-width: 1796px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: -60px;
-    margin-bottom: -60px;
+    // margin-top: -60px;
+    // margin-bottom: -60px;
 
-    &__round-img {
-        position: absolute;
-        // top: -65px;
-        // top: 48px; //для наглядности
-        // left: 1570px;
-
-        margin-top: -760px;
-        margin-left: 725px;
-        max-width: 130px;
-    }
+    // &__round-img {
+    //     position: absolute;
+    //     margin-top: -760px;
+    //     margin-left: 725px;
+    //     max-width: 130px;
+    // }
 
     &__nav-arrow_left {
         max-width: 55px;
@@ -48,5 +44,100 @@
     width: 1704px;
     margin-left: auto;
     margin-right: auto;
-    // margin-top: 36px;
 }
+
+.banner-tablet {
+    display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .banner {
+        max-width: 1000px;
+
+        &__nav-arrow_left {
+            max-width: 45px;
+            margin-right: -10px;
+        }
+
+        &__nav-arrow_right {
+            max-width: 45px;
+            margin-left: -10px;
+        }
+    }
+
+    .banner__slide {
+        width: 950px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .banner {
+        display: none;
+    }
+
+    .banner-tablet {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .banner__slide {
+        width: 720px;
+    }
+
+    .banner__nav-arrow {
+        &_left {
+            position: absolute;
+            left: 33px;
+            z-index: 2;
+        }
+
+        &_right {
+            position: absolute;
+            right: 33px;
+            z-index: 2;
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .banner {
+        display: none;
+    }
+
+    .banner-tablet {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 340px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .banner__slide {
+        width: 340px;
+    }
+
+    .banner__nav-arrow {
+        &_left {
+            position: absolute;
+            max-width: 39px;
+            left: 10px;
+            z-index: 2;
+        }
+
+        &_right {
+            position: absolute;
+            max-width: 39px;
+            right: 10px;
+            z-index: 2;
+        }
+    }
+}
+//у второго слайда tablet высота отличается от остальных
