@@ -436,7 +436,7 @@ body {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .banner-tablet {
+  .banner {
     position: relative;
     display: flex;
     align-items: center;

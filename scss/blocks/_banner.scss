@@ -6,15 +6,6 @@
     max-width: 1796px;
     margin-right: auto;
     margin-left: auto;
-    // margin-top: -60px;
-    // margin-bottom: -60px;
-
-    // &__round-img {
-    //     position: absolute;
-    //     margin-top: -760px;
-    //     margin-left: 725px;
-    //     max-width: 130px;
-    // }
 
     &__nav-arrow_left {
         max-width: 55px;
@@ -46,10 +37,6 @@
     margin-right: auto;
 }
 
-// .banner-tablet {
-//     display: none;
-// }
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .banner {
         max-width: 1000px;
@@ -71,11 +58,7 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    // .banner {
-    //     display: none;
-    // }
-
-    .banner-tablet {
+    .banner {
         position: relative;
         display: flex;
         align-items: center;
@@ -106,10 +89,6 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    // .banner {
-    //     display: none;
-    // }
-
     .banner {
         position: relative;
         display: flex;
@@ -140,4 +119,5 @@
         }
     }
 }
+
 //у второго слайда tablet высота отличается от остальных
