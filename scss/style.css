@@ -419,10 +419,6 @@ body {
   margin-right: auto;
 }
 
-.banner-tablet {
-  display: none;
-}
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .banner {
     max-width: 1000px;
@@ -440,9 +436,6 @@ body {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .banner {
-    display: none;
-  }
   .banner-tablet {
     position: relative;
     display: flex;
@@ -468,9 +461,6 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .banner {
-    display: none;
-  }
-  .banner-tablet {
     position: relative;
     display: flex;
     align-items: center;
