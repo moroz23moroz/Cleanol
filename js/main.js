@@ -61,8 +61,6 @@ const bannerMobile = window.matchMedia('(max-width: 768px)');
 function changeImage(e) {
   if (e.matches) {
     /* the viewport is 768 pixels wide or less */
-    console.log('This is a narrow screen — less than 768px wide.');
-
     document.querySelector('.banner__slide_1').src = '../images/banner/tab_slide_1.png';
     document.querySelector('.banner__slide_2').src = '../images/banner/tab_slide_2.png';
     document.querySelector('.banner__slide_3').src = '../images/banner/tab_slide_3.png';
@@ -70,8 +68,6 @@ function changeImage(e) {
     document.querySelector('.banner__nav-arrow_right').src = '../images/banner/arrow_right_white.svg';
   } else {
     /* the viewport is more than 600 pixels wide */
-    console.log('This is a wide screen — more than 768px wide.');
-
     document.querySelector('.banner__slide_1').src = '../images/banner/slider_1.png';
     document.querySelector('.banner__slide_2').src = '../images/banner/slider_2.png';
     document.querySelector('.banner__slide_3').src = '../images/banner/slider_3.png';
