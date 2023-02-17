@@ -1419,7 +1419,7 @@ td:nth-child(2) {
   border-radius: 50px 50px 0px 0px;
   color: #fff;
   padding-top: 85px;
-  padding-bottom: 480px;
+  padding-bottom: 400px;
 }
 
 .form__inner {
@@ -1494,9 +1494,10 @@ td:nth-child(2) {
 }
 
 .form__main-button {
+  position: relative;
   width: 239px;
   margin-top: 30px;
-  padding: 10px;
+  padding: 10px 35px 10px 10px;
   border-radius: 8px;
   border-color: transparent;
   color: #265FE5;
@@ -1505,12 +1506,20 @@ td:nth-child(2) {
   cursor: pointer;
 }
 
+.form__main-button::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/arrow-blue.svg);
+  width: 26px;
+  height: 14px;
+  right: 25px;
+  bottom: 15px;
+}
+
 .footer {
   position: absolute;
   color: #fff;
-  height: 315px;
-  padding-top: 70px;
-  padding-bottom: 45px;
+  height: 300px;
   width: 100%;
   bottom: 0;
   z-index: 5;
@@ -1522,6 +1531,7 @@ td:nth-child(2) {
   display: flex;
   justify-content: space-between;
   gap: 65px;
+  margin-top: 75px;
 }
 
 .footer__logo {
@@ -1535,6 +1545,7 @@ td:nth-child(2) {
   flex-direction: column;
   flex-wrap: wrap;
   height: 100px;
+  margin: 0;
 }
 
 .footer__menu-item {
@@ -1549,10 +1560,27 @@ td:nth-child(2) {
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__contacts p,
+.footer__logo p {
+  display: block;
+  margin: 0;
 }
 
 .footer__phone {
   font-family: "RF Dewi Extended";
+}
+
+.footer__adress {
+  padding-bottom: 5px;
 }
 
 .footer__email {
