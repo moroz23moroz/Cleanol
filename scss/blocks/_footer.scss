@@ -19,12 +19,12 @@
 }
 
 .form__text {
-    width: 559px;
+    width: 405px;
     padding-right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
+    gap: 15px;
 }
 
 .form__title {
@@ -38,15 +38,62 @@
     width: 650px;
     display: flex;
     flex-direction: column;
+    align-items: end;
     gap: 10px;
+}
+
+.form__main-input,
+.form__main-input-text {
+    border-radius: 6px;
+    border-color: transparent;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: inherit;
+    border: 1px solid #9BB6F3;
+
+}
+
+.form__main-input:placeholder,
+.form__main-input-text:placeholder {
+    color: #9BB6F3;
+    font-size: inherit;
+}
+
+.form__row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.form__main {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__main-input {
+    width: 320px;
+    padding: 5px 0 5px 18px;
 }
 
 .form__main-input_text {
     height: 130px;
+    width: 650px;
+    padding: 5px 0 100px 18px;
 }
 
 .form__main-button {
     width: 239px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: transparent;
+    color: #265FE5;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .footer {
