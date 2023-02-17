@@ -1162,9 +1162,12 @@ body {
 }
 
 .header__contacts {
-  font-family: "RFDewi-Regular";
   font-size: 20px;
   line-height: 30px;
+}
+
+.header__phone {
+  font-family: "RF Dewi Extended";
 }
 
 .header__email {
@@ -1177,7 +1180,7 @@ body {
 }
 
 .header__menu,
-.header .header-high {
+.header-high {
   padding: 0 45px;
 }
 
@@ -1208,6 +1211,7 @@ body {
 }
 
 .collection__image {
+  height: 100%;
   width: 100%;
 }
 
@@ -1282,7 +1286,7 @@ body {
 .functions__main-item,
 .functions__additional-item {
   border-radius: 14px;
-  padding-left: 65px;
+  padding-left: 75px;
   height: 57px;
   display: flex;
   align-items: center;
@@ -1293,14 +1297,57 @@ body {
   position: relative;
 }
 
-.functions__main-item::after {
+.functions__first::after,
+.functions__second::after,
+.functions__third::after,
+.functions__forth::after,
+.functions__fifth::after,
+.functions__sixth::after,
+.functions__seventh::after,
+.functions__eighth::after,
+.functions__ninth::after {
   position: absolute;
   content: "";
-  background-image: url(../images/icon1.svg);
   width: 75px;
   height: 58px;
   left: -13px;
   bottom: 0;
+}
+
+.functions__first::after {
+  background-image: url(../images/icon1.svg);
+}
+
+.functions__second::after {
+  background-image: url(../images/icon2.svg);
+}
+
+.functions__third::after {
+  background-image: url(../images/icon3.svg);
+}
+
+.functions__forth::after {
+  background-image: url(../images/icon4.svg);
+}
+
+.functions__fifth::after {
+  background-image: url(../images/icon5.svg);
+}
+
+.functions__sixth::after {
+  background-image: url(../images/icon6.svg);
+}
+
+.functions__seventh::after {
+  background-image: url(../images/icon7.svg);
+}
+
+.functions__eighth::after {
+  background-image: url(../images/icon8.svg);
+}
+
+.functions__ninth::after {
+  background-image: url(../images/icon9.svg);
 }
 
 .functions__main-item,
@@ -1329,12 +1376,34 @@ body {
   bottom: 0;
 }
 
+._first::after {
+  background-image: url(../images/icon10.svg);
+}
+
+._second::after {
+  background-image: url(../images/icon11.svg);
+}
+
+._third::after {
+  background-image: url(../images/icon12.svg);
+}
+
+._forth::after {
+  background-image: url(../images/icon13.svg);
+}
+
+.container__low {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .form {
   background-color: #265fe5;
   border-radius: 50px 50px 0px 0px;
   color: #fff;
   padding-top: 85px;
-  padding-bottom: 410px;
+  padding-bottom: 480px;
 }
 
 .form__inner {
@@ -1344,12 +1413,12 @@ body {
 }
 
 .form__text {
-  width: 559px;
+  width: 405px;
   padding-right: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 25px;
+  gap: 15px;
 }
 
 .form__title {
@@ -1363,15 +1432,61 @@ body {
   width: 650px;
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 10px;
 }
 
-.form__main-input_text {
+.form__main-input,
+.form__main-input-text {
+  border-radius: 6px;
+  border-color: transparent;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: inherit;
+  border: 1px solid #9BB6F3;
+}
+
+.form__main-input:placeholder,
+.form__main-input-text:placeholder {
+  color: #9BB6F3;
+  font-size: inherit;
+}
+
+.form__row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.form__main {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__main-input {
+  width: 320px;
+  padding: 5px 0 5px 18px;
+}
+
+.form__main-input-text {
   height: 130px;
+  width: 650px;
+  padding: 5px 0 100px 18px;
 }
 
 .form__main-button {
   width: 239px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  color: #265FE5;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .footer {
@@ -1381,6 +1496,7 @@ body {
   padding-top: 70px;
   padding-bottom: 45px;
   width: 100%;
+  bottom: 0;
   z-index: 5;
   background-color: #3a475e;
   border-radius: 50px 50px 0px 0px;
@@ -1407,6 +1523,10 @@ body {
 
 .footer__menu-item {
   padding-right: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1.5;
 }
 
 .footer__contacts {
@@ -1416,17 +1536,11 @@ body {
 }
 
 .footer__phone {
-  font-family: "RFDewi-Regular";
+  font-family: "RF Dewi Extended";
 }
 
 .footer__email {
   width: 100px;
-}
-
-.container__low {
-  max-width: 1310px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 @media screen and (max-width: 1221px) and (min-width: 425px) {
