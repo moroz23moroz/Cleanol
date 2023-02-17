@@ -1218,7 +1218,7 @@ body {
 .functions {
   max-width: 1200px;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 165px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1390,6 +1390,22 @@ body {
 
 ._forth::after {
   background-image: url(../images/icon13.svg);
+}
+
+.functions__technical {
+  padding: 35px 50px 0 50px;
+}
+
+.functions__technical-title {
+  text-align: start;
+  margin-bottom: 35px;
+}
+
+td:nth-child(2) {
+  font-family: "RF Dewi Extended";
+  font-weight: 700;
+  line-height: 47px;
+  padding-left: 48px;
 }
 
 .container__low {
