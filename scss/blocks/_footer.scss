@@ -1,3 +1,9 @@
+.container__low {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .form {
     background-color: #265fe5;
     border-radius: 50px 50px 0px 0px;
@@ -50,7 +56,7 @@
     padding-top: 70px;
     padding-bottom: 45px;
     width: 100%;
-    // bottom: 0;
+    bottom: 0;
     z-index: 5;
     background-color: #3a475e;
     border-radius: 50px 50px 0px 0px;
@@ -77,6 +83,10 @@
 
 .footer__menu-item {
     padding-right: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.5;
 }
 
 .footer__contacts {
@@ -86,15 +96,9 @@
 }
 
 .footer__phone {
-    font-family: "RFDewi-Regular"
+    font-family: "RF Dewi Extended";
 }
 
 .footer__email {
     width: 100px;
-}
-
-.container__low {
-    max-width: 1310px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
