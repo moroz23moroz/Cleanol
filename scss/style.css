@@ -1590,14 +1590,7 @@ td:nth-child(2) {
   width: 100px;
 }
 
-.container__low {
-  max-width: 1310px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 @media screen and (min-width: 769px) and (max-width: 1221px) {
-@media screen and (max-width: 1221px) and (min-width: 425px) {
   .why-robot-cleaner {
     margin-top: 150px;
   }
