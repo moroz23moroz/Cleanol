@@ -36,11 +36,8 @@ body {
   border-radius: 50px;
   background-color: #EEF3FD;
 }
-.why-robot-cleaner * {
-  outline: 1px solid salmon;
-}
 .why-robot-cleaner__container {
-  margin: auto;
+  margin: 0 auto;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +110,163 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1221px) {
+  .why-robot-cleaner__container {
+    max-width: 768px;
+  }
+  .why-robot-cleaner__title {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .why-robot-cleaner__images {
+    max-width: 100%;
+  }
+  .why-robot-cleaner__photo {
+    max-width: 100%;
+  }
+  .why-robot-cleaner__info-group {
+    max-width: 100%;
+    margin: 20px 15px auto;
+  }
+  .why-robot-cleaner__info a {
+    font-weight: 700;
+    display: inline-block;
+  }
+  .why-robot-cleaner__button {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .why-robot-cleaner__title {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-width: 671px) {
+  .why-robot-cleaner__icon {
+    top: calc(42% - 29.5px);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-width: 616px) {
+  .why-robot-cleaner__icon {
+    top: calc(38% - 29.5px);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-width: 550px) {
+  .why-robot-cleaner__icon {
+    max-width: 49px;
+    left: calc(50% - 24.5px);
+    top: calc(38% - 24.5px);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-width: 500px) {
+  .why-robot-cleaner__icon {
+    top: calc(34% - 24.5px);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .why-robot-cleaner__image-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .why-robot-cleaner__info-group {
+    max-width: 100%;
+    margin: 20px 15px auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .why-robot-cleaner__info a {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-robot-cleaner {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 500px;
+    padding: 10px;
+  }
+  .why-robot-cleaner__title {
+    font-family: "RF Dewi Extended", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .why-robot-cleaner__images {
+    flex-direction: column;
+  }
+  .why-robot-cleaner__image-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .why-robot-cleaner__photo {
+    width: 152px;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 307px) {
+  .why-robot-cleaner__photo {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-robot-cleaner__icon {
+    top: calc(50% - 29.5px);
+    left: 122.5px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 307px) {
+  .why-robot-cleaner__icon {
+    left: 70.5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-robot-cleaner__image-text {
+    width: 47%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 315px) {
+  .why-robot-cleaner__image-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-robot-cleaner__info-group {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-robot-cleaner__info {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .why-robot-cleaner__info a {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-robot-cleaner__button {
+    display: block;
+    margin: 30px auto;
+    font-size: 18px;
+  }
+}
 .advantages__container {
   max-width: 1146px;
   margin: 100px auto 0;
@@ -1590,39 +1744,6 @@ td:nth-child(2) {
   width: 100px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1221px) {
-  .why-robot-cleaner {
-    margin-top: 150px;
-  }
-  .why-robot-cleaner__container {
-    max-width: 768px;
-  }
-  .why-robot-cleaner__title {
-    font-family: "RF Dewi Extended", sans-serif;
-    font-size: 35px;
-    line-height: 42px;
-  }
-  .why-robot-cleaner__images {
-    max-width: 100%;
-  }
-  .why-robot-cleaner__photo {
-    max-width: 100%;
-  }
-  .why-robot-cleaner__icon {
-    left: 37%;
-  }
-  .why-robot-cleaner__info-group {
-    max-width: 100%;
-    margin: 20px 15px auto;
-  }
-  .why-robot-cleaner__info a {
-    font-weight: 700;
-    display: inline-block;
-  }
-  .why-robot-cleaner__button {
-    margin-top: 20px;
-  }
-}
 @media screen and (max-width: 1023px) and (min-width: 425px) {
   .advantages__container {
     grid-template-columns: 100%;
@@ -1708,60 +1829,6 @@ td:nth-child(2) {
   }
 }
 @media screen and (max-width: 424px) {
-  .why-robot-cleaner {
-    box-sizing: border-box;
-    width: 100%;
-    margin-top: 100px;
-    padding: 10px;
-  }
-  .why-robot-cleaner__title {
-    font-family: "RF Dewi Extended", sans-serif;
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .why-robot-cleaner__images {
-    flex-direction: column;
-  }
-  .why-robot-cleaner__image-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  .why-robot-cleaner__photo {
-    width: 152px;
-    margin-bottom: 0;
-    margin-right: 40px;
-  }
-  .why-robot-cleaner__icon {
-    top: calc(50% - 29.5px);
-    left: 122.5px;
-  }
-  .why-robot-cleaner__image-text {
-    width: 47%;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-  }
-  .why-robot-cleaner__info-group {
-    margin: 0 auto;
-  }
-  .why-robot-cleaner__info {
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-  }
-  .why-robot-cleaner__info a {
-    display: inline-block;
-  }
-  .why-robot-cleaner__button {
-    display: block;
-    margin: 30px auto;
-    font-size: 18px;
-  }
   .advantages__container {
     grid-template-columns: 100%;
     justify-items: center;
