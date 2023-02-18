@@ -5,6 +5,11 @@
     border-radius: 50px;
     background-color: $bg-color-light;
 
+    * {
+        outline: 1px solid salmon;
+    }
+
+
     &__container {
         margin: auto;
         max-width: 100%;
@@ -35,15 +40,15 @@
     }
 
     &__photo {
-        max-width: 207px;
+        max-width: 100%;
         margin-bottom: 22px;
     }
 
     &__icon {
         max-width: 59px;
         position: absolute;
-        left: 34%;
-        top: 42%;
+        left: calc(50% - 29.5px);
+        top: calc(50% - 29.5px);
         z-index: 1;
     }
 

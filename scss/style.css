@@ -36,6 +36,9 @@ body {
   border-radius: 50px;
   background-color: #EEF3FD;
 }
+.why-robot-cleaner * {
+  outline: 1px solid salmon;
+}
 .why-robot-cleaner__container {
   margin: auto;
   max-width: 100%;
@@ -63,14 +66,14 @@ body {
   max-width: 30%;
 }
 .why-robot-cleaner__photo {
-  max-width: 207px;
+  max-width: 100%;
   margin-bottom: 22px;
 }
 .why-robot-cleaner__icon {
   max-width: 59px;
   position: absolute;
-  left: 34%;
-  top: 42%;
+  left: calc(50% - 29.5px);
+  top: calc(50% - 29.5px);
   z-index: 1;
 }
 .why-robot-cleaner__image-text {
@@ -304,7 +307,7 @@ body {
   background-color: #265FE5;
   color: #FFFFFF;
   position: absolute;
-  left: 36%;
+  left: calc(50% - 37.5px);
   bottom: 93%;
 }
 .stages__card {
@@ -1429,7 +1432,7 @@ body {
   padding: 0 15px;
 }
 
-@media screen and (max-width: 1221px) and (min-width: 425px) {
+@media screen and (min-width: 769px) and (max-width: 1221px) {
   .why-robot-cleaner {
     margin-top: 150px;
   }
@@ -1551,7 +1554,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     margin-top: 100px;
-    padding: 20px;
+    padding: 10px;
   }
   .why-robot-cleaner__title {
     font-family: "RF Dewi Extended", sans-serif;
@@ -1573,9 +1576,11 @@ body {
   .why-robot-cleaner__photo {
     width: 152px;
     margin-bottom: 0;
+    margin-right: 40px;
   }
   .why-robot-cleaner__icon {
-    top: 30%;
+    top: calc(50% - 29.5px);
+    left: 122.5px;
   }
   .why-robot-cleaner__image-text {
     width: 47%;
@@ -1622,7 +1627,7 @@ body {
     grid-area: 6/1/7/2;
   }
   .advantages__info {
-    margin: 25px auto;
+    margin: 35px auto;
   }
   .advantages__info_first {
     grid-area: 3/1/4/2;
@@ -1651,10 +1656,10 @@ body {
     left: 41%;
   }
   .advantages__number_one {
-    top: 23.5%;
+    top: 22%;
   }
   .advantages__number_two {
-    top: 53%;
+    top: 52%;
   }
   .advantages__number_three {
     top: 83.5%;
@@ -1736,4 +1741,4 @@ body {
     background-color: #265FE5;
     color: #FFFFFF;
   }
-}/*# sourceMappingURL=style.css.map */
+}

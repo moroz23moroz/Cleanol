@@ -1,5 +1,10 @@
+// @media screen and (min-width: 481px) and (max-width: 768px) {}
+// @media screen and (min-width: 320px) and (max-width: 480px) {}
+
 // tablet
-@media screen and (max-width:1221px) and (min-width:425px) {
+// @media screen and (max-width:1221px) and (min-width:425px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1221px) {
 
     // block why-robot
     .why-robot-cleaner {
@@ -42,6 +47,8 @@
         }
     }
 }
+
+
 
 @media screen and (max-width:1023px) and (min-width:425px) {
 
@@ -161,7 +168,7 @@
         box-sizing: border-box;
         width: 100%;
         margin-top: 100px;
-        padding: 20px;
+        padding: 10px;
 
         &__title {
             @include font-style ($title-font, $title-font-size-mobile, 30px);
@@ -184,10 +191,12 @@
         &__photo {
             width: 152px;
             margin-bottom: 0;
+            margin-right: 40px;
         }
 
         &__icon {
-            top: 30%;
+            top: calc(50% - 29.5px);
+            left: 122.5px;
         }
 
         &__image-text {
@@ -244,7 +253,7 @@
         }
 
         &__info {
-            margin: 25px auto;
+            margin: 35px auto;
 
             &_first {
                 grid-area: 3/1/4/2;
@@ -276,11 +285,11 @@
             left: 41%;
 
             &_one {
-                top: 23.5%;
+                top: 22%;
             }
 
             &_two {
-                top: 53%;
+                top: 52%;
             }
 
             &_three {

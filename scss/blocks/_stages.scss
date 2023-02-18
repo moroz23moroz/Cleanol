@@ -43,7 +43,7 @@
         @include font-style ($title-font, $subtitle-font-size, 25px);
         @include number-circle-icon(75px, 75px, 37.5px);
         position: absolute;
-        left: 36%;
+        left: calc(50% - 37.5px);
         bottom: 93%;
     }
 
