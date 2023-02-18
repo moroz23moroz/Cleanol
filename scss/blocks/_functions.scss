@@ -1,7 +1,7 @@
 .functions {
     max-width: 1200px;
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 165px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -69,7 +69,7 @@
 .functions__main-item,
 .functions__additional-item {
     border-radius: 14px;
-    padding-left: 65px;
+    padding-left: 75px;
     height: 57px;
     display: flex;
     align-items: center;
@@ -80,15 +80,58 @@
     position: relative;
 }
 
-.functions__main-item::after {
+.functions__first::after,
+.functions__second::after,
+.functions__third::after,
+.functions__forth::after,
+.functions__fifth::after,
+.functions__sixth::after,
+.functions__seventh::after,
+.functions__eighth::after,
+.functions__ninth::after {
     position: absolute;
     content: '';
-    background-image: url(../images/icon1.svg);
     width: 75px;
     height: 58px;
     left: -13px;
     bottom: 0;
 
+}
+
+.functions__first::after {
+    background-image: url(../images/icon1.svg);
+}
+
+.functions__second::after {
+    background-image: url(../images/icon2.svg);
+}
+
+.functions__third::after {
+    background-image: url(../images/icon3.svg);
+}
+
+.functions__forth::after {
+    background-image: url(../images/icon4.svg);
+}
+
+.functions__fifth::after {
+    background-image: url(../images/icon5.svg);
+}
+
+.functions__sixth::after {
+    background-image: url(../images/icon6.svg);
+}
+
+.functions__seventh::after {
+    background-image: url(../images/icon7.svg);
+}
+
+.functions__eighth::after {
+    background-image: url(../images/icon8.svg);
+}
+
+.functions__ninth::after {
+    background-image: url(../images/icon9.svg);
 }
 
 .functions__main-item,
@@ -116,4 +159,36 @@
     left: -13px;
     bottom: 0;
 
+}
+
+._first::after {
+    background-image: url(../images/icon10.svg);
+}
+
+._second::after {
+    background-image: url(../images/icon11.svg);
+}
+
+._third::after {
+    background-image: url(../images/icon12.svg);
+}
+
+._forth::after {
+    background-image: url(../images/icon13.svg);
+}
+
+.functions__technical {
+    padding: 35px 50px 0 50px;
+}
+
+.functions__technical-title {
+    text-align: start;
+    margin-bottom: 35px;
+}
+
+td:nth-child(2) {
+    font-family: "RF Dewi Extended";
+    font-weight: 700;
+    line-height: 47px;
+    padding-left: 48px;
 }
