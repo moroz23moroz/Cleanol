@@ -1,47 +1,6 @@
-// tablet
-@media screen and (max-width:1221px) and (min-width:425px) {
-
-    // block why-robot
-    .why-robot-cleaner {
-        margin-top: 150px;
-
-        &__container {
-            max-width: 768px;
-        }
-
-        &__title {
-            @include font-style ($title-font, $title-font-size-tablet, 42px);
-        }
-
-        &__images {
-            max-width: 100%;
-        }
-
-        &__photo {
-            max-width: 100%;
-        }
-
-        &__icon {
-            left: 37%;
-        }
-
-        &__info-group {
-            max-width: 100%;
-            margin: 20px 15px auto;
-        }
-
-        &__info {
-            a {
-                font-weight: 700;
-                display: inline-block;
-            }
-        }
-
-        &__button {
-            margin-top: 20px;
-        }
-    }
-}
+// @media screen and (min-width: 481px) and (max-width: 768px) {}
+// @media screen and (min-width: 320px) and (max-width: 480px) {}
+// @media screen and (min-width: 769px) and (max-width: 1024px){}
 
 @media screen and (max-width:1023px) and (min-width:425px) {
 
@@ -156,64 +115,6 @@
 // mobile
 @media screen and (max-width:424px) {
 
-    // block why-robot
-    .why-robot-cleaner {
-        box-sizing: border-box;
-        width: 100%;
-        margin-top: 100px;
-        padding: 20px;
-
-        &__title {
-            @include font-style ($title-font, $title-font-size-mobile, 30px);
-        }
-
-        &__images {
-            flex-direction: column;
-        }
-
-        &__image-group {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 100%;
-            margin-right: 0;
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
-        &__photo {
-            width: 152px;
-            margin-bottom: 0;
-        }
-
-        &__icon {
-            top: 30%;
-        }
-
-        &__image-text {
-            width: 47%;
-            @include font-style ($main-font, $text-font-size-mobile, 25px);
-        }
-
-        &__info-group {
-            margin: 0 auto;
-        }
-
-        &__info {
-            @include font-style ($main-font, $text-font-size-mobile, 25px);
-
-            a {
-                display: inline-block;
-            }
-        }
-
-        &__button {
-            display: block;
-            margin: 30px auto;
-            font-size: $text-font-size;
-        }
-    }
-
     // block advantages
     .advantages {
         &__container {
@@ -244,7 +145,7 @@
         }
 
         &__info {
-            margin: 25px auto;
+            margin: 35px auto;
 
             &_first {
                 grid-area: 3/1/4/2;
@@ -276,11 +177,11 @@
             left: 41%;
 
             &_one {
-                top: 23.5%;
+                top: 22%;
             }
 
             &_two {
-                top: 53%;
+                top: 52%;
             }
 
             &_three {

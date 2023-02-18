@@ -6,7 +6,7 @@
     background-color: $bg-color-light;
 
     &__container {
-        margin: auto;
+        margin: 0 auto;
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -22,7 +22,6 @@
 
     &__images {
         max-width: 653px;
-        // max-width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -35,15 +34,15 @@
     }
 
     &__photo {
-        max-width: 207px;
+        max-width: 100%;
         margin-bottom: 22px;
     }
 
     &__icon {
         max-width: 59px;
         position: absolute;
-        left: 34%;
-        top: 42%;
+        left: calc(50% - 29.5px);
+        top: calc(50% - 29.5px);
         z-index: 1;
     }
 
@@ -73,5 +72,161 @@
     &__button {
         margin-top: 49px;
         @include button-main (327px, 12px 50px, 22px);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1221px) {
+    .why-robot-cleaner {
+        &__container {
+            max-width: 768px;
+        }
+
+        &__title {
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__images {
+            max-width: 100%;
+        }
+
+        &__photo {
+            max-width: 100%;
+        }
+
+        &__info-group {
+            max-width: 100%;
+            margin: 20px 15px auto;
+        }
+
+        &__info {
+            a {
+                font-weight: 700;
+                display: inline-block;
+            }
+        }
+
+        &__button {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+// tablet
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .why-robot-cleaner {
+        &__title {
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__icon {
+            @media screen and (max-width: 671px) {
+                top: calc(42% - 29.5px);
+            }
+
+            @media screen and (max-width: 616px) {
+                top: calc(38% - 29.5px);
+            }
+
+            @media screen and (max-width: 550px) {
+                max-width: 49px;
+                left: calc(50% - 24.5px);
+                top: calc(38% - 24.5px);
+            }
+
+            @media screen and (max-width: 500px) {
+                top: calc(34% - 24.5px);
+            }
+        }
+
+        &__image-text {
+            @include font-style ($main-font, $text-font-size-mobile, 22px);
+        }
+
+        &__info-group {
+            max-width: 100%;
+            margin: 20px 15px auto;
+        }
+
+        &__info {
+            a {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width:480px) {
+    .why-robot-cleaner {
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 500px;
+        padding: 10px;
+
+        &__title {
+            @include font-style ($title-font, $title-font-size-mobile, 30px);
+        }
+
+        &__images {
+            flex-direction: column;
+        }
+
+        &__image-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        &__photo {
+            width: 152px;
+            margin-bottom: 0;
+            margin-right: 40px;
+
+            @media screen and (max-width:307px) {
+                width: 100px;
+            }
+        }
+
+        &__icon {
+            top: calc(50% - 29.5px);
+            left: 122.5px;
+
+            @media screen and (max-width:307px) {
+                left: 70.5px;
+            }
+        }
+
+        &__image-text {
+            width: 47%;
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+
+            @media screen and (max-width:315px) {
+                @include font-style ($main-font, 14px, 20px);
+            }
+        }
+
+        &__info-group {
+            margin: 0 auto;
+        }
+
+        &__info {
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+
+            a {
+                display: inline-block;
+            }
+        }
+
+        &__button {
+            display: block;
+            margin: 30px auto;
+            font-size: $text-font-size;
+        }
     }
 }
