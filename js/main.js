@@ -45,21 +45,21 @@ new Swiper('.banner-slider-container', {
 const bannerMobile = window.matchMedia('(max-width: 768px)');
 
 function changeImage(e) {
-  if (e.matches) {
-    /* the viewport is 768 pixels wide or less */
-    document.querySelector('.banner__slide_1').src = '../images/banner/tab_slide_1.png';
-    document.querySelector('.banner__slide_2').src = '../images/banner/tab_slide_2.png';
-    document.querySelector('.banner__slide_3').src = '../images/banner/tab_slide_3.png';
-    document.querySelector('.banner__nav-arrow_left').src = '../images/banner/arrow_left_white.svg';
-    document.querySelector('.banner__nav-arrow_right').src = '../images/banner/arrow_right_white.svg';
-  } else {
-    /* the viewport is more than 600 pixels wide */
-    document.querySelector('.banner__slide_1').src = '../images/banner/slider_1.png';
-    document.querySelector('.banner__slide_2').src = '../images/banner/slider_2.png';
-    document.querySelector('.banner__slide_3').src = '../images/banner/slider_3.png';
-    document.querySelector('.banner__nav-arrow_left').src = '../images/banner/banner_arrow_left.svg';
-    document.querySelector('.banner__nav-arrow_right').src = '../images/banner/banner_arrow_right.svg';
-  }
+    if (e.matches) {
+        /* the viewport is 768 pixels wide or less */
+        document.querySelector('.banner__slide_1').src = '../images/banner/tab_slide_1.png';
+        document.querySelector('.banner__slide_2').src = '../images/banner/tab_slide_2.png';
+        document.querySelector('.banner__slide_3').src = '../images/banner/tab_slide_3.png';
+        document.querySelector('.banner__nav-arrow_left').src = '../images/banner/arrow_left_white.svg';
+        document.querySelector('.banner__nav-arrow_right').src = '../images/banner/arrow_right_white.svg';
+    } else {
+        /* the viewport is more than 600 pixels wide */
+        document.querySelector('.banner__slide_1').src = '../images/banner/slider_1.png';
+        document.querySelector('.banner__slide_2').src = '../images/banner/slider_2.png';
+        document.querySelector('.banner__slide_3').src = '../images/banner/slider_3.png';
+        document.querySelector('.banner__nav-arrow_left').src = '../images/banner/banner_arrow_left.svg';
+        document.querySelector('.banner__nav-arrow_right').src = '../images/banner/banner_arrow_right.svg';
+    }
 }
 
 bannerMobile.addEventListener('change', changeImage);
@@ -97,3 +97,20 @@ const toggle = () => {
         if (lineItem.classList.contains('lines-wrapper__item_active')) lineItem.classList.remove('lines-wrapper__item_active')
     }
 }
+
+const links = document.querySelectorAll('.menu-link')
+
+links.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault()
+        const section = document.querySelector(link.getAttribute('href'))
+
+        if (section) {
+            seamless.scrollIntoView(section, {
+                behavior: "smooth",
+                block: "start",
+                inline: "center",
+            });
+        }
+    })
+})
