@@ -8,10 +8,9 @@
         max-width: 973px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 50% 34%;
+        grid-template-columns: 50% 40%;
         justify-content: space-around;
         align-items: center;
-        // 516 392
     }
 
     &__title {
@@ -45,5 +44,66 @@
         @include button-light (327px, 12px 50px, $button-font-size);
         margin: 70px 0;
         font-weight: 600;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .price {
+        max-width: 656px;
+        margin: 50px auto;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__title {
+            @include font-style ($title-font, $title-font-size-tablet, 62.5px);
+        }
+
+        &__text {
+            max-width: 80%;
+        }
+
+        &__button {
+            margin: 15px auto 47px;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .price {
+        max-width: 424px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__title {
+            margin-top: 25px;
+            @include font-style ($title-font, $title-font-size-mobile, 62.5px);
+        }
+
+        &__photo {
+            max-width: 85%;
+        }
+
+        &__text {
+            max-width: 80%;
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+
+            a {
+                display: inline-block;
+                font-size: $text-font-size-mobile;
+            }
+        }
+
+        &__button {
+            font-size: $text-font-size;
+            margin: 15px auto 47px;
+        }
     }
 }

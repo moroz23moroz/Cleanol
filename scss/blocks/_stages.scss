@@ -37,8 +37,6 @@
         width: 90%;
     }
 
-    &__cards-slide {}
-
     &__number {
         @include font-style ($title-font, $subtitle-font-size, 25px);
         @include number-circle-icon(75px, 75px, 37.5px);
@@ -87,8 +85,8 @@
             padding: 10px;
             background-color: $bg-color-white;
             border-radius: 16px;
-            font-size: 0.9em;
-            line-height: 1.3em;
+            font-size: 16px;
+            line-height: 20px;
             text-align: left;
         }
 
@@ -117,5 +115,88 @@
         @include button-main (387px, 12px 50px, $button-font-size);
         display: block;
         margin: 60px auto;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    .stages {
+        &__title {
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__number {
+            @include number-circle-icon(60px, 60px, 37.5px);
+            left: calc(50% - 30px);
+            bottom: 95%;
+        }
+
+        &__card {
+            padding-top: 50px;
+        }
+
+        &__subtitle {
+            @include font-style ($title-font, $subtitle-font-size-mobile, 27px);
+        }
+
+        &__text {
+            @include font-style ($main-font, 14px, 18px);
+
+            &_advice {
+                padding: 5px;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .stages {
+        &__title {
+            width: 80%;
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .stages {
+        &__title {
+            width: 85%;
+            @include font-style ($title-font, $title-font-size-mobile, 30px);
+        }
+
+        &__slider {
+            width: 95%;
+            padding-top: 70px;
+        }
+
+        &__subtitle {
+            @include font-style ($title-font, $subtitle-font-size-mobile, 24px);
+        }
+
+        &__text {
+            @include font-style ($main-font, $text-font-size-mobile, 19px);
+
+            a {
+                @include font-style ($title-font, $text-font-size, 24px);
+            }
+        }
+
+        &__text-apart {
+            margin: 20px auto;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__button-order {
+            @include button-main (80%, 12px 30px, $text-font-size);
+        }
     }
 }
