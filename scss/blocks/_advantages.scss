@@ -5,7 +5,6 @@
         display: grid;
         // 490 166 490
         grid-template-columns: 43% 1fr 43%;
-        // row-gap: 57px;
         align-items: center;
     }
 
@@ -77,5 +76,220 @@
         grid-area: 5/1/6/4;
         justify-self: center;
         @include button-main (384px, 12px 50px, $button-font-size);
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .advantages {
+        &__line {
+            &_middle {
+                content: url('../images/advantages/line-middle-short.svg');
+            }
+        }
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .advantages {
+        &__container {
+            grid-template-columns: 100%;
+            justify-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        &__title {
+            grid-area: 1/1/2/2;
+            max-width: 70%;
+            @include font-style ($title-font, $title-font-size-tablet, 42px);
+
+            @media screen and (max-width:662px) {
+                max-width: 100%;
+            }
+        }
+
+        &__photo {
+            &_first {
+                grid-area: 2/1/3/2;
+            }
+
+            &_second {
+                grid-area: 4/1/5/2;
+            }
+
+            &_third {
+                grid-area: 6/1/7/2;
+            }
+        }
+
+        &__info {
+            margin: 50px auto 30px;
+
+            &_first {
+                grid-area: 3/1/4/2;
+            }
+
+            &_second {
+                grid-area: 5/1/6/2;
+            }
+
+            &_third {
+                grid-area: 7/1/8/2;
+            }
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__number {
+            position: absolute;
+            left: calc(50% - 37.5px);
+
+            &_one {
+                top: 24.5%;
+
+                @media screen and (min-width:663px) and (max-width:744px) {
+                    top: 26%;
+                }
+
+                @media screen and (max-width:526px) {
+                    top: 26%;
+                }
+            }
+
+            &_two {
+                top: 54%;
+
+                @media screen and (max-width:744px) {
+                    top: 55%;
+                }
+            }
+
+            &_three {
+                top: 85%;
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .advantages {
+        &__container {
+            grid-template-columns: 100%;
+            justify-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        &__title {
+            grid-area: 1/1/2/2;
+            max-width: 100%;
+            @include font-style ($title-font, $title-font-size-mobile, 30px);
+        }
+
+        &__photo {
+            &_first {
+                grid-area: 2/1/3/2;
+            }
+
+            &_second {
+                grid-area: 4/1/5/2;
+            }
+
+            &_third {
+                grid-area: 6/1/7/2;
+            }
+        }
+
+        &__info {
+            margin: 35px auto;
+
+            &_first {
+                grid-area: 3/1/4/2;
+            }
+
+            &_second {
+                grid-area: 5/1/6/2;
+            }
+
+            &_third {
+                grid-area: 7/1/8/2;
+            }
+        }
+
+        &__subtitle {
+            @include font-style ($title-font, $subtitle-font-size-mobile, 25px);
+        }
+
+        &__text {
+            @include font-style ($main-font, $text-font-size-mobile, 25px);
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__number {
+            position: absolute;
+            left: calc(50% - 37.5px);
+
+            @media screen and (max-width:300px) {
+                display: none;
+            }
+
+            &_one {
+                top: 24%;
+
+                @media screen and (max-width:455px) {
+                    top: 22.5%;
+                }
+            }
+
+            &_two {
+                top: 53%;
+
+                @media screen and (max-width:455px) {
+                    top: 52%;
+                }
+
+                @media screen and (max-width:360px) {
+                    top: 51%;
+                }
+
+                @media screen and (max-width:342px) {
+                    top: 50%;
+                }
+            }
+
+            &_three {
+                top: 85.5%;
+
+                @media screen and (max-width:455px) {
+                    top: 83%;
+                }
+
+                @media screen and (max-width:360px) {
+                    top: 82%;
+                }
+
+                @media screen and (max-width:342px) {
+                    top: 81%;
+                }
+
+                @media screen and (max-width:312px) {
+                    top: 80%;
+                }
+            }
+        }
+
+        &__button {
+            display: none;
+        }
     }
 }
