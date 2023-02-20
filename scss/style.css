@@ -1461,7 +1461,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-right: 770px;
+  margin-right: 760px;
   margin-top: 73px;
 }
 
@@ -1469,6 +1469,11 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .swiper-pagination {
+    margin-right: 710px;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .horizontal-slider {
     display: none;
