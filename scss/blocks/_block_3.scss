@@ -87,10 +87,10 @@
         margin-top: 0;
         margin-bottom: 0;
         @include block-text (18px, 30px);
+    }
 
-        :nth-child(7) {
-            margin-bottom: 30px;
-        }
+    :nth-child(7) {
+        margin-bottom: 25px;
     }
 }
 

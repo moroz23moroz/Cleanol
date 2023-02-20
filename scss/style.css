@@ -1086,8 +1086,8 @@ body {
   font-size: 18px;
   line-height: 30px;
 }
-.info-block-list__text :nth-child(7) {
-  margin-bottom: 30px;
+.info-block-list :nth-child(7) {
+  margin-bottom: 25px;
 }
 
 .info-block-btn {
