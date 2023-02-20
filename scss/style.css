@@ -2017,6 +2017,11 @@ body {
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+  .functions {
+    margin-bottom: -450px;
+  }
+}
 
 .functions__title,
 .functions__main-title,
@@ -2091,6 +2096,10 @@ body {
   color: #fff;
 }
 
+.functions__main p,
+.functions__additional p {
+  color: #fff;
+}
 @media screen and (max-width: 1200px) {
   .functions__main p,
   .functions__additional p {
@@ -2105,6 +2114,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 590px) {
+  .functions__main,
+  .functions__additional {
+    padding: 35px 25px;
+  }
 }
 
 .functions__main {
