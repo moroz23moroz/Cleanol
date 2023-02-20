@@ -173,13 +173,20 @@ document.querySelector('#form').addEventListener('submit', function (event) {
 //popup
 const openPopupButtons = document.querySelectorAll('.popup__open');
 const closePopupButtons = document.querySelectorAll('.popup__close');
+const feedbackForm = document.getElementById('popup');
+const confirmationForm = document.getElementById('popup_2')
 
 for (let openPopupButton of openPopupButtons) {
     openPopupButton.addEventListener('click', (event) => {
+        popupOpen(feedbackForm);
         const popupName = openPopupButton.getAttribute('id').replace('#', '');
         const currentPopup = document.getElementById(popupName);
-        popupOpen(currentPopup);
-        event.preventDefault;
+
+        currentPopup.addEventListener('click', (event) => {
+            if (!event.target.closest('.popup-form')) {
+                popupClose(currentPopup);
+            }
+        })
     })
 }
 
@@ -189,36 +196,82 @@ for (let closePopupButton of closePopupButtons) {
         event.preventDefault;
     })
 }
-
-const popupOpen = (currentPopup) => {
-    if (currentPopup) {
-        const popupActive = document.querySelector('.popup.open');
-        if (popupActive) {
-            popupClose(popupActive, false);
-        }
-    }
-
-    currentPopup.classList.add('open');
-    currentPopup.addEventListener('click', (event) => {
-        if (!event.target.closest('.popup-form')) {
-            popupClose(event.target.closest('.popup'));
-        }
-    })
+const popupOpen = (popupActive) => {
+    popupActive.classList.add('open');
 }
 const popupClose = (popupActive) => {
     popupActive.classList.remove('open');
 }
 
-document.querySelector('#feedback').addEventListener('submit', (e) => {
-    e.preventDefault();
+//popup form validation
+const username = document.getElementById('name');
+const email = document.getElementById('email');
+const city = document.getElementById('city');
+const phoneNumber = document.getElementById('phone_number');
+const persDataConfirmation = document.getElementById('personal_data');
 
-    fetch('https://httpbin.org/post', {
-            method: 'POST',
-            body: new FormData(feedback)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-        })
-        .catch(err => console.log(err));
+const isChecked = () => {
+    const letters = /^[А-Яа-я]+$/;
+    const mailFormat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const phoneFormat = /(?<=^|\s|>|\;|\:|\))(?:\+|7|8|9|\()[\d\-\(\) ]{8,}\d/;
+
+    let username_result = false;
+    let email_result = false;
+    let phoneNumber_result = false;
+    let city_result = false;
+    let persDataConfirmation_result = false;
+
+    document.querySelector('.error_message').innerHTML = "";
+
+    if (username.value == '' || !username.value.match(letters)) {
+        document.querySelector('.error_message').innerHTML += "Введите имя<br>";
+    } else {
+        username_result = true;
+    }
+
+    if (email.value == '' || !email.value.match(mailFormat)) {
+        document.querySelector('.error_message').innerHTML += "Введите электронную почту<br>";
+    } else {
+        email_result = true;
+    }
+    if (city.value == '' || !city.value.match(letters)) {
+        document.querySelector('.error_message').innerHTML += "Укажите город<br>";
+    } else {
+        city_result = true;
+    }
+    if (phoneNumber.value == '' || !phoneNumber.value.match(phoneFormat)) {
+        document.querySelector('.error_message').innerHTML += "Введите номер телефона<br>";
+    } else {
+        phoneNumber_result = true;
+    }
+    if (!persDataConfirmation.checked) {
+        document.querySelector('.error_message').innerHTML += "Подтвердите свое согласие на обработку персональных данных<br>";
+    } else {
+        persDataConfirmation_result = true;
+    }
+
+    if (username_result == true && email_result == true && phoneNumber_result == true && city_result == true && persDataConfirmation_result == true) {
+        console.log('validation submit');
+        return true;
+    } else {
+        console.log('validation failed');
+        return false;
+    }
+}
+
+document.querySelector('.confirm').addEventListener('click', (e) => {
+    e.preventDefault();
+    if (isChecked() === true) {
+        fetch('https://httpbin.org/post', {
+                method: 'POST',
+                body: new FormData(feedback)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(err => console.log(err));
+        popupClose(feedbackForm);
+        popupOpen(confirmationForm);
+    }
 })
