@@ -98,19 +98,23 @@ const toggle = () => {
     }
 }
 
-const links = document.querySelectorAll('.menu-link')
+const smoothScroll = () => {
+    const links = document.querySelectorAll('.menu-link')
 
-links.forEach((link) => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault()
-        const section = document.querySelector(link.getAttribute('href'))
+    links.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault()
+            const section = document.querySelector(link.getAttribute('href'))
 
-        if (section) {
-            seamless.scrollIntoView(section, {
-                behavior: "smooth",
-                block: "start",
-                inline: "center",
-            });
-        }
+            if (section) {
+                seamless.scrollIntoView(section, {
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "center",
+                });
+            }
+        })
     })
-})
+}
+
+smoothScroll()
