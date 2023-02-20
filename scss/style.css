@@ -2343,6 +2343,10 @@ td:nth-child(2) {
   padding: 5px 0 5px 18px;
 }
 
+.error .form__main-input {
+  background-color: red;
+}
+
 .form__main-input-text {
   height: 115px;
   padding: 5px 0 35px 18px;
