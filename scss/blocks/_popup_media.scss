@@ -1,0 +1,108 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(38, 95, 229, 0.36);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s all;
+        overflow-y: hidden;
+        z-index: 5;
+
+        &-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-form {
+            position: relative;
+            max-width: 340px;
+            padding: 20px 17px 18px;
+            margin-top: 113px;
+        }
+
+        &__close {
+            position: absolute;
+            top: 100px;
+            right: 380px;
+            text-decoration: none;
+            cursor: pointer;
+
+            &_white {
+                display: block;
+            }
+
+            &_blue {
+                display: none;
+            }
+        }
+
+        &__confirm-icon {
+            max-width: 58px;
+            margin-top: 17px;
+            margin-right: auto;
+            margin-bottom: 13px;
+            margin-left: auto;
+        }
+    }
+
+    .popup-content {
+        max-width: 304px;
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__text {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            @include block-text (14px, 20px);
+
+            &_lg {
+                @include block-text (18px, 24px);
+                text-align: center;
+            }
+        }
+    }
+
+    .content-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+        margin-bottom: 6px;
+
+        &_personal {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    #personal_data {
+        margin-top: 10px;
+    }
+
+    .content-container {
+        max-width: 304px;
+
+        &_lg {
+            min-width: 304px;
+        }
+    }
+
+    .textarea {
+        max-width: 280px;
+    }
+
+    .popup-button {
+        max-width: 304px;
+        min-width: 304px;
+    }
+
+    .error_message {
+        @include block-text (12px, 14px);
+    }
+}

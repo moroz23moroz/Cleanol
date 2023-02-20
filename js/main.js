@@ -127,3 +127,56 @@ const formValidate = () => {
 }
 
 formValidate()
+
+//popup
+const openPopupButtons = document.querySelectorAll('.popup__open');
+const closePopupButtons = document.querySelectorAll('.popup__close');
+
+for (let openPopupButton of openPopupButtons) {
+    openPopupButton.addEventListener('click', (event) => {
+        const popupName = openPopupButton.getAttribute('id').replace('#', '');
+        const currentPopup = document.getElementById(popupName);
+        popupOpen(currentPopup);
+        event.preventDefault;
+    })
+}
+
+for (let closePopupButton of closePopupButtons) {
+    closePopupButton.addEventListener('click', (event) => {
+        popupClose(event.target.closest('.popup'));
+        event.preventDefault;
+    })
+}
+
+const popupOpen = (currentPopup) => {
+    if (currentPopup) {
+        const popupActive = document.querySelector('.popup.open');
+        if (popupActive) {
+            popupClose(popupActive, false);
+        }
+    }
+
+    currentPopup.classList.add('open');
+    currentPopup.addEventListener('click', (event) => {
+        if (!event.target.closest('.popup-form')) {
+            popupClose(event.target.closest('.popup'));
+        }
+    })
+}
+const popupClose = (popupActive) => {
+    popupActive.classList.remove('open');
+}
+
+document.querySelector('#feedback').addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    fetch('https://httpbin.org/post', {
+            method: 'POST',
+            body: new FormData(feedback)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(err => console.log(err));
+})
