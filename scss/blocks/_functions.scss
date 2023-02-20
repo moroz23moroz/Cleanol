@@ -1,9 +1,33 @@
-.functions {
+.container-min {
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media screen and (max-width: 1300px) {
+        max-width: 990px;
+    }
+
+    @media screen and (max-width: 990px) {
+        max-width: 590px;
+    }
+
+    @media screen and (max-width: 590px) {
+        max-width: 350px;
+        padding: 0 5px;
+    }
+}
+
+.functions {
     text-align: center;
     margin-bottom: 165px;
-    margin-right: auto;
-    margin-left: auto;
+
+    @media screen and (max-width: 1300px) {
+        margin-bottom: 315px;
+    }
+
+    @media screen and (max-width: 990px) {
+        margin-bottom: 50px;
+    }
 }
 
 .functions__title,
@@ -19,6 +43,17 @@
     margin-bottom: 70px;
     line-height: 62.5px;
     font-size: 45px;
+
+    @media screen and (max-width: 750px) {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 390px) {
+        font-size: 25px;
+        line-height: 33px;
+    }
 }
 
 .functions__title,
@@ -35,6 +70,21 @@
     grid-gap: 25px;
     color: #3A475E;
     line-height: 40px;
+
+    @media screen and (max-width: 990px) {
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    @media screen and (max-width: 590px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    @media screen and (max-width: 390px) {
+        grid-gap: 10px;
+    }
 }
 
 .functions__main-title,
@@ -48,6 +98,15 @@
     color: #fff;
 }
 
+.functions__main p,
+.functions__additional p {
+
+    @media screen and (max-width: 1200px) {
+        margin: 0
+    }
+}
+
+
 .functions__main,
 .functions__additional {
     border-radius: 50px;
@@ -60,6 +119,10 @@
 .functions__main {
     grid-row: span 2;
     background-color: #265FE5;
+
+    @media screen and (max-width: 1200px) {
+        gap: 10px;
+    }
 }
 
 .functions__main-title {
@@ -148,6 +211,10 @@
 .functions__additional-item {
     background-color: white;
     position: relative;
+
+    @media screen and (min-width: 991px) and (max-width: 1300px) {
+        font-size: 13px;
+    }
 }
 
 .functions__additional-item::after {
