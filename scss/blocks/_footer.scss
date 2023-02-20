@@ -15,7 +15,7 @@
 .form__inner {
     display: flex;
     justify-content: space-between;
-    gap: 315px;
+    gap: 200px;
 }
 
 .form__text {
@@ -127,6 +127,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.footer__menu {
+    flex: 1;
 }
 
 .footer__menu-list {

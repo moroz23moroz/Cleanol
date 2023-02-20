@@ -118,3 +118,12 @@ const smoothScroll = () => {
 }
 
 smoothScroll()
+
+const formValidate = () => {
+    const form = document.querySelector('#form')
+    form.addEventListener('submit', (event) => {
+        event.preventDefault()
+    })
+}
+
+formValidate()

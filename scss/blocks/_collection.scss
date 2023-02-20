@@ -1,7 +1,12 @@
 .container-fluid {
     max-width: 1920px;
     margin: 0 auto;
+
+    @media screen and (max-width:750px) {
+        max-width: 750px;
+    }
 }
+
 
 .collection {
     padding: 100px 0;
@@ -12,6 +17,10 @@
     display: grid;
     /* -ms-grid-columns: (1fr)[3]; */
     grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width:750px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .collection__image {
