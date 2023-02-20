@@ -8,7 +8,7 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.5s all;
-    overflow-y: hidden;
+    overflow-y: auto;
     z-index: 5;
 
     &-body {
@@ -131,6 +131,7 @@
 
 .textarea {
     max-width: 400px;
+    resize: vertical;
     border: none;
 }
 
