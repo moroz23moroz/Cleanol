@@ -1,4 +1,4 @@
-.banner {
+.banner-desktop {
     position: relative;
     display: flex;
     align-items: center;
@@ -37,3 +37,6 @@
     margin-right: auto;
 }
 
+.banner-mobile {
+    display: none;
+}

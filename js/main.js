@@ -42,27 +42,27 @@ new Swiper('.banner-slider-container', {
     spaceBetween: 10,
 })
 
-const bannerMobile = window.matchMedia('(max-width: 768px)');
+// const bannerMobile = window.matchMedia('(max-width: 768px)');
 
-function changeImage(e) {
-    if (e.matches) {
-        /* the viewport is 768 pixels wide or less */
-        document.querySelector('.banner__slide_1').src = './images/banner/tab_slide_1.png';
-        document.querySelector('.banner__slide_2').src = './images/banner/tab_slide_2.png';
-        document.querySelector('.banner__slide_3').src = './images/banner/tab_slide_3.png';
-        document.querySelector('.banner__nav-arrow_left').src = './images/banner/arrow_left_white.svg';
-        document.querySelector('.banner__nav-arrow_right').src = './images/banner/arrow_right_white.svg';
-    } else {
-        /* the viewport is more than 600 pixels wide */
-        document.querySelector('.banner__slide_1').src = './images/banner/slider_1.png';
-        document.querySelector('.banner__slide_2').src = './images/banner/slider_2.png';
-        document.querySelector('.banner__slide_3').src = './images/banner/slider_3.png';
-        document.querySelector('.banner__nav-arrow_left').src = './images/banner/banner_arrow_left.svg';
-        document.querySelector('.banner__nav-arrow_right').src = './images/banner/banner_arrow_right.svg';
-    }
-}
+// function changeImage(e) {
+//     if (e.matches) {
+//         /* the viewport is 768 pixels wide or less */
+//         document.querySelector('.banner__slide_1').src = './images/banner/tab_slide_1.png';
+//         document.querySelector('.banner__slide_2').src = './images/banner/tab_slide_2.png';
+//         document.querySelector('.banner__slide_3').src = './images/banner/tab_slide_3.png';
+//         document.querySelector('.banner__nav-arrow_left').src = './images/banner/arrow_left_white.svg';
+//         document.querySelector('.banner__nav-arrow_right').src = './images/banner/arrow_right_white.svg';
+//     } else {
+//         /* the viewport is more than 600 pixels wide */
+//         document.querySelector('.banner__slide_1').src = './images/banner/slider_1.png';
+//         document.querySelector('.banner__slide_2').src = './images/banner/slider_2.png';
+//         document.querySelector('.banner__slide_3').src = './images/banner/slider_3.png';
+//         document.querySelector('.banner__nav-arrow_left').src = './images/banner/banner_arrow_left.svg';
+//         document.querySelector('.banner__nav-arrow_right').src = './images/banner/banner_arrow_right.svg';
+//     }
+// }
 
-bannerMobile.addEventListener('change', changeImage);
+// bannerMobile.addEventListener('change', changeImage);
 
 //vertical slider
 const verticalSlider = new Swiper(".vertical-slider", {
