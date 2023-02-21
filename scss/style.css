@@ -2563,6 +2563,7 @@ td:nth-child(2) {
   padding: 10px 35px 10px 10px;
   border-radius: 8px;
   border-color: transparent;
+  background-color: #fff;
   color: #265FE5;
   font-size: 22px;
   font-weight: 600;
