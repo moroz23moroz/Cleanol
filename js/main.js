@@ -40,15 +40,6 @@ new Swiper('.banner-slider-container', {
         prevEl: '.banner__nav-arrow_left'
     },
     spaceBetween: 10,
-    //for IOS
-    IOSEdgeSwipeDetection: true,
-    onTouchStart: function()
-    {
-        return false;
-    },
-    scrollbarDraggable: true,
-    scrollbar: '.swiper-scrollbar',
-    scrollbarHide: true
 })
 
 // const bannerMobile = window.matchMedia('(max-width: 768px)');
