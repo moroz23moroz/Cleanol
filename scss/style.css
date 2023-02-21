@@ -1262,6 +1262,17 @@ body {
     min-width: 180px;
   }
 }
+@media screen and (min-width: 319px) {
+  .info-block__img {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
+  }
+  .info-block-btn {
+    font-size: 16px;
+  }
+}
 .info-block_sm {
   display: flex;
   align-items: center;
@@ -1570,7 +1581,6 @@ body {
     top: 650px;
     left: 50px;
     z-index: 2;
-    margin-left: 0;
   }
   .image-bg {
     position: absolute;
@@ -1615,6 +1625,14 @@ body {
   }
   .info-block-btn_centered {
     align-self: center;
+  }
+}
+@media screen and (min-width: 319px) {
+  .image-bg {
+    left: 40px;
+  }
+  .info-block__img_absolute {
+    left: 8px;
   }
 }
 #block_5 {

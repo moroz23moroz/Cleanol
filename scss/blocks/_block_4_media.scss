@@ -113,7 +113,6 @@
         top: 650px;
         left: 50px;
         z-index: 2;
-        margin-left: 0;
     }
 
     .image-bg {
@@ -168,5 +167,15 @@
 
     .info-block-btn_centered {
         align-self: center;
+    }
+}
+
+@media screen and (min-width: 319px) {
+    .image-bg {
+        left: 40px;
+    }
+
+    .info-block__img_absolute {
+        left: 8px;
     }
 }
