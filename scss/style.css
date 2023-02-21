@@ -2493,7 +2493,7 @@ td:nth-child(2) {
 }
 
 .error .form__main-input {
-  background-color: red;
+  border-color: red;
 }
 
 .form__main-input-text {
