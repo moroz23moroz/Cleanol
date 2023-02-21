@@ -2,6 +2,14 @@
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media screen and (max-width: 910px) {
+        max-width: 700px;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: 500px;
+    }
 }
 
 .form {
@@ -72,7 +80,7 @@
 }
 
 .error .form__main-input {
-    border-color: red;
+    background-color: red;
 }
 
 .form__main-input-text {
@@ -118,6 +126,18 @@
     z-index: 4;
     background-color: #3a475e;
     border-radius: 50px 50px 0px 0px;
+
+    @media screen and (max-width: 910px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width: 700px) {
+        text-align: center;
+        height: 660px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
 }
 
 .footer__inner {
@@ -125,16 +145,45 @@
     justify-content: space-between;
     gap: 65px;
     margin-top: 75px;
+
+    @media screen and (max-width: 910px) {
+        margin-top: 30px;
+        height: 315px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: end;
+
+    }
+
+    @media screen and (max-width: 700px) {
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 }
 
 .footer__logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 910px) {
+        width: 232px;
+    }
+}
+
+.footer__copy {
+    display: none;
+
+    @media screen and (max-width: 910px) {
+        display: inline-block;
+    }
 }
 
 .footer__menu {
     flex: 1;
+
+    @media screen and (max-width: 910px) {}
 }
 
 .footer__menu-list {
@@ -143,6 +192,16 @@
     flex-wrap: wrap;
     height: 100px;
     margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: 1055px) {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    @media screen and (max-width: 700px) {
+        gap: 5px;
+    }
 }
 
 .footer__menu-item {
@@ -151,6 +210,10 @@
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1.5;
+
+    @media screen and (max-width: 700px) {
+        padding-right: 0;
+    }
 }
 
 .footer__contacts {
@@ -158,6 +221,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (max-width: 910px) {
+        justify-content: flex-end;
+    }
+
+    @media screen and (max-width: 700px) {
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+    }
 }
 
 .footer__row {
@@ -166,10 +239,18 @@
     gap: 5px;
 }
 
-.footer__contacts p,
+.footer__contacts p {
+    display: block;
+    margin: 0;
+}
+
 .footer__logo p {
     display: block;
     margin: 0;
+
+    @media screen and (max-width: 910px) {
+        display: none;
+    }
 }
 
 .footer__phone {
