@@ -175,6 +175,7 @@ const openPopupButtons = document.querySelectorAll('.popup__open');
 const closePopupButtons = document.querySelectorAll('.popup__close');
 const feedbackForm = document.getElementById('popup');
 const confirmationForm = document.getElementById('popup_2')
+const form = document.getElementById('feedback');
 
 for (let openPopupButton of openPopupButtons) {
     openPopupButton.addEventListener('click', (event) => {
@@ -271,6 +272,7 @@ document.querySelector('.confirm').addEventListener('click', (e) => {
                 console.log(data);
             })
             .catch(err => console.log(err));
+        form.reset();
         popupClose(feedbackForm);
         popupOpen(confirmationForm);
     }
