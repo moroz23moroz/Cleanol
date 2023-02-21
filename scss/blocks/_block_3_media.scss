@@ -160,7 +160,7 @@
     }
 }
 
-@media screen and (min-width: 319px) {
+@media screen and (max-width: 319px) {
     .info-block__img {
         max-width: 300px;
         margin-right: auto;

@@ -1262,7 +1262,7 @@ body {
     min-width: 180px;
   }
 }
-@media screen and (min-width: 319px) {
+@media screen and (max-width: 319px) {
   .info-block__img {
     max-width: 300px;
     margin-right: auto;
@@ -1627,7 +1627,7 @@ body {
     align-self: center;
   }
 }
-@media screen and (min-width: 319px) {
+@media screen and (max-width: 319px) {
   .image-bg {
     left: 40px;
   }
@@ -1762,8 +1762,10 @@ body {
 
 .content-container {
   box-sizing: border-box;
-  max-width: 200px;
-  max-height: 48px;
+  min-width: 200px;
+  min-height: 48px;
+  padding: 0;
+  margin: 0;
   border: 1px solid #9ba8c8;
   border-radius: 4px;
 }
@@ -1788,7 +1790,9 @@ body {
 }
 
 .textarea {
-  max-width: 400px;
+  min-width: 395px;
+  min-height: 90px;
+  padding: 5px;
   resize: vertical;
   border: none;
 }

@@ -103,14 +103,15 @@
 
 .content-container {
     box-sizing: border-box;
-    max-width: 200px;
-    max-height: 48px;
+    min-width: 200px;
+    min-height: 48px;
+    padding: 0;
+    margin: 0;
     border: 1px solid #9ba8c8;
     border-radius: 4px;
 
     &_lg {
         min-width: 407px;
-        // min-width: 407px;
         min-height: 91px;
         max-height: fit-content;
     }
@@ -130,7 +131,9 @@
 }
 
 .textarea {
-    max-width: 400px;
+    min-width: 395px;
+    min-height: 90px;
+    padding: 5px;
     resize: vertical;
     border: none;
 }
@@ -156,5 +159,3 @@
     @include block-text (14px, 16px);
     color: red;
 }
-
-
