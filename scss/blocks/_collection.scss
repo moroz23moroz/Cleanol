@@ -10,6 +10,10 @@
 
 .collection {
     padding: 100px 0;
+
+    @media screen and (max-width: 750px) {
+        padding: 0 0 45px 0;
+    }
 }
 
 .collection__inner {

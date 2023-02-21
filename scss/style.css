@@ -2054,6 +2054,11 @@ body {
 .collection {
   padding: 100px 0;
 }
+@media screen and (max-width: 750px) {
+  .collection {
+    padding: 0 0 45px 0;
+  }
+}
 
 .collection__inner {
   display: grid;
@@ -2163,12 +2168,6 @@ body {
     grid-template-rows: repeat(1, 1fr);
   }
 }
-@media screen and (max-width: 590px) {
-  .functions__inner {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
 @media screen and (max-width: 390px) {
   .functions__inner {
     grid-gap: 10px;
@@ -2202,6 +2201,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 590px) {
+  .functions__main,
+  .functions__additional {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 .functions__main-subtitle,
 .functions__additional-subtitle {
@@ -2351,11 +2357,23 @@ body {
   margin-bottom: 35px;
 }
 
+@media screen and (max-width: 490px) {
+  .functions__technical-table {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
 td:nth-child(2) {
   font-family: "RF Dewi Extended";
   font-weight: 700;
   line-height: 47px;
   padding-left: 48px;
+}
+@media screen and (max-width: 490px) {
+  td:nth-child(2) {
+    padding-left: 20px;
+  }
 }
 
 .container__low {
