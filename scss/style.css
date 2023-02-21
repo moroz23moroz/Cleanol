@@ -1276,7 +1276,7 @@ body {
     min-width: 180px;
   }
 }
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 320px) {
   .info-block__img {
     max-width: 300px;
     margin-right: auto;
@@ -1641,12 +1641,12 @@ body {
     align-self: center;
   }
 }
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 320px) {
   .image-bg {
     left: 40px;
   }
   .info-block__img_absolute {
-    left: 8px;
+    left: 10px;
   }
 }
 #block_5 {
@@ -1859,8 +1859,8 @@ body {
   }
   .popup__close {
     position: absolute;
-    top: 100px;
-    right: 380px;
+    top: 30px;
+    right: 10px;
     text-decoration: none;
     cursor: pointer;
   }
@@ -1915,6 +1915,7 @@ body {
   }
   .textarea {
     max-width: 280px;
+    min-width: 280px;
   }
   .popup-button {
     max-width: 304px;
@@ -2576,6 +2577,7 @@ td:nth-child(2) {
   padding: 10px 35px 10px 10px;
   border-radius: 8px;
   border-color: transparent;
+  background-color: #fff;
   color: #265FE5;
   font-size: 22px;
   font-weight: 600;
