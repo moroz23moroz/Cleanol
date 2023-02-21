@@ -1464,7 +1464,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-right: 760px;
+  margin-right: 50%;
   margin-top: 73px;
 }
 
@@ -1474,7 +1474,7 @@ body {
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .swiper-pagination {
-    margin-right: 710px;
+    margin-right: 50%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1494,7 +1494,7 @@ body {
     margin-bottom: 20px;
   }
   .swiper-pagination {
-    margin-right: 470px;
+    margin-right: 50%;
     margin-top: 60px;
   }
 }
