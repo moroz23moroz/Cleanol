@@ -1807,7 +1807,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: 0.5s all;
-    overflow-y: hidden;
+    overflow-y: auto;
     z-index: 5;
   }
   .popup-body {
@@ -1819,7 +1819,7 @@ body {
     position: relative;
     max-width: 340px;
     padding: 20px 17px 18px;
-    margin-top: 113px;
+    margin-top: 50px;
   }
   .popup__close {
     position: absolute;
@@ -2164,13 +2164,11 @@ body {
   color: #fff;
 }
 
-.functions__main p,
-.functions__additional p {
+.functions__main p {
   color: #fff;
 }
 @media screen and (max-width: 1200px) {
-  .functions__main p,
-  .functions__additional p {
+  .functions__main p {
     margin: 0;
   }
 }
@@ -2182,6 +2180,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.functions__main-subtitle,
+.functions__additional-subtitle {
+  color: #3A475E;
 }
 @media screen and (max-width: 590px) {
   .functions__main,

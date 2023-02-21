@@ -9,7 +9,7 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.5s all;
-        overflow-y: hidden;
+        overflow-y: auto;
         z-index: 5;
 
         &-body {
@@ -22,7 +22,7 @@
             position: relative;
             max-width: 340px;
             padding: 20px 17px 18px;
-            margin-top: 113px;
+            margin-top: 50px;
         }
 
         &__close {
