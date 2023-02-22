@@ -1,6 +1,14 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .banner-desktop {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         max-width: 1000px;
+        min-width: 0;
+        margin-right: auto;
+        margin-left: auto;
+
 
         &__nav-arrow_left {
             max-width: 45px;
@@ -29,6 +37,7 @@
         align-items: center;
         justify-content: center;
         max-width: 720px;
+        min-width: 0;
         margin-right: auto;
         margin-left: auto;
     }
