@@ -110,19 +110,22 @@
         &__photo {
             &_first {
                 grid-area: 2/1/3/2;
+                content: url('../../images/advantages/control-tablet.png');
             }
 
             &_second {
                 grid-area: 4/1/5/2;
+                content: url('../../images/advantages/car-wash-tablet.png');
             }
 
             &_third {
                 grid-area: 6/1/7/2;
+                content: url('../../images/advantages/car-blue-tablet.png');
             }
         }
 
         &__info {
-            margin: 50px auto 30px;
+            margin: 0 auto;
 
             &_first {
                 grid-area: 3/1/4/2;
@@ -142,32 +145,7 @@
         }
 
         &__number {
-            position: absolute;
-            left: calc(50% - 37.5px);
-
-            &_one {
-                top: 24.5%;
-
-                @media screen and (min-width:663px) and (max-width:744px) {
-                    top: 26%;
-                }
-
-                @media screen and (max-width:526px) {
-                    top: 26%;
-                }
-            }
-
-            &_two {
-                top: 54%;
-
-                @media screen and (max-width:744px) {
-                    top: 55%;
-                }
-            }
-
-            &_three {
-                top: 85%;
-            }
+            display: none;
         }
 
         &__button {
@@ -196,19 +174,22 @@
         &__photo {
             &_first {
                 grid-area: 2/1/3/2;
+                content: url('../../images/advantages/control-mobile.png');
             }
 
             &_second {
                 grid-area: 4/1/5/2;
+                content: url('../../images/advantages/car-wash-mobile.png');
             }
 
             &_third {
                 grid-area: 6/1/7/2;
+                content: url('../../images/advantages/car-blue-mobile.png');
             }
         }
 
         &__info {
-            margin: 35px auto;
+            margin: 0 auto;
 
             &_first {
                 grid-area: 3/1/4/2;
@@ -236,56 +217,7 @@
         }
 
         &__number {
-            position: absolute;
-            left: calc(50% - 37.5px);
-
-            @media screen and (max-width:300px) {
-                display: none;
-            }
-
-            &_one {
-                top: 24%;
-
-                @media screen and (max-width:455px) {
-                    top: 22.5%;
-                }
-            }
-
-            &_two {
-                top: 53%;
-
-                @media screen and (max-width:455px) {
-                    top: 52%;
-                }
-
-                @media screen and (max-width:360px) {
-                    top: 51%;
-                }
-
-                @media screen and (max-width:342px) {
-                    top: 50%;
-                }
-            }
-
-            &_three {
-                top: 85.5%;
-
-                @media screen and (max-width:455px) {
-                    top: 83%;
-                }
-
-                @media screen and (max-width:360px) {
-                    top: 82%;
-                }
-
-                @media screen and (max-width:342px) {
-                    top: 81%;
-                }
-
-                @media screen and (max-width:312px) {
-                    top: 80%;
-                }
-            }
+            display: none;
         }
 
         &__button {
