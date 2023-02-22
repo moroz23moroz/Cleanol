@@ -34,13 +34,13 @@ new Swiper('.stages__slider', {
 // // Конец Блок 8 этапов строительства
 
 //banner slider
-new Swiper('.banner-slider-container', {
-    navigation: {
-        nextEl: '.banner__nav-arrow_right',
-        prevEl: '.banner__nav-arrow_left'
-    },
-    spaceBetween: 10,
-})
+// new Swiper('.banner-slider-container', {
+//     navigation: {
+//         nextEl: '.banner__nav-arrow_right',
+//         prevEl: '.banner__nav-arrow_left'
+//     },
+//     spaceBetween: 10,
+// })
 
 // const bannerMobile = window.matchMedia('(max-width: 768px)');
 
