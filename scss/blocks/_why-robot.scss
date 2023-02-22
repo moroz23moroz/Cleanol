@@ -188,6 +188,18 @@
             margin-bottom: 0;
             margin-right: 40px;
 
+            &_first {
+                content: url('../../images/why-robot/parking-lot-mobile.png');
+            }
+
+            &_second {
+                content: url('../../images/why-robot/land-mobile.png');
+            }
+
+            &_third {
+                content: url('../../images/why-robot/money-mobile.png');
+            }
+
             @media screen and (max-width:307px) {
                 width: 100px;
             }

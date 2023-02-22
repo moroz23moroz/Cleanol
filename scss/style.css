@@ -214,6 +214,15 @@ body {
     margin-bottom: 0;
     margin-right: 40px;
   }
+  .why-robot-cleaner__photo_first {
+    content: url("../../images/why-robot/parking-lot-mobile.png");
+  }
+  .why-robot-cleaner__photo_second {
+    content: url("../../images/why-robot/land-mobile.png");
+  }
+  .why-robot-cleaner__photo_third {
+    content: url("../../images/why-robot/money-mobile.png");
+  }
 }
 @media screen and (max-width: 480px) and (max-width: 307px) {
   .why-robot-cleaner__photo {
