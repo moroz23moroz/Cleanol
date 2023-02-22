@@ -27,6 +27,7 @@ body {
 
 .wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .why-robot-cleaner {
@@ -1938,7 +1939,7 @@ body {
 }
 @media screen and (max-width: 920px) {
   .header {
-    margin-bottom: -15px;
+    margin-bottom: -3px;
   }
 }
 
@@ -1985,6 +1986,11 @@ body {
     display: block;
     width: 48px;
     height: 29px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__burger img {
+    margin-right: -30px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -2056,6 +2062,7 @@ body {
 }
 
 .adaptive-menu {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -2067,10 +2074,22 @@ body {
   font-size: 20px;
   font-weight: 600;
   z-index: 4;
+  transition: transform 0.5s;
+}
+@media screen and (max-width: 920px) {
+  .adaptive-menu {
+    display: block;
+  }
 }
 @media screen and (max-width: 510px) {
   .adaptive-menu {
-    height: 525px;
+    height: 555px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .adaptive-menu.menu--close {
+    transform: translateX(1000%);
   }
 }
 
@@ -2109,6 +2128,7 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
+  transition: transform 0.5s;
 }
 
 .adaptive-menu__description {

@@ -118,66 +118,9 @@
                                 sales@aqts.by
                             </a>
                         </div>
-                        <a class="header__burger" href="#">
+                        <a class="header__burger" href="#" id="open">
                             <img src="./images/burger.png" alt="menu">
                         </a>
-                        <div class="adaptive-menu">
-                            <div class="container-adapt">
-                                <div class="adaptive__row">
-                                    <a class="logo" href="#">
-                                        <img src="./images/logo-adaptive.png" alt="logo">
-                                    </a>
-                                    <button class="adaptive-menu__close">
-                                        <img src="./images/close.svg" alt="close">
-                                    </button>
-                                </div>
-                                <p class="adaptive-menu__description">
-                                    Продажа и установка роботизированных моек в каждом городе Беларуси
-                                </p>
-                                <div class="adaptive__column">
-                                    <nav class="menu__adaptive">
-                                        <ul class="menu__list">
-                                            <li class="menu__item">
-                                                <a href="#banner" class="menu__link menu-link">
-                                                    Описание
-                                                </a>
-                                            </li>
-                                            <li class="menu__item">
-                                                <a href="#qualities" class="menu__link menu-link">
-                                                    Характеристики
-                                                </a>
-                                            </li>
-                                            <li class="menu__item">
-                                                <a href="#functions" class="menu__link menu-link">
-                                                    Техническое оснащение
-                                                </a>
-                                            </li>
-                                            <li class="menu__item">
-                                                <a href="#advantages" class="menu__link menu-link">
-                                                    Преимущества
-                                                </a>
-                                            </li>
-                                            <li class="menu__item">
-                                                <a href="#stages" class="menu__link menu-link">
-                                                    Этапы работы
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <div class="menu__contacts">
-                                        <a class="phone" href="#">
-                                            +375 29 365-80-70
-                                        </a>
-                                        <a class="email" href="#">
-                                            info@aqts.by
-                                        </a>
-                                        <a class="email" href="#">
-                                            sales@aqts.by
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="header-low">
@@ -210,6 +153,63 @@
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div class="adaptive-menu menu--close">
+                    <div class="container-adapt">
+                        <div class="adaptive__row">
+                            <a class="logo" href="#">
+                                <img src="./images/logo-adaptive.png" alt="logo">
+                            </a>
+                            <button class="adaptive-menu__close" id="close">
+                                <img src="./images/close.svg" alt="close">
+                            </button>
+                        </div>
+                        <p class="adaptive-menu__description">
+                            Продажа и установка роботизированных моек в каждом городе Беларуси
+                        </p>
+                        <div class="adaptive__column">
+                            <nav class="menu__adaptive">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="#banner" class="menu__link menu-link" id="close2">
+                                            Описание
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#qualities" class="menu__link menu-link">
+                                            Характеристики
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#functions" class="menu__link menu-link">
+                                            Техническое оснащение
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#advantages" class="menu__link menu-link">
+                                            Преимущества
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#stages" class="menu__link menu-link">
+                                            Этапы работы
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="menu__contacts">
+                                <a class="phone" href="#">
+                                    +375 29 365-80-70
+                                </a>
+                                <a class="email" href="#">
+                                    info@aqts.by
+                                </a>
+                                <a class="email" href="#">
+                                    sales@aqts.by
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -1218,7 +1218,7 @@
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

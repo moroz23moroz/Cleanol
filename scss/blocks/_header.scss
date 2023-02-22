@@ -10,7 +10,7 @@
   color: #3a475e;
 
   @media screen and (max-width: 920px) {
-    margin-bottom: -15px;
+    margin-bottom: -3px;
   }
 }
 
@@ -53,6 +53,10 @@
     display: block;
     width: 48px;
     height: 29px;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-right: -30px;
   }
 
   @media screen and (max-width: 390px) {
@@ -119,6 +123,7 @@
 }
 
 .adaptive-menu {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -130,9 +135,20 @@
   font-size: 20px;
   font-weight: 600;
   z-index: 4;
+  transition: transform .5s;
+
+  @media screen and (max-width: 920px) {
+    display: block;
+  }
 
   @media screen and (max-width: 510px) {
-    height: 525px;
+    height: 555px;
+  }
+}
+
+.adaptive-menu.menu--close {
+  @media screen and (max-width: 920px) {
+    transform: translateX(1000%);
   }
 }
 
@@ -168,6 +184,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  transition: transform .5s;
 }
 
 .adaptive-menu__description {
