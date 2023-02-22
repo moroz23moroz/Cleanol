@@ -188,14 +188,29 @@ for (let openPopupButton of openPopupButtons) {
                 popupClose(currentPopup);
             }
         })
-    })
+    });
+    // openPopupButton.addEventListener('touchend', (event) => {
+    //     popupOpen(feedbackForm);
+    //     const popupName = openPopupButton.getAttribute('id').replace('#', '');
+    //     const currentPopup = document.getElementById(popupName);
+
+    //     currentPopup.addEventListener('touchend', (event) => {
+    //         if (!event.target.closest('.popup-form')) {
+    //             popupClose(currentPopup);
+    //         }
+    //     })
+    // })
 }
 
 for (let closePopupButton of closePopupButtons) {
     closePopupButton.addEventListener('click', (event) => {
         popupClose(event.target.closest('.popup'));
         event.preventDefault;
-    })
+    });
+    // closePopupButton.addEventListener('touchend', (event) => {
+    //     popupClose(event.target.closest('.popup'));
+    //     event.preventDefault;
+    // })
 }
 const popupOpen = (popupActive) => {
     popupActive.classList.add('open');
@@ -261,6 +276,24 @@ const isChecked = () => {
 }
 
 document.querySelector('.confirm').addEventListener('click', (e) => {
+    e.preventDefault();
+    if (isChecked() === true) {
+        fetch('https://httpbin.org/post', {
+                method: 'POST',
+                body: new FormData(feedback)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(err => console.log(err));
+        form.reset();
+        popupClose(feedbackForm);
+        popupOpen(confirmationForm);
+    }
+})
+
+document.querySelector('.confirm').addEventListener('touchend', (e) => {
     e.preventDefault();
     if (isChecked() === true) {
         fetch('https://httpbin.org/post', {
