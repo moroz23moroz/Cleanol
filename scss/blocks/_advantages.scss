@@ -3,7 +3,6 @@
         max-width: 1146px;
         margin: 100px auto 0;
         display: grid;
-        // 490 166 490
         grid-template-columns: 43% 1fr 43%;
         align-items: center;
     }
@@ -185,6 +184,7 @@
             justify-items: center;
             text-align: center;
             position: relative;
+            margin: 20px auto 0;
         }
 
         &__title {

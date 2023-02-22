@@ -105,7 +105,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
@@ -349,7 +349,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
@@ -455,6 +455,7 @@ body {
     justify-items: center;
     text-align: center;
     position: relative;
+    margin: 20px auto 0;
   }
   .advantages__title {
     grid-area: 1/1/2/2;
@@ -617,7 +618,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #FFFFFF;
   color: #265FE5;
@@ -628,12 +629,12 @@ body {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .price {
     max-width: 656px;
-    margin: 50px auto;
   }
   .price__container {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0 auto;
   }
   .price__title {
     font-family: "RF Dewi Extended", sans-serif;
@@ -650,6 +651,7 @@ body {
 @media screen and (max-width: 480px) {
   .price {
     max-width: 424px;
+    margin: 0 auto;
   }
   .price__container {
     display: flex;
@@ -801,7 +803,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
@@ -896,7 +898,7 @@ body {
     border-radius: 8px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     background-color: #265FE5;
     color: #FFFFFF;
@@ -2874,4 +2876,4 @@ td:nth-child(2) {
 
 .footer__email {
   width: 100px;
-}/*# sourceMappingURL=style.css.map */
+}
