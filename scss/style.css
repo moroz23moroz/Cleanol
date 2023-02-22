@@ -2055,6 +2055,107 @@ body {
   }
 }
 
+.adaptive-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 460px;
+  padding-top: 20px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 4;
+}
+@media screen and (max-width: 510px) {
+  .adaptive-menu {
+    height: 525px;
+  }
+}
+
+.container-adapt {
+  max-width: 620px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 650px) {
+  .container-adapt {
+    max-width: 510px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .container-adapt {
+    max-width: 320px;
+  }
+}
+
+.adaptive__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 154px;
+}
+@media screen and (max-width: 510px) {
+  .logo {
+    width: 124px;
+  }
+}
+
+.adaptive-menu__close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.adaptive-menu__description {
+  line-height: 25px;
+  color: #265FE5;
+  width: 405px;
+}
+@media screen and (max-width: 510px) {
+  .adaptive-menu__description {
+    width: 290px;
+  }
+}
+
+.adaptive__column {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 510px) {
+  .adaptive__column {
+    flex-direction: column;
+  }
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 16px;
+  padding: 0;
+}
+
+.menu__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 30px;
+}
+
+.phone {
+  font-family: "RF Dewi Extended";
+  color: #265FE5;
+}
+
+.email {
+  color: #222021;
+}
+
 .container-fluid {
   max-width: 1920px;
   margin: 0 auto;
