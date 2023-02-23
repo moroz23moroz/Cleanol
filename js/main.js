@@ -315,7 +315,7 @@ const isChecked = () => {
 
 const sendData=()=>{
     if (isChecked() === true) {
-        fetch('https://httpbin.org/post', {
+        fetch('sendmail.php', {
                 method: 'POST',
                 body: new FormData(feedback)
             })
