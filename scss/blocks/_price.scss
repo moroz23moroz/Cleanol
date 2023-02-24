@@ -5,7 +5,7 @@
     background-color: $bg-color-main;
 
     @media screen and (max-width: 770px) {
-        margin: 0;
+        margin: 40px auto;
     }
 
     &__container {

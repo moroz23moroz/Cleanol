@@ -580,7 +580,7 @@ body {
 }
 @media screen and (max-width: 770px) {
   .price {
-    margin: 0;
+    margin: 40px auto;
   }
 }
 .price__container {
