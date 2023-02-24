@@ -96,8 +96,8 @@
         <!-- popup -->
 
         <!-- header -->
-        <header class="header">
-            <div class="container">
+        <header class="header" id="open">
+            <div class="header__container" id="close">
                 <div class="header-high">
                     <div class="header__inner">
                         <div class="header__main">
@@ -119,8 +119,8 @@
                                 sales@aqts.by
                             </a>
                         </div>
-                        <a class="header__burger" href="#" id="open">
-                            <img src="./images/burger.png" alt="menu">
+                        <a class="header__burger" href="#open">
+                            <img src="./images/burger.png" alt="menu" onclick="">
                         </a>
                     </div>
                 </div>
@@ -155,15 +155,15 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="adaptive-menu menu--close">
+                <div class="adaptive-menu" id="adaptive">
                     <div class="container-adapt">
                         <div class="adaptive__row">
-                            <a class="logo" href="#">
+                            <a class="logo" href="#" onclick="">
                                 <img src="./images/logo-adaptive.png" alt="logo">
                             </a>
-                            <button class="adaptive-menu__close" id="close">
-                                <img src="./images/close.svg" alt="close">
-                            </button>
+                            <a class="adaptive-menu__close" href="#close">
+                                <img src="./images/close.svg">
+                            </a>
                         </div>
                         <p class="adaptive-menu__description">
                             Продажа и установка роботизированных моек в каждом городе Беларуси
@@ -1124,12 +1124,12 @@
                         </div>
                         <form class="form__main" id="form">
                             <div class="form__row">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Имя">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Телефон">
+                                <input class="form__main-input" type="text" placeholder="Имя" required>
+                                <input class="form__main-input" type="text" placeholder="Телефон" required>
                             </div>
                             <div class="form__row">
-                                <input data-required="true" class="form__main-input" type="email" placeholder="e-mail">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Город">
+                                <input class="form__main-input" type="email" placeholder="e-mail" required>
+                                <input class="form__main-input" type="text" placeholder="Город" required>
                             </div>
                             <textarea class="form__main-input-text" placeholder="Сообщение"></textarea>
                             <div class="btn-row">

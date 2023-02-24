@@ -120,26 +120,26 @@ const smoothScroll = () => {
 smoothScroll()
 
 
-document.addEventListener(("DOMContentLoaded"),
-    function () {
-        document.querySelector('#open').addEventListener('click', function () {
-            document.querySelector('.adaptive-menu').classList.toggle('menu--close')
-        })
-    })
+// document.addEventListener(("DOMContentLoaded"),
+//     function () {
+//         document.querySelector('#open').addEventListener('click', function () {
+//             document.querySelector('.adaptive-menu').classList.toggle('menu--close')
+//         })
+//     })
 
-document.addEventListener(("DOMContentLoaded"),
-    function () {
-        document.querySelector('#close').addEventListener("click", function () {
-            document.querySelector('.adaptive-menu').classList.toggle("menu--close")
-        })
-    })
+// document.addEventListener(("DOMContentLoaded"),
+//     function () {
+//         document.querySelector('#close').addEventListener("click", function () {
+//             document.querySelector('.adaptive-menu').classList.toggle("menu--close")
+//         })
+//     })
 
-document.addEventListener(("DOMContentLoaded"),
-    function () {
-        document.querySelector('#close2').addEventListener("click", function () {
-            document.querySelector('.adaptive-menu').classList.toggle("menu--close")
-        })
-    })
+// document.addEventListener(("DOMContentLoaded"),
+//     function () {
+//         document.querySelector('#close2').addEventListener("click", function () {
+//             document.querySelector('.adaptive-menu').classList.toggle("menu--close")
+//         })
+//     })
 
 
 
@@ -209,7 +209,7 @@ const popupClose = (popupActive) => {
     popupActive.classList.remove('open');
 }
 
-const closeClosestPopupForm=()=>{
+const closeClosestPopupForm = () => {
     for (let openPopupButton of openPopupButtons) {
         const popupName = openPopupButton.getAttribute('id').replace('#', '');
         const currentPopup = document.getElementById(popupName);
@@ -313,7 +313,7 @@ const isChecked = () => {
     }
 }
 
-const sendData=()=>{
+const sendData = () => {
     if (isChecked() === true) {
         fetch('sendmail.php', {
                 method: 'POST',
@@ -339,4 +339,3 @@ document.querySelector('.confirm').addEventListener('touchend', (e) => {
     e.preventDefault();
     sendData();
 })
-
