@@ -105,7 +105,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
@@ -214,6 +214,15 @@ body {
     width: 152px;
     margin-bottom: 0;
     margin-right: 40px;
+  }
+  .why-robot-cleaner__photo_first {
+    content: url("../../images/why-robot/parking-lot-mobile.png");
+  }
+  .why-robot-cleaner__photo_second {
+    content: url("../../images/why-robot/land-mobile.png");
+  }
+  .why-robot-cleaner__photo_third {
+    content: url("../../images/why-robot/money-mobile.png");
   }
 }
 @media screen and (max-width: 480px) and (max-width: 307px) {
@@ -355,7 +364,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
@@ -390,17 +399,20 @@ body {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .advantages__photo_first {
     grid-area: 2/1/3/2;
+    content: url("../../images/advantages/control-tablet.png");
   }
   .advantages__photo_second {
     grid-area: 4/1/5/2;
+    content: url("../../images/advantages/car-wash-tablet.png");
   }
   .advantages__photo_third {
     grid-area: 6/1/7/2;
+    content: url("../../images/advantages/car-blue-tablet.png");
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .advantages__info {
-    margin: 50px auto 30px;
+    margin: 0 auto;
   }
   .advantages__info_first {
     grid-area: 3/1/4/2;
@@ -419,36 +431,7 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .advantages__number {
-    position: absolute;
-    left: calc(50% - 37.5px);
-  }
-  .advantages__number_one {
-    top: 24.5%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 663px) and (max-width: 744px) {
-  .advantages__number_one {
-    top: 26%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) and (max-width: 526px) {
-  .advantages__number_one {
-    top: 26%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .advantages__number_two {
-    top: 54%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) and (max-width: 744px) {
-  .advantages__number_two {
-    top: 55%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .advantages__number_three {
-    top: 85%;
+    display: none;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -462,6 +445,7 @@ body {
     justify-items: center;
     text-align: center;
     position: relative;
+    margin: 20px auto 0;
   }
   .advantages__title {
     grid-area: 1/1/2/2;
@@ -472,15 +456,18 @@ body {
   }
   .advantages__photo_first {
     grid-area: 2/1/3/2;
+    content: url("../../images/advantages/control-mobile.png");
   }
   .advantages__photo_second {
     grid-area: 4/1/5/2;
+    content: url("../../images/advantages/car-wash-mobile.png");
   }
   .advantages__photo_third {
     grid-area: 6/1/7/2;
+    content: url("../../images/advantages/car-blue-mobile.png");
   }
   .advantages__info {
-    margin: 35px auto;
+    margin: 0 auto;
   }
   .advantages__info_first {
     grid-area: 3/1/4/2;
@@ -505,71 +492,8 @@ body {
     display: none;
   }
   .advantages__number {
-    position: absolute;
-    left: calc(50% - 37.5px);
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 300px) {
-  .advantages__number {
     display: none;
   }
-}
-@media screen and (max-width: 480px) {
-  .advantages__number_one {
-    top: 24%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 455px) {
-  .advantages__number_one {
-    top: 22.5%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .advantages__number_two {
-    top: 53%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 455px) {
-  .advantages__number_two {
-    top: 52%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 360px) {
-  .advantages__number_two {
-    top: 51%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 342px) {
-  .advantages__number_two {
-    top: 50%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .advantages__number_three {
-    top: 85.5%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 455px) {
-  .advantages__number_three {
-    top: 83%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 360px) {
-  .advantages__number_three {
-    top: 82%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 342px) {
-  .advantages__number_three {
-    top: 81%;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 312px) {
-  .advantages__number_three {
-    top: 80%;
-  }
-}
-@media screen and (max-width: 480px) {
   .advantages__button {
     display: none;
   }
@@ -629,7 +553,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #FFFFFF;
   color: #265FE5;
@@ -646,6 +570,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0 auto;
   }
   .price__title {
     font-family: "RF Dewi Extended", sans-serif;
@@ -662,6 +587,7 @@ body {
 @media screen and (max-width: 480px) {
   .price {
     max-width: 424px;
+    margin: 0 auto;
   }
   .price__container {
     display: flex;
@@ -813,7 +739,7 @@ body {
   border-radius: 8px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
@@ -859,7 +785,28 @@ body {
     line-height: 16px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .stages__slider {
+    width: 95%;
+    padding-top: 0;
+  }
+  .stages__cards-container {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 570px;
+    padding-top: 50px;
+    gap: 20px;
+    overflow-x: scroll;
+  }
+  .stages__cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  .stages__card {
+    width: 52%;
+  }
+  .stages__card-content {
+    padding: 0 30px;
+  }
   .stages__title {
     width: 80%;
     font-family: "RF Dewi Extended", sans-serif;
@@ -873,15 +820,31 @@ body {
 @media screen and (max-width: 480px) {
   .stages__title {
     width: 85%;
+    margin-top: 40px;
     font-family: "RF Dewi Extended", sans-serif;
     font-size: 25px;
     line-height: 30px;
   }
   .stages__slider {
     width: 95%;
-    padding-top: 70px;
+    padding-top: 0;
+  }
+  .stages__cards-container {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 570px;
+    padding-top: 50px;
+    gap: 10px;
+    overflow-x: scroll;
+  }
+  .stages__cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  .stages__card {
+    width: 80%;
   }
   .stages__subtitle {
+    margin: 0 auto 10px;
     font-family: "RF Dewi Extended", sans-serif;
     font-size: 20px;
     line-height: 24px;
@@ -909,7 +872,7 @@ body {
     border-radius: 8px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     background-color: #265FE5;
     color: #FFFFFF;
@@ -2977,4 +2940,4 @@ td:nth-child(2) {
 
 .footer__email {
   width: 100px;
-}/*# sourceMappingURL=style.css.map */
+}

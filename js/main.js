@@ -1,12 +1,12 @@
 "use strict";
 
 // // Блок 8 этапов строительства (галерея карточек)
-const mediaQueryMobile = window.matchMedia('(max-width: 424px)');
-if (mediaQueryMobile.matches) {
-    document.querySelector('.why-robot-cleaner__photo_first').src = '../images/why-robot/parking-lot-mobile.png';
-    document.querySelector('.why-robot-cleaner__photo_second').src = '../images/why-robot/land-mobile.png';
-    document.querySelector('.why-robot-cleaner__photo_third').src = '../images/why-robot/money-mobile.png';
-}
+// const mediaQueryMobile = window.matchMedia('(max-width: 424px)');
+// if (mediaQueryMobile.matches) {
+//     document.querySelector('.why-robot-cleaner__photo_first').src = '../images/why-robot/parking-lot-mobile.png';
+//     document.querySelector('.why-robot-cleaner__photo_second').src = '../images/why-robot/land-mobile.png';
+//     document.querySelector('.why-robot-cleaner__photo_third').src = '../images/why-robot/money-mobile.png';
+// }
 
 new Swiper('.stages__slider', {
     navigation: {
@@ -16,14 +16,14 @@ new Swiper('.stages__slider', {
     slidesPerView: 4,
     spaceBetween: 30,
     breakpoints: {
-        200: {
-            slidesPerView: 1.3,
-            spaceBetweenSlides: 5,
-        },
-        768: {
-            slidesPerView: 1.8,
-            spaceBetweenSlides: 30,
-        },
+        // 200: {
+        //     slidesPerView: 1.3,
+        //     spaceBetweenSlides: 5,
+        // },
+        // 768: {
+        //     slidesPerView: 1.8,
+        //     spaceBetweenSlides: 30,
+        // },
         1024: {
             slidesPerView: 4,
             spaceBetween: 15,
