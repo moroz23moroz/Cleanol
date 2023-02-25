@@ -9,6 +9,11 @@
 
 //second option
 // let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+if (IS_IOS) {
+    document.documentElement.classList.add('ios');
+}
 
 //popup
 const mainWrapper = document.querySelector('.main');

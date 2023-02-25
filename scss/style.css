@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap");
 @font-face {
   font-family: "RF Dewi Extended";
-  src: url("../fonts/RFDewiExtended-Regular.woff");
+  src: url("../fonts/RFDewiExtended-Regular.woff2");
   font-weight: 400;
 }
 * {
@@ -28,6 +28,15 @@ body {
 .wrapper {
   position: relative;
   overflow: hidden;
+}
+
+.main {
+  cursor: pointer;
+}
+
+.ios,
+.ios * {
+  cursor: pointer;
 }
 
 .why-robot-cleaner {
@@ -2940,4 +2949,4 @@ td:nth-child(2) {
 
 .footer__email {
   width: 100px;
-}
+}/*# sourceMappingURL=style.css.map */

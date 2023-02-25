@@ -24,3 +24,13 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+.main{
+  cursor: pointer;
+}
+
+.ios,
+.ios * {
+    // causes dom events to be fired
+    cursor: pointer;
+}
