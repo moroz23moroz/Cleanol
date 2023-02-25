@@ -13,6 +13,7 @@
 
     background-color: $bg-color-main;
     color: $text-color-white;
+    cursor: pointer;
 }
 
 
@@ -30,6 +31,7 @@
 
     background-color: $bg-color-white;
     color: $text-color-title;
+    cursor: pointer;
 }
 
 @mixin font-style ($font-family, $font-size, $line-height) {

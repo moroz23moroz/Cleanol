@@ -109,6 +109,7 @@ body {
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1221px) {
@@ -358,6 +359,7 @@ body {
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -631,6 +633,7 @@ body {
   text-align: center;
   background-color: #FFFFFF;
   color: #265FE5;
+  cursor: pointer;
   margin: 70px 0;
   font-weight: 600;
 }
@@ -814,6 +817,7 @@ body {
   text-align: center;
   background-color: #265FE5;
   color: #FFFFFF;
+  cursor: pointer;
   display: block;
   margin: 60px auto;
 }
@@ -909,6 +913,7 @@ body {
     text-align: center;
     background-color: #265FE5;
     color: #FFFFFF;
+    cursor: pointer;
   }
 }
 .banner-desktop {
@@ -1138,6 +1143,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 .info-block-btn_lg {
   max-width: 295px;
