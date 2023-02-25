@@ -16,14 +16,14 @@ new Swiper('.stages__slider', {
     slidesPerView: 4,
     spaceBetween: 30,
     breakpoints: {
-        200: {
-            slidesPerView: 1.3,
-            spaceBetweenSlides: 5,
-        },
-        768: {
-            slidesPerView: 1.8,
-            spaceBetweenSlides: 30,
-        },
+        // 200: {
+        //     slidesPerView: 1.3,
+        //     spaceBetweenSlides: 5,
+        // },
+        // 768: {
+        //     slidesPerView: 1.8,
+        //     spaceBetweenSlides: 30,
+        // },
         1024: {
             slidesPerView: 4,
             spaceBetween: 15,

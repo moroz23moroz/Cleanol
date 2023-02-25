@@ -771,7 +771,28 @@ body {
     line-height: 16px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .stages__slider {
+    width: 95%;
+    padding-top: 0;
+  }
+  .stages__cards-container {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 570px;
+    padding-top: 50px;
+    gap: 20px;
+    overflow-x: scroll;
+  }
+  .stages__cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  .stages__card {
+    width: 52%;
+  }
+  .stages__card-content {
+    padding: 0 30px;
+  }
   .stages__title {
     width: 80%;
     font-family: "RF Dewi Extended", sans-serif;
@@ -785,15 +806,31 @@ body {
 @media screen and (max-width: 480px) {
   .stages__title {
     width: 85%;
+    margin-top: 40px;
     font-family: "RF Dewi Extended", sans-serif;
     font-size: 25px;
     line-height: 30px;
   }
   .stages__slider {
     width: 95%;
-    padding-top: 70px;
+    padding-top: 0;
+  }
+  .stages__cards-container {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 570px;
+    padding-top: 50px;
+    gap: 10px;
+    overflow-x: scroll;
+  }
+  .stages__cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  .stages__card {
+    width: 80%;
   }
   .stages__subtitle {
+    margin: 0 auto 10px;
     font-family: "RF Dewi Extended", sans-serif;
     font-size: 20px;
     line-height: 24px;

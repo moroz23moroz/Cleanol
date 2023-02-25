@@ -150,8 +150,34 @@
     }
 }
 
-@media screen and (min-width:481px) and (max-width:768px) {
+@media screen and (min-width:481px) and (max-width:1023px) {
     .stages {
+        &__slider {
+            width: 95%;
+            padding-top: 0;
+        }
+
+        &__cards-container {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 570px;
+            padding-top: 50px;
+            gap: 20px;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__card {
+            width: 52%;
+        }
+
+        &__card-content {
+            padding: 0 30px;
+        }
+
         &__title {
             width: 80%;
             @include font-style ($title-font, $title-font-size-tablet, 42px);
@@ -167,15 +193,34 @@
     .stages {
         &__title {
             width: 85%;
+            margin-top: 40px;
             @include font-style ($title-font, $title-font-size-mobile, 30px);
         }
 
         &__slider {
             width: 95%;
-            padding-top: 70px;
+            padding-top: 0;
+        }
+
+        &__cards-container {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 570px;
+            padding-top: 50px;
+            gap: 10px;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__card {
+            width: 80%;
         }
 
         &__subtitle {
+            margin: 0 auto 10px;
             @include font-style ($title-font, $subtitle-font-size-mobile, 24px);
         }
 
