@@ -13,8 +13,8 @@ new Swiper('.stages__slider', {
         nextEl: '.stages__button_next',
         prevEl: '.stages__button_prev'
     },
-    slidesPerView: 4,
-    spaceBetween: 30,
+    // slidesPerView: 4,
+    // spaceBetween: 30,
     breakpoints: {
         // 200: {
         //     slidesPerView: 1.3,
