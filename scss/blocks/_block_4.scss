@@ -29,6 +29,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 15px;
+    z-index: 1;
 
     &__item {
         box-sizing: border-box;
@@ -119,10 +120,10 @@
 .swiper-pagination-bullet {
     width: 30px;
     height: 30px;
-    background-color: $bg-color-light;
+    background-color: rgba(255, 255, 255, 0);       
 
     &-active {
-        background-color: rgba(238, 243, 253, 0);
+        background-color: rgba(255, 255, 255, 0);
     }
 }
 
@@ -137,4 +138,3 @@
 .horizontal-slider {
     display: none;
 }
-

@@ -1400,6 +1400,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-right: 15px;
+  z-index: 1;
 }
 .numbers-wrapper__item {
   box-sizing: border-box;
@@ -1482,10 +1483,10 @@ body {
 .swiper-pagination-bullet {
   width: 30px;
   height: 30px;
-  background-color: #EEF3FD;
+  background-color: rgba(255, 255, 255, 0);
 }
 .swiper-pagination-bullet-active {
-  background-color: rgba(238, 243, 253, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .swiper-pagination {
