@@ -1,3 +1,15 @@
+'use strict'
+//first option
+// let iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
+// let e = "click";
+
+// if(iOS != null){
+//     e = "touchstart";
+// }
+
+//second option
+// let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+
 //popup
 const mainWrapper = document.querySelector('.main');
 const openPopupButtons = document.querySelectorAll('.popup__open');
@@ -24,7 +36,7 @@ const closeClosestPopupForm=()=>{
             }
         })
 
-        currentPopup.addEventListener('touchend', (event) => {
+        currentPopup.addEventListener('touchstart', (event) => {
             if (!event.target.closest('.popup-form')) {
                 popupClose(currentPopup);
             }
@@ -39,7 +51,7 @@ mainWrapper.addEventListener('click', (event) => {
     }
 })
 
-mainWrapper.addEventListener('touchend', (event) => {
+mainWrapper.addEventListener('touchstart', (event) => {
     if (event.target.classList.contains('popup__open')) {
         popupOpen(feedbackForm);
         closeClosestPopupForm();
@@ -55,7 +67,7 @@ for (let closePopupButton of closePopupButtons) {
 }
 
 for (let closePopupButton of closePopupButtons) {
-    closePopupButton.addEventListener('touchend', (event) => {
+    closePopupButton.addEventListener('touchstart', (event) => {
         popupClose(event.target.closest('.popup'));
         event.preventDefault;
     })
