@@ -120,26 +120,26 @@ const smoothScroll = () => {
 smoothScroll()
 
 
-document.addEventListener(("DOMContentLoaded"),
-    function () {
-        document.querySelector('#open').addEventListener('click', function () {
-            document.querySelector('.adaptive-menu').classList.toggle('menu--close')
-        })
-    })
+// document.addEventListener(("DOMContentLoaded"),
+//     function () {
+//         document.querySelector('#open').addEventListener('click', function () {
+//             document.querySelector('.adaptive-menu').classList.toggle('menu--close')
+//         })
+//     })
 
-document.addEventListener(("DOMContentLoaded"),
-    function () {
-        document.querySelector('#close').addEventListener("click", function () {
-            document.querySelector('.adaptive-menu').classList.toggle("menu--close")
-        })
-    })
+// document.addEventListener(("DOMContentLoaded"),
+//     function () {
+//         document.querySelector('#close').addEventListener("click", function () {
+//             document.querySelector('.adaptive-menu').classList.toggle("menu--close")
+//         })
+//     })
 
-document.addEventListener(("DOMContentLoaded"),
-    function () {
-        document.querySelector('#close2').addEventListener("click", function () {
-            document.querySelector('.adaptive-menu').classList.toggle("menu--close")
-        })
-    })
+// document.addEventListener(("DOMContentLoaded"),
+//     function () {
+//         document.querySelector('#close2').addEventListener("click", function () {
+//             document.querySelector('.adaptive-menu').classList.toggle("menu--close")
+//         })
+//     })
 
 
 

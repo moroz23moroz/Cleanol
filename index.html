@@ -72,8 +72,8 @@
                                 “Отправить заявку”, вы соглашаетесь на обработку персональных данных</label>
                         </div>
 
-                        <button class="popup-button popup__open confirm" type="submit" id="#popup_2">Отправить<img
-                                src="./images/arrow-white.svg" alt="white arrow"
+                        <button class="popup-button popup__open confirm" type="submit" id="#popup_2"
+                            onclick="">Отправить<img src="./images/arrow-white.svg" alt="white arrow"
                                 class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                     </div>
                 </form>
@@ -96,12 +96,12 @@
         <!-- popup -->
 
         <!-- header -->
-        <header class="header">
-            <div class="container">
+        <header class="header" id="open">
+            <div class="header__container" id="close">
                 <div class="header-high">
                     <div class="header__inner">
                         <div class="header__main">
-                            <a class="header__logo" href="#">
+                            <a class="header__logo" href="#main">
                                 <img src="./images/logo.svg" alt="logo" class="logo">
                             </a>
                             <p class="header__description">
@@ -109,18 +109,18 @@
                             </p>
                         </div>
                         <div class="header__contacts">
-                            <a class="header__phone" href="#">
+                            <a class="header__phone" href="#tel:+375293658070">
                                 +375 29 365-80-70
                             </a>
-                            <a class="header__email" href="#">
+                            <a class="header__email" href="mailto:info@aqts.by">
                                 info@aqts.by
                             </a>
-                            <a class="header__email" href="#">
+                            <a class="header__email" href="mailto:sales@aqts.by">
                                 sales@aqts.by
                             </a>
                         </div>
-                        <a class="header__burger" href="#" id="open">
-                            <img src="./images/burger.png" alt="menu">
+                        <a class="header__burger" href="#open">
+                            <img src="./images/burger.png" alt="menu" onclick="">
                         </a>
                     </div>
                 </div>
@@ -155,15 +155,15 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="adaptive-menu menu--close">
+                <div class="adaptive-menu" id="adaptive">
                     <div class="container-adapt">
                         <div class="adaptive__row">
-                            <a class="logo" href="#">
+                            <a class="logo" href="#" onclick="">
                                 <img src="./images/logo-adaptive.png" alt="logo">
                             </a>
-                            <button class="adaptive-menu__close" id="close">
-                                <img src="./images/close.svg" alt="close">
-                            </button>
+                            <a class="adaptive-menu__close" href="#close">
+                                <img src="./images/close.svg">
+                            </a>
                         </div>
                         <p class="adaptive-menu__description">
                             Продажа и установка роботизированных моек в каждом городе Беларуси
@@ -199,13 +199,13 @@
                                 </ul>
                             </nav>
                             <div class="menu__contacts">
-                                <a class="phone" href="#">
+                                <a class="phone" href="tel:+375293658070">>
                                     +375 29 365-80-70
                                 </a>
-                                <a class="email" href="#">
+                                <a class="email" href="mailto:info@aqts.by">
                                     info@aqts.by
                                 </a>
-                                <a class="email" href="#">
+                                <a class="email" href="mailto:sales@aqts.by">
                                     sales@aqts.by
                                 </a>
                             </div>
@@ -216,7 +216,7 @@
         </header>
         <!-- header -->
 
-        <main class="main">
+        <main class="main" id="main">
             <!-- "banner-desktop -->
             <div class="banner-desktop">
                 <img src="./images/banner/banner_arrow_left.svg" alt=""
@@ -276,8 +276,8 @@
                                 электроэнергии</p>
                         </div>
 
-                        <button class="info-block-btn info-block-btn_blue info-block-btn_md popup__open"
-                            id="#popup">Заказать
+                        <button class="info-block-btn info-block-btn_blue info-block-btn_md popup__open" id="#popup"
+                            onclick="">Заказать
                             <img src="./images/arrow-white.svg" alt="white arrow"
                                 class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                     </div>
@@ -1124,12 +1124,12 @@
                         </div>
                         <form class="form__main" id="form">
                             <div class="form__row">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Имя">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Телефон">
+                                <input class="form__main-input" type="text" placeholder="Имя" required>
+                                <input class="form__main-input" type="text" placeholder="Телефон" required>
                             </div>
                             <div class="form__row">
-                                <input data-required="true" class="form__main-input" type="email" placeholder="e-mail">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Город">
+                                <input class="form__main-input" type="email" placeholder="e-mail" required>
+                                <input class="form__main-input" type="text" placeholder="Город" required>
                             </div>
                             <textarea class="form__main-input-text" placeholder="Сообщение"></textarea>
                             <div class="btn-row">
@@ -1182,7 +1182,7 @@
                     </nav>
                     <div class="footer__contacts">
                         <div class="footer__row">
-                            <a class="footer__phone" href="#">
+                            <a class="footer__phone" hhref="tel:+375293658070">
                                 +375 29 365-80-70
                             </a>
                             <p class="footer__order">
@@ -1197,10 +1197,10 @@
                                 г. Минск, ул. Толбухина 2а, к. 320
                             </p>
                         </div>
-                        <a class="footer__email" href="#">
+                        <a class="footer__email" href="mailto:info@aqts.by">
                             info@aqts.by
                         </a>
-                        <a class="footer__email" href="#">
+                        <a class="footer__email" href="mailto:sales@aqts.by">
                             sales@aqts.by
                         </a>
                     </div>

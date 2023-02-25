@@ -1,4 +1,8 @@
 .advantages {
+    @media screen and (max-width: 768px) {
+        margin-top: -70px;
+    }
+
     &__container {
         max-width: 1146px;
         margin: 100px auto 0;
