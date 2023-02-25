@@ -94,8 +94,6 @@
     }
 }
 
-
-
 .info-block-btn {
     max-height: 54px;
     min-height: 54px;
@@ -106,6 +104,7 @@
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 0.1em;
+    cursor: pointer;
 
     &_lg {
         max-width: 295px;

@@ -1,4 +1,5 @@
-.container {
+.container,
+.header__container {
   max-width: 1730px;
   margin: 0 auto;
   padding: 0 15px;
@@ -124,21 +125,21 @@
 
 .adaptive-menu {
   display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 460px;
-  padding-top: 20px;
-  background-color: white;
-  font-size: 20px;
-  font-weight: 600;
-  z-index: 4;
-  transition: transform .5s;
 
   @media screen and (max-width: 920px) {
     display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 460px;
+    padding-top: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 4;
   }
 
   @media screen and (max-width: 510px) {
@@ -146,10 +147,19 @@
   }
 }
 
-.adaptive-menu.menu--close {
+.header:target .adaptive-menu {
   @media screen and (max-width: 920px) {
-    transform: translateX(1000%);
+    left: 0;
   }
+
+}
+
+.header:target .header__burger {
+  display: none;
+}
+
+.header:target .adaptive-menu__close {
+  display: block;
 }
 
 .container-adapt {

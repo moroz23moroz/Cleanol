@@ -8,6 +8,7 @@
 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
     <link rel="stylesheet" href="./scss/style.css">
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
     <title>Document</title>
@@ -35,20 +36,20 @@
                             <fieldset class="content-container">
                                 <legend class="input-title">Имя<span class="input-title input-title_sp">*</span>
                                 </legend>
-                                <input type="text" class="input-field" name="name" id="name" required>
+                                <input type="text" class="input-field" name="name" id="name">
                             </fieldset>
 
                             <fieldset class="content-container">
                                 <legend class="input-title">Телефон<span class="input-title input-title_sp">*</span>
                                 </legend>
-                                <input type="text" class="input-field" name="phone_number" id="phone_number" required>
+                                <input type="text" class="input-field" name="phone_number" id="phone_number">
                             </fieldset>
                         </div>
                         <div class="content-row">
                             <fieldset class="content-container">
                                 <legend class="input-title">Город<span class="input-title input-title_sp">*</span>
                                 </legend>
-                                <input type="text" class="input-field" name="city" id="city" required>
+                                <input type="text" class="input-field" name="city" id="city">
                             </fieldset>
 
                             <fieldset class="content-container">
@@ -65,14 +66,14 @@
                         </div>
                         <div class="error_message"></div>
                         <div class="content-row content-row_personal">
-                            <input type="checkbox" id="personal_data" name="personal_data" required>
+                            <input type="checkbox" id="personal_data" name="personal_data">
                             <label for="personal_data" class="popup-content__text popup-content__text_sm">Нажимая на
                                 кнопку
                                 “Отправить заявку”, вы соглашаетесь на обработку персональных данных</label>
                         </div>
 
-                        <button class="popup-button popup__open confirm" type="submit" id="#popup_2">Отправить<img
-                                src="./images/arrow-white.svg" alt="white arrow"
+                        <button class="popup-button popup__open confirm" type="submit" id="#popup_2"
+                            onclick="">Отправить<img src="./images/arrow-white.svg" alt="white arrow"
                                 class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                     </div>
                 </form>
@@ -95,12 +96,12 @@
         <!-- popup -->
 
         <!-- header -->
-        <header class="header">
-            <div class="container">
+        <header class="header" id="open">
+            <div class="header__container" id="close">
                 <div class="header-high">
                     <div class="header__inner">
                         <div class="header__main">
-                            <a class="header__logo" href="#">
+                            <a class="header__logo" href="#main">
                                 <img src="./images/logo.svg" alt="logo" class="logo">
                             </a>
                             <p class="header__description">
@@ -108,18 +109,18 @@
                             </p>
                         </div>
                         <div class="header__contacts">
-                            <a class="header__phone" href="#">
+                            <a class="header__phone" href="#tel:+375293658070">
                                 +375 29 365-80-70
                             </a>
-                            <a class="header__email" href="#">
+                            <a class="header__email" href="mailto:info@aqts.by">
                                 info@aqts.by
                             </a>
-                            <a class="header__email" href="#">
+                            <a class="header__email" href="mailto:sales@aqts.by">
                                 sales@aqts.by
                             </a>
                         </div>
-                        <a class="header__burger" href="#" id="open">
-                            <img src="./images/burger.png" alt="menu">
+                        <a class="header__burger" href="#open">
+                            <img src="./images/burger.png" alt="menu" onclick="">
                         </a>
                     </div>
                 </div>
@@ -154,15 +155,15 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="adaptive-menu menu--close">
+                <div class="adaptive-menu" id="adaptive">
                     <div class="container-adapt">
                         <div class="adaptive__row">
-                            <a class="logo" href="#">
+                            <a class="logo" href="#" onclick="">
                                 <img src="./images/logo-adaptive.png" alt="logo">
                             </a>
-                            <button class="adaptive-menu__close" id="close">
-                                <img src="./images/close.svg" alt="close">
-                            </button>
+                            <a class="adaptive-menu__close" href="#close">
+                                <img src="./images/close.svg">
+                            </a>
                         </div>
                         <p class="adaptive-menu__description">
                             Продажа и установка роботизированных моек в каждом городе Беларуси
@@ -198,13 +199,13 @@
                                 </ul>
                             </nav>
                             <div class="menu__contacts">
-                                <a class="phone" href="#">
+                                <a class="phone" href="tel:+375293658070">>
                                     +375 29 365-80-70
                                 </a>
-                                <a class="email" href="#">
+                                <a class="email" href="mailto:info@aqts.by">
                                     info@aqts.by
                                 </a>
-                                <a class="email" href="#">
+                                <a class="email" href="mailto:sales@aqts.by">
                                     sales@aqts.by
                                 </a>
                             </div>
@@ -215,21 +216,17 @@
         </header>
         <!-- header -->
 
-        <main class="main">
+        <main class="main" id="main" onclick="">
             <!-- "banner-desktop -->
-            <div class="banner-desktop" id="banner-desktop">
+            <div class="banner-desktop">
                 <img src="./images/banner/banner_arrow_left.svg" alt=""
                     class="banner__nav-arrow banner__nav-arrow_left">
 
-                <div class="banner-slider-container swiper-container">
-                    <div class="banner-slider-wrapper swiper-wrapper">
-                        <img src="./images/banner/slider_1.png" alt="robo car washer"
-                            class="banner__slide banner__slide_1 swiper-slide">
-                        <img src="./images/banner/slider_2.png" alt="invest properly"
-                            class="banner__slide banner__slide_2 swiper-slide">
-                        <img src="./images/banner/slider_3.png" alt="earn money right now"
-                            class="banner__slide banner__slide_3 swiper-slide">
-                    </div>
+                <div class="banner-slider-container">
+                    <img src="./images/banner/slider_1.png" alt="robo car washer" class="banner__slide banner__slide_1">
+                    <img src="./images/banner/slider_2.png" alt="invest properly" class="banner__slide banner__slide_2">
+                    <img src="./images/banner/slider_3.png" alt="earn money right now"
+                        class="banner__slide banner__slide_3">
                 </div>
 
                 <img src="./images/banner/banner_arrow_right.svg" alt=""
@@ -241,20 +238,19 @@
                 <img src="./images/banner/arrow_left_white.svg" alt="" class="banner__nav-arrow banner__nav-arrow_left">
 
                 <div class="banner-slider-container swiper-container">
-                    <div class="banner-slider-wrapper swiper-wrapper">
-                        <img src="./images/banner/tab_slide_1.png" alt="robo car washer"
-                            class="banner__slide banner__slide_1 swiper-slide">
-                        <img src="./images/banner/tab_slide_2.png" alt="invest properly"
-                            class="banner__slide banner__slide_2 swiper-slide">
-                        <img src="./images/banner/tab_slide_3.png" alt="earn money right now"
-                            class="banner__slide banner__slide_3 swiper-slide">
-                    </div>
+                    <img src="./images/banner/tab_slide_1.jpg" alt="robo car washer"
+                        class="banner__slide banner__slide_1 swiper-slide">
+                    <img src="./images/banner/tab_slide_2.jpg" alt="invest properly"
+                        class="banner__slide banner__slide_2 swiper-slide">
+                    <img src="./images/banner/tab_slide_3.jpg" alt="earn money right now"
+                        class="banner__slide banner__slide_3 swiper-slide">
                 </div>
 
                 <img src="./images/banner/arrow_right_white.svg" alt=""
                     class="banner__nav-arrow banner__nav-arrow_right">
             </div>
             <!-- banner-mobile -->
+
             <!-- block_3 -->
             <div class="info-block info-block_desktop" id="description">
                 <h2 class="info-block__title">Робот-мойка для легковых автомобилей</h2>
@@ -280,8 +276,8 @@
                                 электроэнергии</p>
                         </div>
 
-                        <button class="info-block-btn info-block-btn_blue info-block-btn_md popup__open"
-                            id="#popup">Заказать
+                        <button class="info-block-btn info-block-btn_blue info-block-btn_md popup__open" id="#popup"
+                            onclick="">Заказать
                             <img src="./images/arrow-white.svg" alt="white arrow"
                                 class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                     </div>
@@ -317,7 +313,7 @@
 
                     <button
                         class="info-block-btn info-block-btn_blue info-block-btn_md info-block-btn_centered popup__open"
-                        id="#popup">Заказать
+                        id="#popup" onclick="">Заказать
                         <img src="./images/arrow-white.svg" alt="white arrow"
                             class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                 </div>
@@ -333,7 +329,8 @@
                     Объяснит целесообразность данного бизнеса, его окупаемость и сориентирует по прибыльности проекта
                 </div>
 
-                <button class="info-block-btn info-block-btn_white info-block-btn_lg popup__open" id="#popup">Оставить
+                <button class="info-block-btn info-block-btn_white info-block-btn_lg popup__open" id="#popup"
+                    onclick="">Оставить
                     заявку <img src="./images/arrow-blue.svg" alt="blue arrow"
                         class="info-block-btn-arrow info-block-btn-arrow_blue"></button>
             </div>
@@ -398,7 +395,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
@@ -418,7 +415,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
@@ -445,7 +442,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
@@ -464,7 +461,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
@@ -481,7 +478,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
@@ -502,7 +499,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
@@ -520,7 +517,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
 
@@ -538,7 +535,7 @@
                                 </div>
 
                                 <button class="info-block-btn info-block-btn_sm info-block-btn_blue popup__open"
-                                    id="#popup">Купить <img src="./images/arrow-white.svg" alt="white arrow"
+                                    id="#popup" onclick="">Купить <img src="./images/arrow-white.svg" alt="white arrow"
                                         class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                             </div>
                         </div>
@@ -573,7 +570,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -595,7 +592,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -624,7 +621,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -645,7 +642,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -664,7 +661,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -687,7 +684,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -707,7 +704,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -727,7 +724,7 @@
 
                             <button
                                 class="info-block-btn info-block-btn_sm info-block-btn_blue info-block-btn_centered popup__open"
-                                id="#popup">Купить
+                                id="#popup" onclick="">Купить
                                 <img src="./images/arrow-white.svg" alt="white arrow"
                                     class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                         </div>
@@ -755,7 +752,7 @@
 
                         <button
                             class="info-block-btn info-block-btn_lg info-block-btn_blue info-block-btn_centered popup__open"
-                            id="#popup">Подробнее
+                            id="#popup" onclick="">Подробнее
                             <img src="./images/arrow-white.svg" alt="white arrow"
                                 class="info-block-btn-arrow info-block-btn-arrow_white"></button>
                     </div>
@@ -908,8 +905,8 @@
                             или оставьте заявку на сайте. Мы свяжемся с вами, обсудим волнующие вас моменты и ответим на
                             все
                             вопросы</div>
-                        <button class="why-robot-cleaner__button popup__open" id="#popup">Оставить заявку <img
-                                src="./images/arrow-white.svg" alt="arrow icon" /></button>
+                        <button class="why-robot-cleaner__button popup__open" id="#popup" onclick="">Оставить заявку
+                            <img src="./images/arrow-white.svg" alt="arrow icon" /></button>
                     </div>
                 </div>
             </div>
@@ -955,7 +952,7 @@
                         <div class="advantages__number advantages__number_three">3</div>
                         <img src="./images/advantages/line-bottom.svg" alt="vertical line" class="advantages__line">
                     </div>
-                    <button class="advantages__button popup__open" id="#popup">Купить робот-мойку <img
+                    <button class="advantages__button popup__open" id="#popup" onclick="">Купить робот-мойку <img
                             src="./images/arrow-white.svg" alt="arrow icon" /></button>
                 </div>
             </div>
@@ -973,7 +970,7 @@
                         специалист, проконсультирует, уточнит бюджет, узнает ваши потребности по оборудованию и подберет
                         именно
                         тот вариант, который вам необходим</p>
-                    <button class="price__button popup__open" id="#popup">Оставить заявку <img
+                    <button class="price__button popup__open" id="#popup" onclick="">Оставить заявку <img
                             src="./images/arrow-blue.svg" alt="arrow icon" /></button>
                 </div>
             </div>
@@ -1106,7 +1103,7 @@
                 <button class="stages__button stages__button_next"><img src="./images/arrow-circle-next.svg"
                         alt="next icon"></button>
 
-                <button class="stages__button-order popup__open" id="#popup">Заказать робот-мойку <img
+                <button class="stages__button-order popup__open" id="#popup" onclick="">Заказать робот-мойку <img
                         src="./images/arrow-white.svg" alt="arrow icon" /></button>
 
             </div>
@@ -1125,16 +1122,16 @@
                         </div>
                         <form class="form__main" id="form">
                             <div class="form__row">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Имя">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Телефон">
+                                <input class="form__main-input" type="text" placeholder="Имя" required>
+                                <input class="form__main-input" type="text" placeholder="Телефон" required>
                             </div>
                             <div class="form__row">
-                                <input data-required="true" class="form__main-input" type="email" placeholder="e-mail">
-                                <input data-required="true" class="form__main-input" type="text" placeholder="Город">
+                                <input class="form__main-input" type="email" placeholder="e-mail" required>
+                                <input class="form__main-input" type="text" placeholder="Город" required>
                             </div>
                             <textarea class="form__main-input-text" placeholder="Сообщение"></textarea>
                             <div class="btn-row">
-                                <button class="form__main-button" type="submit">Отправить</button>
+                                <button class="form__main-button" type="submit" onclick="">Отправить</button>
                             </div>
                         </form>
                     </div>
@@ -1183,7 +1180,7 @@
                     </nav>
                     <div class="footer__contacts">
                         <div class="footer__row">
-                            <a class="footer__phone" href="#">
+                            <a class="footer__phone" hhref="tel:+375293658070">
                                 +375 29 365-80-70
                             </a>
                             <p class="footer__order">
@@ -1198,10 +1195,10 @@
                                 г. Минск, ул. Толбухина 2а, к. 320
                             </p>
                         </div>
-                        <a class="footer__email" href="#">
+                        <a class="footer__email" href="mailto:info@aqts.by">
                             info@aqts.by
                         </a>
-                        <a class="footer__email" href="#">
+                        <a class="footer__email" href="mailto:sales@aqts.by">
                             sales@aqts.by
                         </a>
                     </div>
@@ -1215,7 +1212,12 @@
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js" defer></script>
+    <script src="js/slick.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
