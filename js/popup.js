@@ -17,7 +17,7 @@ if (IS_IOS) {
 
 //popup
 const mainWrapper = document.querySelector('.main');
-const openPopupButtons = document.querySelectorAll('.popup__open');
+const openPopupButtons = document.querySelectorAll('.popup__open2');
 const closePopupButtons = document.querySelectorAll('.popup__close');
 const feedbackForm = document.getElementById('popup');
 const confirmationForm = document.getElementById('popup_2')
@@ -30,7 +30,7 @@ const popupClose = (popupActive) => {
     popupActive.classList.remove('open');
 }
 
-const closeClosestPopupForm=()=>{
+const closeClosestPopupForm = () => {
     for (let openPopupButton of openPopupButtons) {
         const popupName = openPopupButton.getAttribute('id').replace('#', '');
         const currentPopup = document.getElementById(popupName);
@@ -50,14 +50,14 @@ const closeClosestPopupForm=()=>{
 }
 
 mainWrapper.addEventListener('click', (event) => {
-    if (event.target.classList.contains('popup__open')) {
+    if (event.target.classList.contains('popup__open2')) {
         popupOpen(feedbackForm);
         closeClosestPopupForm();
     }
 })
 
 mainWrapper.addEventListener('touchstart', (event) => {
-    if (event.target.classList.contains('popup__open')) {
+    if (event.target.classList.contains('popup__open2')) {
         popupOpen(feedbackForm);
         closeClosestPopupForm();
     }
@@ -134,7 +134,7 @@ const isChecked = () => {
     }
 }
 
-const sendData=()=>{
+const sendData = () => {
     if (isChecked() === true) {
         fetch('https://httpbin.org/post', {
                 method: 'POST',
