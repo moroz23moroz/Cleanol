@@ -15,6 +15,12 @@ new Swiper('.stages__slider', {
     },
     // slidesPerView: 4,
     // spaceBetween: 30,
+    mousewheel: {
+        forceToAxis: true,
+        sensitivity: 1,
+        releaseOnEdges: true
+    },
+
     breakpoints: {
         // 200: {
         //     slidesPerView: 1.3,
@@ -193,4 +199,3 @@ document.querySelector('#form').addEventListener('submit', function (event) {
         alert("успешно!")
     }
 })
-
