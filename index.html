@@ -21,7 +21,7 @@
             <div class="popup-body">
                 <a href="#header" class="popup__close popup__close_white"><img src="./images/close_icon_white.svg"
                         alt=""></a>
-                <form action="#" class="popup-form" id="feedback">
+                <form class="popup-form" id="form">
                     <a href="#header" class="popup__close popup__close_blue"><img src="./images/close_icon_blue.svg"
                             alt=""></a>
                     <div class="popup-content">
@@ -36,13 +36,14 @@
                             <fieldset class="content-container">
                                 <legend class="input-title">Имя<span class="input-title input-title_sp">*</span>
                                 </legend>
+                                <input type="hidden" name="title" value="from modal">
                                 <input type="text" class="input-field" name="name" id="name">
                             </fieldset>
 
                             <fieldset class="content-container">
                                 <legend class="input-title">Телефон<span class="input-title input-title_sp">*</span>
                                 </legend>
-                                <input type="text" class="input-field" name="phone_number" id="phone_number">
+                                <input type="tel" class="input-field" name="tel" id="phone_number">
                             </fieldset>
                         </div>
                         <div class="content-row">
@@ -66,7 +67,7 @@
                         </div>
                         <div class="error_message"></div>
                         <div class="content-row content-row_personal">
-                            <input type="checkbox" id="personal_data" name="personal_data">
+                            <input type="checkbox" id="personal_data" name="personal_data" required>
                             <label for="personal_data" class="popup-content__text popup-content__text_sm">Нажимая на
                                 кнопку
                                 “Отправить заявку”, вы соглашаетесь на обработку персональных данных</label>
@@ -81,10 +82,11 @@
         </div>
 
         <!-- confirmation -->
-        <div class="popup" id="popup_2">
+        <div class="popup__tnks popup" id="popup_2">
             <div class="popup-body">
-                <div class="popup-form">
+                <div class="popup-form popup-parent">
                     <div class="popup-content ">
+                        <a class="close__tnks" href="#">X</a>
                         <img src="./images/confirmation_icon.svg" alt="" class="popup__confirm-icon">
                         <div class="popup-content__text popup-content__text_lg"><span
                                 class="info-block__text_bold info-block__text_blue">Спасибо, ваша заявка
@@ -276,7 +278,7 @@
                                 электроэнергии</p>
                         </div>
 
-                        <button class="info-block-btn info-block-btn_blue info-block-btn_md popup__open2" id="#popup"
+                        <button class="info-block-btn info-block-btn_blue info-block-btn_md popup__open2" href="#popup"
                             onclick="">Заказать
                             <img src="./images/arrow-white.svg" alt="white arrow"
                                 class="info-block-btn-arrow info-block-btn-arrow_white"></button>
@@ -313,9 +315,10 @@
 
                     <button
                         class="info-block-btn info-block-btn_blue info-block-btn_md info-block-btn_centered popup__open2"
-                        id="#popup" onclick="">Заказать
+                        onclick="">Заказать
                         <img src="./images/arrow-white.svg" alt="white arrow"
-                            class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                            class="info-block-btn-arrow info-block-btn-arrow_white">
+                    </button>
                 </div>
             </div>
             <!-- tablet&mobile block_3 -->
@@ -1126,16 +1129,22 @@
                                 робот-мойки
                             </p>
                         </div>
-                        <form class="form__main" id="form">
+                        <form class="form__main" id="form-main">
                             <div class="form__row">
-                                <input class="form__main-input" type="text" placeholder="Имя" required>
-                                <input class="form__main-input" type="text" placeholder="Телефон" required>
+                                <input type="hidden" name="title" value="block from site">
+                                <input class="form__main-input" type="text" name="name" placeholder="Имя" required
+                                    id="form-name">
+                                <input class="form__main-input" type="tel" name="tel" placeholder="Телефон" required
+                                    id="form-tel">
                             </div>
                             <div class="form__row">
-                                <input class="form__main-input" type="email" placeholder="e-mail" required>
-                                <input class="form__main-input" type="text" placeholder="Город" required>
+                                <input class="form__main-input" type="email" name="email" placeholder="e-mail" required
+                                    id="form-email">
+                                <input class="form__main-input" type="text" name="city" placeholder="Город" required
+                                    id="form-city">
                             </div>
-                            <textarea class="form__main-input-text" placeholder="Сообщение"></textarea>
+                            <textarea class="form__main-input-text" name="message" placeholder="Сообщение"
+                                id="form-message"></textarea>
                             <div class="btn-row">
                                 <button class="form__main-button" type="submit" onclick="">Отправить</button>
                             </div>
@@ -1223,7 +1232,8 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js" defer></script>
     <script src="js/slick.js"></script>
-    <script src="js/popup.js"></script>
+    <!-- <script src="js/popup.js"></script> -->
+    <script src="js/form.js"></script>
 </body>
 
 </html>
