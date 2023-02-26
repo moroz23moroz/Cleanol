@@ -4,7 +4,15 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 5000,
         prevArrow: $('.banner__nav-arrow_left'),
-        nextArrow:$('.banner__nav-arrow_right')
+        nextArrow: $('.banner__nav-arrow_right')
+    });
+
+    $('.banner__nav-arrow_left').on('click', function () {
+        $('.slick-slider').slick('slickPrev');
+    });
+
+    $('.banner__nav-arrow_right').on('click', function () {
+        $('.slick-slider').slick('slickNext');
     });
 });
 
