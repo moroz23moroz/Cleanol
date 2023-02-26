@@ -20,6 +20,8 @@ new Swiper('.stages__slider', {
         sensitivity: 1,
         releaseOnEdges: true
     },
+    loop: true,
+    loopedSlides: 8,
 
     breakpoints: {
         // 200: {
