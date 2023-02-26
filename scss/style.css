@@ -287,11 +287,6 @@ body {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 768px) {
-  .advantages {
-    margin-top: -70px;
-  }
-}
 .advantages__container {
   max-width: 1146px;
   margin: 100px auto 0;
