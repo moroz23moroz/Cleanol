@@ -17,15 +17,10 @@ $(document).ready(function () {
 
     $('.popup__open2').on('click', function () {
         $('#popup').addClass('open');
-        console.log("click");
     });
 
     $('.popup__close').on('click', function () {
         $('#popup').removeClass('open');
-        console.log("click");
     });
 });
 
-// document.querySelector('.banner__nav-arrow_right').addEventListener('click', (e)=>{
-//     console.log('right arrow clicked');
-// })

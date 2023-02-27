@@ -1,14 +1,4 @@
 'use strict'
-//first option
-// let iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
-// let e = "click";
-
-// if(iOS != null){
-//     e = "touchstart";
-// }
-
-//second option
-// let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 if (IS_IOS) {
@@ -17,18 +7,18 @@ if (IS_IOS) {
 
 //popup
 const mainWrapper = document.querySelector('.main');
-// const openPopupButtons = document.querySelectorAll('.popup__open2');
-// const closePopupButtons = document.querySelectorAll('.popup__close');
+const openPopupButtons = document.querySelectorAll('.popup__open2');
+const closePopupButtons = document.querySelectorAll('.popup__close');
 const feedbackForm = document.getElementById('popup');
 const confirmationForm = document.getElementById('popup_2')
 const form = document.getElementById('feedback');
 
-// const popupOpen = (popupActive) => {
-//     popupActive.classList.add('open');
-// }
-// const popupClose = (popupActive) => {
-//     popupActive.classList.remove('open');
-// }
+const popupOpen = (popupActive) => {
+    popupActive.classList.add('open');
+}
+const popupClose = (popupActive) => {
+    popupActive.classList.remove('open');
+}
 
 const closeClosestPopupForm = () => {
     for (let openPopupButton of openPopupButtons) {
