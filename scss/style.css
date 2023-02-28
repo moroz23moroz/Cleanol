@@ -1500,7 +1500,7 @@ body {
     margin-right: 50%;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 861px) and (max-width: 1024px) {
   .horizontal-slider {
     display: none;
   }
@@ -1521,7 +1521,7 @@ body {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 860px) {
   .vertical-slider {
     display: none;
   }
