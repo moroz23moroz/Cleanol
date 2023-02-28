@@ -2668,7 +2668,7 @@ td:nth-child(2) {
 }
 
 .form__text {
-  width: 405px;
+  width: 420px;
   padding-right: 0;
   display: flex;
   flex-direction: column;
@@ -2705,6 +2705,9 @@ td:nth-child(2) {
   }
 }
 
+.form__subtitle {
+  width: 400px;
+}
 @media screen and (max-width: 390px) {
   .form__subtitle {
     font-size: 16px;
