@@ -1,6 +1,6 @@
-@import "fonts"; //Шрифты
-@import "vars"; //Переменные
-@import "mixins"; //Миксины 
+@import "fonts"; 
+@import "vars"; 
+@import "mixins"; 
 @import "global";
 @import "reset";
 
@@ -25,9 +25,4 @@
 @import "blocks/collection";
 @import "blocks/functions";
 @import "blocks/footer";
-
-@import "media"; //Медиазапросы 
-
-// * {
-//     outline: 1px solid salmon;
-// }
+ 
