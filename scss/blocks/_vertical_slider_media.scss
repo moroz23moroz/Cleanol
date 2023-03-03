@@ -9,17 +9,6 @@
         display: none;
     }
 
-    .info-block__img_absolute {
-        max-width: 434px;
-        min-width: 434px;
-        margin-top: 20px;
-        margin-left: -25px;
-    }
-
-    .image-bg {
-        margin-top: 20px;
-    }
-
     .vertical-slider {
         margin-bottom: 20px;
     }
@@ -33,33 +22,6 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .vertical-slider {
         display: none;
-    }
-
-    .info-block_bg-light-blue {
-        position: relative;
-        max-width: 750px;
-        min-height: 1000px;
-    }
-
-    .info-block__img_absolute {
-        position: absolute;
-        max-width: 434px;
-        min-width: 434px;
-        top: 570px;
-        left: 158px;
-        z-index: 2;
-        margin-left: 0;
-    }
-
-    .image-bg {
-        position: absolute;
-        max-width: 330px;
-        min-width: 330px;
-        max-height: 295px;
-        min-height: 295px;
-        top: 600px;
-        left: 200px;
-        z-index: 1;
     }
 
     .horizontal-slider {
@@ -83,48 +45,11 @@
         max-width: 477px;
         min-width: 477px;
     }
-
-    .info-block-btn_sm {
-        margin-top: auto;
-    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .vertical-slider {
         display: none;
-    }
-
-    .info-block_bg-light-blue {
-        max-width: 390px;
-        min-height: 955px;
-    }
-
-    .info-block__title_centered {
-        max-width: 340px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .info-block__img_absolute {
-        position: absolute;
-        margin-left: 0;
-        max-width: 290px;
-        min-width: 290px;
-        top: 650px;
-        left: 40px;
-        z-index: 2;
-    }
-
-    .image-bg {
-        position: absolute;
-        max-width: 220px;
-        min-width: 220px;
-        max-height: 196px;
-        min-height: 196px;
-        top: 650px;
-        left: 90px;
-        z-index: 1;
-        border-radius: calc(220px/2);
     }
 
     .horizontal-slider {
@@ -159,23 +84,5 @@
             max-width: 71px;
             margin-left: -15px;
         }
-    }
-
-    .info-block-btn_sm {
-        margin-top: auto;
-    }
-
-    .info-block-btn_centered {
-        align-self: center;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .image-bg {
-        left: 40px;
-    }
-
-    .info-block__img_absolute {
-        left: 10px;
     }
 }

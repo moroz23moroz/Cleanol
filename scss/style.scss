@@ -10,12 +10,10 @@
 @import "blocks/stages"; //Ильвина блок "8 этапов строительства робот-мойки"
 @import 'blocks/banner';
 @import 'blocks/banner_media';
-@import 'blocks/block_3';
-@import 'blocks/block_3_media';
-@import 'blocks/block_3.1';
-@import 'blocks/block_3.1_media';
-@import 'blocks/block_4';
-@import 'blocks/block_4_media';
+@import 'blocks/info-block';
+@import 'blocks/info-block_media';
+@import 'blocks/vertical_slider';
+@import 'blocks/vertical_slider_media';
 @import 'blocks/block_5';
 @import 'blocks/block_5_media';
 @import 'blocks/popup';
@@ -25,4 +23,3 @@
 @import "blocks/collection";
 @import "blocks/functions";
 @import "blocks/footer";
- 
