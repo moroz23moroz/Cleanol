@@ -2680,6 +2680,7 @@ td:nth-child(2) {
   .form__subtitle {
     font-size: 16px;
     line-height: 22px;
+    width: 350px;
   }
 }
 
