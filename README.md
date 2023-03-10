@@ -24,6 +24,14 @@ Site for the company, producing equipment for robotic car-washers, Belarus.
 <p><img src="images/readme/1.JPG" alt="result"></p>
 <p><img src="images/readme/2.JPG" alt="result"></p>
 <p><img src="images/readme/3.JPG" alt="result"></p>
+<p><img src="images/readme/4.JPG" alt="result"></p>
+<p><img src="images/readme/5.JPG" alt="result"></p>
+<p><img src="images/readme/6.JPG" alt="result"></p>
+<p><img src="images/readme/7.JPG" alt="result"></p>
+<p><img src="images/readme/8.JPG" alt="result"></p>
+<p><img src="images/readme/9.JPG" alt="result"></p>
+<p><img src="images/readme/10.JPG" alt="result"></p>
+
 
 ## Authors
 Marina Morozova<br>
