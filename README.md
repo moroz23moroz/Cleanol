@@ -20,7 +20,7 @@ Site for the company, producing equipment for robotic car-washers, Belarus.
 
 
 ## Result
-
+<a href="http://robot.aqts.by/">Click here</a>
 
 ## Authors
 Marina Morozova<br>
