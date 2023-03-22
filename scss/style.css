@@ -910,6 +910,14 @@ body {
   min-width: 0;
 }
 
+.banner-slider-container .banner__slide:not(:first-child) {
+  display: none;
+}
+
+.banner-slider-container.slick-initialized .banner__slide:not(:first-child) {
+  display: block;
+}
+
 .slick-list {
   overflow: hidden;
 }
