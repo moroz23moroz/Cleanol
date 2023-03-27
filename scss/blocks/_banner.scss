@@ -29,6 +29,15 @@
     min-width: 0;
 }
 
+//Оптимизация, чтобы при первичной загрузке показывался один слайд
+.banner-slider-container .banner__slide:not(:first-child) {
+    display: none;
+}
+
+.banner-slider-container.slick-initialized .banner__slide:not(:first-child) {
+    display: block;
+}
+
 // Ограничивающая оболочка
 .slick-list {
     overflow: hidden;
