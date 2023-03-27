@@ -25,12 +25,16 @@ body {
   overflow: hidden;
 }
 
-.main{
+.main {
   cursor: pointer;
+}
+
+input {
+  outline: none;
 }
 
 .ios,
 .ios * {
-    // causes dom events to be fired
-    cursor: pointer;
+  // causes dom events to be fired
+  cursor: pointer;
 }

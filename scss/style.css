@@ -34,6 +34,10 @@ body {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
 .ios,
 .ios * {
   cursor: pointer;
