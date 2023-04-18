@@ -5,6 +5,10 @@
     padding-top: 85px;
     padding-bottom: 400px;
 
+    @media screen and (max-width: 1080px) {
+        padding-bottom: 450px;
+    }
+
     @media screen and (max-width: 700px) {
         padding-bottom: 670px;
     }
